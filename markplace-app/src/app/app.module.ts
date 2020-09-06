@@ -8,6 +8,7 @@ import { MaterialCommonModule } from '../app/material/material.module';
 import { CommonComponentModule }  from './components/common/common.module';
 import { HomeCommonModule } from './components/home/home.module';
 import { AboutModule } from './components/about/about.module';
+import { WorkshopModule } from './components/workshop/workshop.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonComponentModule,
     HomeCommonModule,
     AboutModule,
+    WorkshopModule,
     FlexLayoutModule
   ],
   providers: [],
