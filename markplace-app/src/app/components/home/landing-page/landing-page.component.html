@@ -1,14 +1,15 @@
 <div>
   <div class="_flex _justify_center">
     <div class="_flex_col _flex_align_item_center">
-      <div>MARKETPLACE</div>
-      <div>A place to learn grow</div>
+      <div class="title_text">MARKETPLACE</div>
+      <div class="title_subtext">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum
+        dolor vel tempus pulvinar. Ut vitae leo metus. Duis felis metus,
+      </div>
     </div>
   </div>
 
-
-  <app-landing-page-card [config]="{ }">
-    
-  </app-landing-page-card>
-
+  <div *ngFor="let card of landingCards">
+    <app-landing-page-card [config]="card"></app-landing-page-card>
+  </div>
 </div>

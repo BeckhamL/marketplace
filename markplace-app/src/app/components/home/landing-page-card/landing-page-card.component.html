@@ -1,4 +1,18 @@
-<div class="_flex _flex_align_item_center _space_between card_wrapper">
+<div class="_flex _flex_align_item_center _space_around card_wrapper">
 
+  <div *ngIf="config?.imagePosition === 'left'" class="_flex _justify_center width_50" fxFlex="50%">
+    <img src="{{config?.imageValue}}">
+  </div>
 
+  <div *ngIf="config?.textPosition === 'left'" class="_flex _justify_center width_50" fxFlex="50%">
+    <div class="text_value"> {{ config?.textValue}} </div>
+  </div>
+
+  <div *ngIf="config?.imagePosition === 'right'" class="_flex _justify_center width_50" fxFlex="50%">
+    <img src="{{config?.imageValue}}">
+  </div>
+
+  <div *ngIf="config?.textPosition === 'right'" class="_flex _justify_center width_50" fxFlex="50%">
+    <div class="text_value"> {{ config?.textValue}} </div>
+  </div>
 </div>
