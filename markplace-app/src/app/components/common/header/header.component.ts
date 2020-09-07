@@ -1,19 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  innerWidth = window.innerWidth;
 
-  ngOnInit() {
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
   }
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {}
 
   onClickNavigation(path: string) {
     this.router.navigate([`/${path}`]);
   }
-
 }
