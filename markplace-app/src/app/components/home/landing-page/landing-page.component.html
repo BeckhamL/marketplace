@@ -25,7 +25,10 @@
     </div>
   </div>
 
-  <div *ngFor="let card of landingCards">
+  <div *ngFor="let card of landingCards; let first = first">
+    <div class="_flex _justify_center" *ngIf="!first">
+      <div class="seperator"></div>
+    </div>
     <app-landing-page-card [config]="card"></app-landing-page-card>
   </div>
 </div>

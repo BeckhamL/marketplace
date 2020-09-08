@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from "@angular/common";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,15 +9,23 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   innerWidth = window.innerWidth;
+  currentRoute = '';
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerWidth = window.innerWidth;
   }
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private location: Location) {
+    this.router.events.subscribe(() => {
+      this.currentRoute = location.path().replace('/','');
+    });
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.currentRoute = this.router.url;
+    console.log(this.currentRoute)
+  }
 
   onClickNavigation(path: string) {
     this.router.navigate([`/${path}`]);

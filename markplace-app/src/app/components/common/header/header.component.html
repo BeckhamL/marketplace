@@ -1,8 +1,18 @@
 <mat-toolbar class="_flex _space_between">
   <div class="header_title" (click)="onClickNavigation('')">MARKETPLACE</div>
   <div class="_flex _flex_align_item_center" *ngIf="innerWidth > 1000">
-    <div class="content_tab" (click)="onClickNavigation('about')">About</div>
-    <div class="content_tab" (click)="onClickNavigation('workshop')">
+    <div
+      class="content_tab"
+      (click)="onClickNavigation('about')"
+      [ngClass]="{ activeRoute: currentRoute === 'about' }"
+    >
+      About
+    </div>
+    <div
+      class="content_tab"
+      (click)="onClickNavigation('workshop')"
+      [ngClass]="{ activeRoute: currentRoute === 'workshop' }"
+    >
       Workshop
     </div>
     <div class="content_tab">Course Outline</div>
@@ -13,10 +23,14 @@
     <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
-        <div class="content_tab" (click)="onClickNavigation('about')">About</div>
+        <div class="content_tab" (click)="onClickNavigation('about')">
+          About
+        </div>
       </button>
       <button mat-menu-item>
-        <div class="content_tab" (click)="onClickNavigation('workshop')">Workshop</div>
+        <div class="content_tab" (click)="onClickNavigation('workshop')">
+          Workshop
+        </div>
       </button>
       <button mat-menu-item>
         <div class="content_tab">Course Outline</div>
