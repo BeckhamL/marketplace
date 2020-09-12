@@ -1,0 +1,30 @@
+@import "../../../../assets/scss/layout.scss";
+
+.workshop_title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.author_text {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.topic_title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.duration_text {
+  font-size: 18px;
+  background-color: #fff2ac;
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
+.margin_bottom_40 {
+  margin-bottom: 40px;
+}
+
+li {
+  margin: 5px 0px;
+}

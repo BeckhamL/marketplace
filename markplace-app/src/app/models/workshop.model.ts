@@ -5,11 +5,12 @@ export class Workshop {
 }
 
 export class Part {
-  topic: Topic;
-  description?: string;
+  topic?: Topic[];
 }
 
 export class Topic {
+  title: string;
+  description?: string;
   duration?: string;
   points?: string[];
 }
