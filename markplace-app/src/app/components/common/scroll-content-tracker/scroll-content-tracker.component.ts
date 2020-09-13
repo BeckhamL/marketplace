@@ -17,7 +17,6 @@ export class ScrollContentTrackerComponent implements OnInit {
 
   ngOnInit() {
     this.getTitles();
-    console.log(this.currentWorkshop)
   }
 
   getTitles() {

@@ -9,6 +9,7 @@ import { CommonComponentModule }  from './components/common/common.module';
 import { HomeCommonModule } from './components/home/home.module';
 import { AboutModule } from './components/about/about.module';
 import { WorkshopModule } from './components/workshop/workshop.module';
+import { UtilityModule } from './utility/utility.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HomeCommonModule,
     AboutModule,
     WorkshopModule,
+    UtilityModule,
     FlexLayoutModule
   ],
   providers: [],

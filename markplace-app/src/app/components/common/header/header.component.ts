@@ -24,7 +24,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.currentRoute = this.router.url;
-    console.log(this.currentRoute)
   }
 
   onClickNavigation(path: string) {
