@@ -1,10 +1,33 @@
-@import '../../../../assets/scss/layout.scss';
+@import "../../../../assets/scss/layout.scss";
 
 .about_wrapper {
-    text-align: center;
-    padding: 20px ;
+  text-align: center;
+  padding: 20px;
 }
 
 .about_text {
-    font-size: 24px;
+  font-size: 24px;
+}
+
+img {
+  width: 500px;
+}
+
+@media only screen and (max-width: 1000px) {
+  ._flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_text {
+    font-size: 20px;
+  }
+
+  .image_wrapper {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 400px;
+  }
 }
