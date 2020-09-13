@@ -1,3 +1,18 @@
+@import "../../../../assets/scss/layout.scss";
+
 .scroll_wrapper {
-    position: fixed;
+  position: fixed;
+}
+
+.header_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.topic_text {
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.topic_text:hover {
 }

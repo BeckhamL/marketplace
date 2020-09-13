@@ -1,5 +1,6 @@
 <div class="scroll_wrapper">
-  <p>
-    scroll-content-tracker works!
-  </p>
+  <div class="header_text">Jump to topic</div>
+  <div class="_flex_col" *ngFor="let topic of highlightPoints">
+    <div class="topic_text">{{topic?.title}}</div>
+  </div>
 </div>

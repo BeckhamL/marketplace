@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Workshop } from 'src/app/models/workshop.model';
 
 @Component({
   selector: 'app-scroll-content-tracker',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScrollContentTrackerComponent implements OnInit {
 
+  @Input()
+  currentWorkshop: Workshop;
+
+  highlightPoints = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.getTitles();
+    console.log(this.currentWorkshop)
+  }
+
+  getTitles() {
+    this.currentWorkshop.part.forEach(part => {
+      part.topic.forEach(topic => {
+        this.highlightPoints.push(topic);
+      })
+    })
   }
 
 }

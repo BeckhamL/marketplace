@@ -40,25 +40,34 @@ export class WorkshopMainComponent implements OnInit {
               'Remembered each other. Office was happy to hear the young mans faith. Then added: "I was with a Baptist church but no longer practicing. But maybe I should go back"',
             ],
           },
+        ],
+      },
+      {
+        topic: [
           {
             duration: '15 min',
-            title: '\"Discovering God @ Work\": an individual excercise',
-            description: 'Think of one great moment or one rotten day during the past week/month. Ask:',
+            title: '"Discovering God @ Work": an individual excercise',
+            description:
+              'Think of one great moment or one rotten day during the past week/month. Ask:',
             points: [
               'What happened?',
               'Why did it happen?',
               'Where was God when it happened?',
-              'What have I learned from this?'
-            ]
+              'What have I learned from this?',
+            ],
           },
+        ],
+      },
+      {
+        topic: [
           {
             duration: '15 min',
             title: 'Break into pairs to share discovery',
             description: 'Pray for each other',
             points: [
-              'In case you\'re not prepared to share details of your discovery, simply ask the other person to pray for a specific need you have at work'
-            ]
-          }
+              "In case you're not prepared to share details of your discovery, simply ask the other person to pray for a specific need you have at work",
+            ],
+          },
         ],
       },
     ],
