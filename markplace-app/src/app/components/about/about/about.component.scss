@@ -10,7 +10,10 @@
 }
 
 img {
-  width: 500px;
+  width: 350px;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0px 3px 6px #c1c1c1;
 }
 
 @media only screen and (max-width: 1000px) {
