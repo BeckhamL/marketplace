@@ -15,7 +15,14 @@
     >
       Workshop
     </div>
-    <div class="content_tab">Course Outline</div>
+    <div
+      class="content_tab"
+      class="content_tab"
+      (click)="onClickNavigation('outlines')"
+      [ngClass]="{ activeRoute: currentRoute === 'outlines' }"
+    >
+      Course Outline
+    </div>
     <div class="content_tab">Blogs</div>
     <div class="content_tab">Case Studies</div>
   </div>
