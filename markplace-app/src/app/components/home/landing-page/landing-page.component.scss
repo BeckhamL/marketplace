@@ -63,13 +63,8 @@ img {
 }
 
 .main {
-  /* Fill the available space */
   height: 100vh;
-  
-  /* Make the children of the element closer to the viewport */
   perspective: 2px;
-  
-  /* Hide the overflow */
   overflow-x: hidden;
 }
 
@@ -83,10 +78,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 100vh;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.section_pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* Different background colors for demo purpose */
@@ -102,8 +104,12 @@ img {
   background-color: #c06c84;
 }
 
+.static {
+  z-index: 2;
+}
+
 .parallax::after {
-  /* Position the pseudo-element to fill the parent */
+
   content: '';
   position: absolute;
   top: 0;
@@ -111,11 +117,8 @@ img {
   bottom: 0;
   left: 0;
   
-  /* Scale the image to full */
-  background-size: cover;
-  
   /* Move the element back then scale the element, it helps to appears more slowly */
-  transform: translateZ(-1px) scale(2.5);
+  transform: translateZ(-1px) scale(2);
   
   /* Set the parallax section before the other elements. */
   z-index: -1;
@@ -127,5 +130,5 @@ img {
 }
 
 .parallax-two::after {
-  background-image: url(https://source.unsplash.com/P86-JPbDnPY/1600x900);
+  background-image: url(https://source.unsplash.com/vs6a4EHj_Ro/1600x900);
 }
