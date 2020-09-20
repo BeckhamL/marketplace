@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Outline } from 'src/app/models/outlines.model';
 
 @Component({
   selector: 'app-outlines-material',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutlinesMaterialComponent implements OnInit {
 
+  @Input()
+  outlines: Outline[];
+  
   constructor() { }
 
   ngOnInit() {

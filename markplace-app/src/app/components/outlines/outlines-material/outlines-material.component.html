@@ -1,3 +1,11 @@
-<p>
-  outlines-material works!
-</p>
+<div *ngFor="let outline of outlines">
+  <div class="title">{{ outline?.title }}</div>
+  <div>{{ outline?.date }}</div>
+  <div>{{ outline?.description }}</div>
+  <div class="_flex">
+    <div>Instructors: </div>
+    <div *ngFor="let instructor of outline?.instructors; let last = last">
+        {{ instructor }} 
+    </div>
+  </div>
+</div>
