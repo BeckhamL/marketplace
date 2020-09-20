@@ -1,5 +1,11 @@
-@import '../../../../assets/scss/layout.scss';
+@import "../../../../assets/scss/layout.scss";
 
 .list_wrapper {
-    position: fixed;
+  position: fixed;
+}
+
+.title_text {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }

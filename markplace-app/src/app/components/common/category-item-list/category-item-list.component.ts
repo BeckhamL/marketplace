@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-category-item-list',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryItemListComponent implements OnInit {
 
+  @Input()
+  title: string;
+  
   constructor() { }
 
   ngOnInit() {
