@@ -9,7 +9,7 @@ import { Outline } from 'src/app/models/outlines.model';
 export class OutlinesMaterialComponent implements OnInit {
 
   @Input()
-  outlines: Outline[];
+  outline: Outline;
   
   constructor() { }
 

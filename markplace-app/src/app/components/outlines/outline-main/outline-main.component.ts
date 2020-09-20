@@ -7,14 +7,12 @@ import { Outline } from 'src/app/models/outlines.model';
   styleUrls: ['./outline-main.component.scss'],
 })
 export class OutlineMainComponent implements OnInit {
-  outlines: Outline[] = [
-    {
-      title: 'Saints @ Work',
-      date: 'June 2020',
-      description: '10:30 - 11:30 am, EST Canada on Zoom!',
-      instructors: ['Pastor David', 'RHCCC Marketplace Ministry Team'],
-    },
-  ];
+  outline: Outline = {
+    title: 'Saints @ Work',
+    date: 'June 2020',
+    description: '10:30 - 11:30 am, EST Canada on Zoom!',
+    instructors: ['Pastor David', 'RHCCC Marketplace Ministry Team'],
+  };
   constructor() {}
 
   ngOnInit() {}
