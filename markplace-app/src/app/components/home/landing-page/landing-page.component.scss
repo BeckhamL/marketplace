@@ -76,7 +76,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 600px;
   font-size: 40px;
   text-transform: uppercase;
   font-weight: bold;
@@ -92,6 +92,7 @@ img {
 /* Different background colors for demo purpose */
 .static-one {
   background-color: #feceab;
+  height: 100vh;
 }
 
 .static-two {
@@ -104,6 +105,10 @@ img {
 
 .static {
   z-index: 2;
+}
+
+.parallax {
+  height: 500px;
 }
 
 .parallax::after {
@@ -124,7 +129,7 @@ img {
 
 /* Different background images */
 .parallax-one::after {
-  background-image: url(https://source.unsplash.com/vs6a4EHj_Ro/1600x900);
+  background-image: url(https://source.unsplash.com/random);
 }
 
 .parallax-two::after {

@@ -12,6 +12,12 @@ export class OutlineMainComponent implements OnInit {
     date: 'June 2020',
     description: '10:30 - 11:30 am, EST Canada on Zoom!',
     instructors: ['Pastor David', 'RHCCC Marketplace Ministry Team'],
+    scriptures: [
+      'Genesis 1-4',
+      'Ephesians 2:1-10,4:17-6:18',
+      'Matthew 22:37-39',
+      'John 14:16',
+    ],
   };
   constructor() {}
 

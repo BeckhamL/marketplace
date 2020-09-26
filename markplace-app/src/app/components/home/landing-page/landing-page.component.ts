@@ -3,6 +3,7 @@ import {
   LandingCardConfig,
   LandingCardPosition,
 } from '../landing-page-card/landing-page-card.model';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-landing-page',
@@ -11,10 +12,21 @@ import {
 })
 export class LandingPageComponent implements OnInit {
   landingCards: LandingCardConfig[];
+  typed: Typed;
+
 
   constructor() {}
 
   ngOnInit() {
+    this.typed = new Typed('#element', {
+      strings: ['Learn', 'Grow', 'Think', 'Discover'],
+      typeSpeed: 100,
+      backSpeed: 80,
+      smartBackspace: true,
+      loop: true,
+      showCursor: false,
+      shuffle: true
+    });
     this.landingCards = [
       {
         textPosition: LandingCardPosition.left,
