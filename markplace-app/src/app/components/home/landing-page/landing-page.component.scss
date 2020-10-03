@@ -107,11 +107,15 @@ img {
   z-index: 2;
 }
 
-.parallax {
+.parallax_full {
   height: 500px;
 }
 
-.parallax::after {
+.parallax_half {
+  height: 600px;
+}
+
+.parallax_full::after {
 
   content: '';
   position: absolute;
@@ -119,15 +123,22 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  
-  /* Move the element back then scale the element, it helps to appears more slowly */
   transform: translateZ(-1px) scale(2);
-  
-  /* Set the parallax section before the other elements. */
   z-index: -1;
 }
 
-/* Different background images */
+.parallax_half::after {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
 .parallax-one::after {
   background-image: url(https://source.unsplash.com/random);
 }
