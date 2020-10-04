@@ -14,8 +14,8 @@ export class OutlinesMaterialComponent implements OnInit {
   columnDefs = ['Date', 'Topic', 'Description', 'Testimony/Case'];
 
   rowDefs = [
-    {'Date': '6/7', 'Topic' : 'Why work?', 'Description': 'desc'},
-    {'Date': '6/14', 'Topic' : 'Working with God', 'Description': 'desc', 'Testimony/Case' : 'Mia Wang: Why am I doing this?' },
+    {'Date': '6/7', 'Topic' : 'Why work?'},
+    {'Date': '6/14', 'Topic' : 'Working with God', 'Testimony/Case' : 'Mia Wang: Why am I doing this?' },
     {'Date': '6/21', 'Topic' : 'Where do I fit in?', 'Description': 'Prayer and Work' },
     {'Date': '6/28', 'Topic' : 'Building partners @ work', 'Description': 'Next steps for your journey' }
   ]
