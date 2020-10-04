@@ -1,4 +1,10 @@
-<div class="title" tooltipInfoPopup [tooltipText]="'test'">{{ outline?.title }}</div>
+<div class="_flex _flex_align_item_center">
+  <div class="title">{{ outline?.title }}</div>
+  <mat-icon tooltipInfoPopup [tooltipText]="'Click to download'"
+    >get_app</mat-icon
+  >
+</div>
+
 <div>{{ outline?.date }}</div>
 <div>{{ outline?.description }}</div>
 <div class="_flex">
@@ -10,5 +16,9 @@
 <app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
 <div>Kep scripture references</div>
 <ul>
-  <li *ngFor="let scripture of outline?.scriptures">{{scripture}}</li>
+  <li *ngFor="let scripture of outline?.scriptures">{{ scripture }}</li>
 </ul>
+<div>Questions</div>
+<div *ngFor="let question of outline?.questions">
+  <div>{{ question }}</div>
+</div>

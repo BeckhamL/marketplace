@@ -4,3 +4,12 @@
   font-size: 44px;
   font-weight: bold;
 }
+
+mat-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+mat-icon:hover {
+  color: #0645AD ;
+}

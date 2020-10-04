@@ -18,6 +18,12 @@ export class OutlineMainComponent implements OnInit {
       'Matthew 22:37-39',
       'John 14:16',
     ],
+    questions: [
+      '自我認識多少?',
+      'Personal branding: 打造自己的品牌',
+      'Building my network: 人脈',
+      'Communication and interpersonal skills: 溝通與人際關係的技巧'
+    ]
   };
   constructor() {}
 

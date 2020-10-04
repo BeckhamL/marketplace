@@ -4,4 +4,5 @@ export class Outline {
   description?: string;
   instructors: string[];
   scriptures?: string[];
+  questions?: string[];
 }
