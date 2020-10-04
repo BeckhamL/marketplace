@@ -7,7 +7,7 @@
     {{ instructor }}
   </div>
 </div>
-<app-table [columnDefs]="columnDefs" [dataSource]="dataSource"></app-table>
+<app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
 <div>Kep scripture references</div>
 <ul>
   <li *ngFor="let scripture of outline?.scriptures">{{scripture}}</li>

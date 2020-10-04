@@ -1,3 +1,9 @@
+@import '../../../../assets/scss/layout.scss';
+
 table {
-    width: 100%;
+  width: 100%;
+}
+
+th {
+  text-align: start;
 }

@@ -1,14 +1,13 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <ng-container
-    *ngFor="let columnName of columnDefs"
-    [matColumnDef]="columnName"
-  >
-    <th mat-header-cell *matHeaderCellDef>{{ columnName }}</th>
-    <td mat-cell *matCellDef="let element">
-      <div>{{getCellValue(columnName,element)}}</div>
-    </td>
-  </ng-container>
+<table>
+  <tr>
+    <th *ngFor="let column of columnDefs">
+      {{ column }}
+    </th>
+  </tr>
 
-  <tr mat-header-row *matHeaderRowDef="columnDefs"></tr>
-  <tr mat-row *matRowDef="let row; columns: columnDefs"></tr>
+  <tr *ngFor="let row of rowDefs">
+    <td *ngFor="let column of columnDefs">
+      {{ row[column] }}
+    </td>
+  </tr>
 </table>

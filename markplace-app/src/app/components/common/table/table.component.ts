@@ -11,7 +11,7 @@ export class TableComponent implements OnInit {
   columnDefs: string[];
 
   @Input()
-  dataSource: any[];
+  rowDefs: string[];
 
   constructor() { }
 
