@@ -1,4 +1,4 @@
-@import "../../../../assets/scss/layout.scss";
+@import "../../../../assets/scss/main.scss";
 
 .main_wrapper {
   height: 100vh;
@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.site_color {
+  color: $site-pink;
+}
+
 .title_text {
   font-size: 80px;
   font-weight: bold;
@@ -41,6 +45,17 @@
   text-align: center;
 }
 
+.section_bold_text {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.36px;
+}
+
+.section_header_text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .seperator {
   width: 60%;
   height: 2px;
@@ -48,7 +63,6 @@
 }
 
 img {
-  width: 400px;
   height: 400px;
 }
 
@@ -77,9 +91,6 @@ img {
   align-items: center;
   justify-content: center;
   height: 600px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .section_pic {
@@ -91,7 +102,7 @@ img {
 
 /* Different background colors for demo purpose */
 .static-one {
-  background-color: #feceab;
+  background-color: rgb(247, 250, 255);
   height: 100vh;
 }
 
@@ -100,7 +111,7 @@ img {
 }
 
 .static-three {
-  background-color: #c06c84;
+  background-color: rgb(247, 250, 255);
 }
 
 .static {
