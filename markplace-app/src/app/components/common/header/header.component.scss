@@ -1,4 +1,4 @@
-@import "../../../../assets/scss/layout.scss";
+@import "../../../../assets/scss/main.scss";
 
 .header_title {
   font-size: 40px;
@@ -24,11 +24,11 @@
 
 .content_tab:hover:after {
   width: 100%;
-  background: #4B2665;
+  background: $site-pink;
 }
 
 .activeRoute {
-  background: orange;
+  color: $site-pink;
 }
 
 mat-icon {
