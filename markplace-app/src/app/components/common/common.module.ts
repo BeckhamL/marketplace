@@ -6,10 +6,25 @@ import { ScrollContentTrackerComponent } from './scroll-content-tracker/scroll-c
 import { CategoryItemListComponent } from './category-item-list/category-item-list.component';
 import { TableComponent } from './table/table.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import { EmailInputComponent } from './email-input/email-input.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
-  exports: [HeaderComponent, ScrollContentTrackerComponent, CategoryItemListComponent, TableComponent, BlogCardComponent],
-  declarations: [HeaderComponent, ScrollContentTrackerComponent, CategoryItemListComponent, TableComponent, BlogCardComponent],
+  exports: [
+    HeaderComponent,
+    ScrollContentTrackerComponent,
+    CategoryItemListComponent,
+    TableComponent,
+    BlogCardComponent,
+    EmailInputComponent,
+  ],
+  declarations: [
+    HeaderComponent,
+    ScrollContentTrackerComponent,
+    CategoryItemListComponent,
+    TableComponent,
+    BlogCardComponent,
+    EmailInputComponent,
+  ],
 })
 export class CommonComponentModule {}
