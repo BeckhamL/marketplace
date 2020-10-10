@@ -1,0 +1,21 @@
+@import "../../../../assets/scss/main.scss";
+
+.blog_card_wrapper {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: white;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 20px 20px;
+  cursor: pointer;
+}
+
+.blog_title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+img {
+    width: 300px;
+}

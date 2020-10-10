@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.height_100 {
+  height: 100% !important;
+}
+
 .site_color {
   color: $site-pink;
 }
@@ -54,6 +58,7 @@
 .section_header_text {
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .seperator {
