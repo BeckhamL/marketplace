@@ -75,6 +75,10 @@ img {
   margin: 20px 0px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 960px) {
 
   img {
@@ -96,9 +100,7 @@ img {
 /* General styling, not necessarily related to parallax effect  */
 .section {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
   height: 600px;
 }
 
