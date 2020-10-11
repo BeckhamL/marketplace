@@ -123,6 +123,10 @@ img {
   background-color: rgb(247, 250, 255);
 }
 
+.static-four {
+  background-color: #f6efe8;
+}
+
 .static {
   z-index: 2;
 }
@@ -160,7 +164,7 @@ img {
 }
 
 .parallax-one::after {
-  background-image: url(https://source.unsplash.com/random);
+  background-image: url('https://source.unsplash.com/random');
 }
 
 .parallax-two::after {

@@ -14,11 +14,11 @@
   </div>
 </div>
 <app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
-<div>Kep scripture references</div>
+<div class="subheaders">Kep scripture references</div>
 <ul>
   <li *ngFor="let scripture of outline?.scriptures">{{ scripture }}</li>
 </ul>
-<div>Questions</div>
+<div class="subheaders">Questions</div>
 <div *ngFor="let question of outline?.questions">
   <div>{{ question }}</div>
 </div>

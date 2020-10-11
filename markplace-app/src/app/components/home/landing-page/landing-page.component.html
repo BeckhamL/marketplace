@@ -1,38 +1,3 @@
-<!-- <div>
-  <div class="_flex _justify_center _flex_align_item_center main_wrapper">
-    <div class="_flex_col _flex_align_item_center _space_evenly main_content">
-      <div fxLayout="column" fxLayoutAlign="center">
-        <div class="title_text">MARKETPLACE</div>
-        <div class="title_subtext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum
-          dolor vel tempus pulvinar. Ut vitae leo metus. Duis felis metus,
-        </div>
-      </div>
-      <div class="_flex _flex_align_item_center _space_between width_100" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
-        <div class="_flex_col _flex_align_item_center main_cards width_33">
-          <img src="/assets/images/learn.svg">
-          <div class="card_title">LEARN</div>
-        </div>
-        <div class="_flex_col _flex_align_item_center main_cards width_33">
-          <img src="/assets/images/question.svg">
-          <div class="card_title">QUESTION</div>
-        </div>
-        <div class="_flex_col _flex_align_item_center width_33">
-          <img src="/assets/images/discover.svg">
-          <div class="card_title">DISCOVER</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div *ngFor="let card of landingCards; let first = first">
-    <div class="_flex _justify_center" *ngIf="!first">
-      <div class="seperator"></div>
-    </div>
-    <app-landing-page-card [config]="card"></app-landing-page-card>
-  </div>
-</div> -->
-
 <main class="main">
   <section class="section static static-one">
     <div class="_flex_col _flex_align_item_start">
@@ -48,8 +13,12 @@
     </div>
   </section>
   <div class="_flex">
-    <div class="section static static-three" fxFlex="50%">test</div>
-    <div fxFlex="50%">
+    <div class="section static static-four" fxFlex="30%">
+      <div class="_flex_col section_header_text">
+        <span class="site_color">Transforming</span> 
+        <div>Work</div>
+      </div></div>
+    <div fxFlex="70%">
       <section class="section parallax_half parallax-two">
         <div style="color: white">fake test</div>
       </section>
@@ -68,7 +37,7 @@
             <app-blog-card></app-blog-card>
             <app-blog-card></app-blog-card>
           </div>
-          <div>view all</div>
+          <div class="_flex _justify_end width_100 site_color">view all <mat-icon>keyboard_arrow_right</mat-icon></div>
         </div>
       </div>
       <div class="_flex _flex_align_item_center">

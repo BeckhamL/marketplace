@@ -1,4 +1,4 @@
-@import "../../../../assets/scss/layout.scss";
+@import "../../../../assets/scss/main.scss";
 
 .scroll_wrapper {
   position: fixed;
@@ -17,4 +17,5 @@
 
 .topic_text:hover {
   font-weight: 500;
+  color: $site-pink;
 }

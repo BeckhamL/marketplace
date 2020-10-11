@@ -1,4 +1,4 @@
-@import '../../../../assets/scss/layout.scss';
+@import '../../../../assets/scss/main.scss';
 
 table {
   border-collapse: collapse;
@@ -19,6 +19,6 @@ tr:nth-child(even){background-color: #f2f2f2;}
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: $site-pink;
   color: white;
 }
