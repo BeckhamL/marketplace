@@ -1,0 +1,34 @@
+@import "../../../../assets/scss/main.scss";
+
+.button_wrapper {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 16px 18px rgba(0,0,0,0.06);
+  background-image: linear-gradient(#FF0067, #FF0067);
+  background-repeat: no-repeat;
+  transition: background-size 0.5s, color 0.5s;
+  background-size: 100% 0%;
+  margin-bottom: 20px;
+  color: $site-pink;
+}
+
+.button_wrapper:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.button_description {
+  font-size: 15px;
+  letter-spacing: 0.36px;
+  font-weight: 500;
+}
+
+mat-icon {
+  width: 44px;
+  height: 44px;
+  font-size: 44px;
+}

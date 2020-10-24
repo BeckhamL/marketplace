@@ -23,7 +23,14 @@
     >
       Course Outline
     </div>
-    <div class="content_tab" (click)="onClickNavigation('blogs')">Blogs</div>
+    <div
+      class="content_tab"
+      class="content_tab"
+      (click)="onClickNavigation('blogs')"
+      [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
+    >
+      Blogs
+    </div>
     <div class="content_tab">Case Studies</div>
   </div>
   <div *ngIf="innerWidth < 1000">

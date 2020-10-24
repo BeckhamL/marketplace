@@ -1,0 +1,25 @@
+@import "../../../../assets/scss/main.scss";
+
+.blog_wrapper {
+  padding: 20px;
+  height: 100%;
+  background: oldlace;
+}
+
+.title_text {
+  font-size: 60px;
+  color: $site-blue;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.category_buttons {
+  app-icon-button {
+    margin: 40px;
+  }
+}
+
+.margin_bottom_50 {
+  margin-bottom: 50px;
+}
