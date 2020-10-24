@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IconButtonConfig } from './icon-button-config';
+import { IconButtonConfig } from './icon-button.model';
 
 @Component({
   selector: 'app-icon-button',

@@ -8,6 +8,7 @@ import { TableComponent } from './table/table.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { EmailInputComponent } from './email-input/email-input.component';
 import { IconButtonComponent } from './icon-button/icon-button.component';
+import { OverviewCardComponent } from './overview-card/overview-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
@@ -18,7 +19,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     TableComponent,
     BlogCardComponent,
     EmailInputComponent,
-    IconButtonComponent
+    IconButtonComponent,
+    OverviewCardComponent
   ],
   declarations: [
     HeaderComponent,
@@ -27,7 +29,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     TableComponent,
     BlogCardComponent,
     EmailInputComponent,
-    IconButtonComponent
+    IconButtonComponent,
+    OverviewCardComponent
   ],
 })
 export class CommonComponentModule {}
