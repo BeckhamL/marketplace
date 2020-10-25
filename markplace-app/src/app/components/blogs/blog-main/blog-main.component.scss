@@ -2,7 +2,6 @@
 
 .blog_wrapper {
   padding: 20px;
-  height: 100%;
   background: oldlace;
 }
 
@@ -12,6 +11,19 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   text-align: center;
+}
+
+.header_text {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.list_column {
+  common-overview-card {
+    margin: 25px;
+  }
 }
 
 .category_buttons {

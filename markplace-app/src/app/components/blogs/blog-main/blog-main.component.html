@@ -10,9 +10,21 @@
     <app-icon-button [config]="{icon: 'self_improvement', style: 'default', description: 'Personal'}"></app-icon-button>
   </div>
 
-  <div class="_flex_col">
-    <div>Latest blog:</div>
-    <common-overview-card></common-overview-card>
+  <div class="_flex _justify_center">
+    <div class="_flex_col _flex_align_item_center list_column">
+      <div class="header_text">Latest</div>
+      <common-overview-card></common-overview-card>
+      <common-overview-card></common-overview-card>
+      <common-overview-card></common-overview-card>
+    </div>
+  
+    <div class="_flex_col _flex_align_item_center list_column">
+      <div class="header_text">Popular</div>
+      <common-overview-card></common-overview-card>
+      <common-overview-card></common-overview-card>
+      <common-overview-card></common-overview-card>
+    </div>
   </div>
+
 
 </div>
