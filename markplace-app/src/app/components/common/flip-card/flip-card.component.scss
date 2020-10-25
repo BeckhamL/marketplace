@@ -25,6 +25,12 @@ img {
   perspective: 1000px; 
 }
 
+.flip-card-horizontal {
+  width: 400px;
+  height: 230px;
+  perspective: 1000px; 
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -38,6 +44,10 @@ img {
   transform: rotateX(180deg);
 }
 
+.flip-card-horizontal:hover .flip-card-inner-horizontal {
+  transform: rotateY(-180deg);
+}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -48,4 +58,8 @@ img {
 
 .flip-card-back {
   transform: rotateX(180deg);
+}
+
+.flip-card-back-horizontal {
+  transform: rotateY(-180deg);
 }

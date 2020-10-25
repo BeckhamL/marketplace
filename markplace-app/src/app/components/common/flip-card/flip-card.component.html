@@ -1,5 +1,5 @@
-<div class="flip-card">
-  <div class="flip-card-inner flip_card_wrapper">
+<div class="flip-card" [ngClass]="{'flip-card-horizontal' : flipDirection === 'horizontal' }">
+  <div class="flip-card-inner flip_card_wrapper" [ngClass]="{'flip-card-inner-horizontal' : flipDirection === 'horizontal' }">
     <div class="_flex _space_around flip-card-front">
       <img src="../../../../assets/images/learn.svg">
       <div class="_flex_col _space_around">
@@ -7,7 +7,7 @@
         <div>David</div>
       </div>
     </div>
-    <div class="flip-card-back">
+    <div class="flip-card-back" [ngClass]="{'flip-card-back-horizontal' : flipDirection === 'horizontal' }">
         <div>This is a fake description</div>
     </div>
   </div>

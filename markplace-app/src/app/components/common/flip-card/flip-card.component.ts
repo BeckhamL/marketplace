@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FlipDirectionEnum } from './flip-card.model';
 
 @Component({
   selector: 'common-flip-card',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlipCardComponent implements OnInit {
 
+  @Input()
+  flipDirection: string;
+  
   constructor() { }
 
   ngOnInit() {
