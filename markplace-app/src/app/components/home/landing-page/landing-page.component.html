@@ -47,8 +47,8 @@
     </div>
   </section>
   <section class="section parallax_full parallax-one"></section>
-  <section class="_flex_col _flex_align_item_center section static static-three">
-    <div class="section_header_text">Learn about our <span class="site_color">workshops:</span></div>
+  <section class="_flex_col _flex_align_item_center _space_evenly section static static-three">
+    <div class="section_header_text">Check out our latest <span class="site_color">workshops:</span></div>
     <div class="_flex workshop_cards">
       <common-flip-card></common-flip-card>
       <common-flip-card></common-flip-card>
@@ -57,9 +57,21 @@
     <div class="section_regular_text">
       Discover more workshops that cover a wide range of engaging, relevant, and thought-provoking topics.
     </div>
+    <common-button [title]="'View all workshops'"></common-button>
   </section>
-  <section class="_flex _justify_center section static static-four">
-    <div class="section_header_text">View our <span class="site_color">outlines:</span></div>
+  <section class="_flex_col _flex_align_item_center _space_evenly section static static-four">
+    <div class="section_header_text">Discover our most recent <span class="site_color">outline:</span></div>
+    <div class="_flex _flex_align_item_center _space_evenly">
+      <div class="_flex_col workshop_cards">
+        <common-flip-card></common-flip-card>
+      </div>
+      <div class="_flex_col _space_evenly height_100" fxFlex="30%">
+        <div class="section_regular_text">
+          Discover more workshops that cover a wide range of engaging, relevant, and thought-provoking topics.
+        </div>
+        <common-button [title]="'View all outlines'"></common-button>
+      </div>
+    </div>
   </section>
   <section class="_flex _flex_align_item_center _justify_center section static static-three height_100">
     <div class="_flex_col _flex_align_item_center">

@@ -1,0 +1,20 @@
+@import "../../../../assets/scss/main.scss";
+
+.button_wrapper {
+  height: 25px;
+  border-radius: 25px;
+  background: $site-blue;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button_wrapper:hover {
+  box-shadow: 0px 3px 6px #c1c1c1;
+}
+
+.button_text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
