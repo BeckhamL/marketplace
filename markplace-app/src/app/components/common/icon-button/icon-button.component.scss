@@ -1,5 +1,9 @@
 @import "../../../../assets/scss/main.scss";
 
+.container {
+  max-width: 90px;
+}
+
 .button_wrapper {
   width: 5rem;
   height: 5rem;
@@ -7,8 +11,8 @@
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
-  box-shadow: 0 16px 18px rgba(0,0,0,0.06);
-  background-image: linear-gradient(#FF0067, #FF0067);
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.06);
+  background-image: linear-gradient(#ff0067, #ff0067);
   background-repeat: no-repeat;
   transition: background-size 0.5s, color 0.5s;
   background-size: 100% 0%;
@@ -25,6 +29,7 @@
   font-size: 15px;
   letter-spacing: 0.36px;
   font-weight: 500;
+  text-align: center;
 }
 
 mat-icon {

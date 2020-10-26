@@ -12,6 +12,7 @@ import { OverviewCardComponent } from './overview-card/overview-card.component';
 import { FlipCardComponent } from './flip-card/flip-card.component';
 import { ButtonComponent } from './button/button.component';
 import { ImageDescriptionComponent } from './image-description/image-description.component';
+import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
@@ -26,7 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     OverviewCardComponent,
     FlipCardComponent,
     ButtonComponent,
-    ImageDescriptionComponent
+    ImageDescriptionComponent,
+    FooterComponent
   ],
   declarations: [
     HeaderComponent,
@@ -39,7 +41,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     OverviewCardComponent,
     FlipCardComponent,
     ButtonComponent,
-    ImageDescriptionComponent
+    ImageDescriptionComponent,
+    FooterComponent
   ],
 })
 export class CommonComponentModule {}

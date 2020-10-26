@@ -1,12 +1,7 @@
 @import "../../../../assets/scss/main.scss";
 
 .main_wrapper {
-  height: 100vh;
   background-color: #91B7C7;
-}
-
-.main_content {
-  height: 100%;
 }
 
 .main_cards {
@@ -50,7 +45,7 @@
 }
 
 .section_regular_text {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.36px;
 }
 
@@ -72,6 +67,10 @@
   background-color: #c1c1c1;
 }
 
+.bible_study_img {
+  width: 600px;
+}
+
 img {
   height: 400px;
 }
@@ -90,6 +89,10 @@ img {
   cursor: pointer;
 }
 
+app-icon-button {
+  margin: 15px;
+}
+
 @media only screen and (max-width: 960px) {
 
   img {
@@ -104,9 +107,9 @@ img {
   overflow-x: hidden;
 }
 
-.main::-webkit-scrollbar {
-  display: none;
-}
+// .main::-webkit-scrollbar {
+//   display: none;
+// }
 
 /* General styling, not necessarily related to parallax effect  */
 .section {
@@ -115,17 +118,8 @@ img {
   height: 600px;
 }
 
-.section_pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-/* Different background colors for demo purpose */
 .static-one {
   background-color: rgb(247, 250, 255);
-  height: 100vh;
 }
 
 .static-two {
@@ -177,9 +171,9 @@ img {
 }
 
 .parallax-one::after {
-  background-image: url(https://source.unsplash.com/rFhW5ZP6xx0/1600x900);
+  background-image: url('/assets/images/cross.jpg');
 }
 
 .parallax-two::after {
-  background-image: url(https://source.unsplash.com/sjHDn0oakCc/1300x800);
+  background-image: url('/assets/images/bible.jpg');
 }
