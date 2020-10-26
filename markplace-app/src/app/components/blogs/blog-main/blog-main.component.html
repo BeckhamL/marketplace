@@ -2,7 +2,7 @@
   <div class="_flex _justify_center">
     <div class="title_text margin_bottom_50">What insight will <br> you gain today?</div>
   </div>
-  <div class="_flex _justify_center category_buttons">
+  <div class="_flex _justify_center category_buttons margin_bottom_50">
     <app-icon-button [config]="{icon: 'visibility', style: 'default', description: 'Discover'}"></app-icon-button>
     <app-icon-button [config]="{icon: 'supervisor_account', style: 'default', description: 'Workplace'}"></app-icon-button>
     <app-icon-button [config]="{icon: 'family_restroom', style: 'default', description: 'Family'}"></app-icon-button>
@@ -11,11 +11,9 @@
   </div>
 
   <div class="_flex _justify_center">
-    <div class="_flex_col _flex_align_item_center list_column">
+    <div class="_flex_col _flex_align_item_center" fxFlex="40%">
       <div class="header_text">Latest</div>
-      <common-overview-card></common-overview-card>
-      <common-overview-card></common-overview-card>
-      <common-overview-card></common-overview-card>
+      <common-image-description></common-image-description>
     </div>
   
     <div class="_flex_col _flex_align_item_center list_column">

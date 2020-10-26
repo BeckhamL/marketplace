@@ -11,6 +11,7 @@ import { IconButtonComponent } from './icon-button/icon-button.component';
 import { OverviewCardComponent } from './overview-card/overview-card.component';
 import { FlipCardComponent } from './flip-card/flip-card.component';
 import { ButtonComponent } from './button/button.component';
+import { ImageDescriptionComponent } from './image-description/image-description.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
@@ -24,7 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     IconButtonComponent,
     OverviewCardComponent,
     FlipCardComponent,
-    ButtonComponent
+    ButtonComponent,
+    ImageDescriptionComponent
   ],
   declarations: [
     HeaderComponent,
@@ -36,7 +38,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     IconButtonComponent,
     OverviewCardComponent,
     FlipCardComponent,
-    ButtonComponent
+    ButtonComponent,
+    ImageDescriptionComponent
   ],
 })
 export class CommonComponentModule {}
