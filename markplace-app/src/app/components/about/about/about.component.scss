@@ -1,19 +1,70 @@
-@import "../../../../assets/scss/layout.scss";
+@import "../../../../assets/scss/main.scss";
 
 .about_wrapper {
   text-align: center;
-  padding: 20px;
+  padding: 70px;
+}
+
+.title_text {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 5px solid $site-pink;
+  margin-bottom: 20px;
+}
+
+.sub_header_text {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .about_text {
   font-size: 24px;
 }
 
-img {
+.general_text {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.about_card {
+  padding: 70px;
+  background-color: #f0f8ff;
+}
+
+.name_text {
+  font-size: 24px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
+
+.email_wrapper {
+  margin: 20px 0px;
+}
+
+.bio_image {
   width: 350px;
   border-radius: 50%;
   margin: 20px;
   box-shadow: 0px 3px 6px #c1c1c1;
+}
+
+.image_wrapper {
+  cursor: pointer;
+}
+
+.bio_wrapper {
+  margin: 15px 0px;
+}
+
+.section_wrapper {
+  margin: 30px 0px;
+}
+
+.questions_image {
+  width: 500px;
 }
 
 @media only screen and (max-width: 1000px) {
