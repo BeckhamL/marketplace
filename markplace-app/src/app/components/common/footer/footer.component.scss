@@ -1,0 +1,19 @@
+@import "../../../../assets/scss/main.scss";
+
+.footer_wrapper {
+  padding: 70px;
+  background-color: #330033;
+}
+
+.nav_text {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0px;
+  letter-spacing: 1.5px;
+}
+
+.nav_text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
