@@ -58,7 +58,6 @@ export class TooltipInfoPopupDirective implements OnInit {
     //     this.tooltipOffsetY ? this.tooltipOffsetY : 0
     //   }`,
     // });
-    console.log('here')
     this.toolTippy = tippy(this.element, {
         content: this.tooltipUseHTML ? this.getTemplateID(this.tooltipTemplateID) : this.tooltipText
     })

@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   imports: [
     CommonModule,
@@ -13,6 +14,7 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatMenuModule,
     MatTableModule,
+    MatDialogModule,
   ],
   exports: [
     MatSliderModule,
@@ -20,6 +22,7 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatMenuModule,
     MatTableModule,
+    MatDialogModule,
   ],
   declarations: [],
 })

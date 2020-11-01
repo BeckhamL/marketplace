@@ -55,9 +55,9 @@
   >
     <div class="title_text">Explore.</div>
     <div class="sub_header_text">
-      3 areas of life to discover and re-imagine for:
+      3 areas of life to discover and re-imagine:
     </div>
-    <div class="_flex _flex_align_item_center _space_between">
+    <div class="_flex _flex_align_item_center _space_between margin_top_40">
       <div class="_flex_col" fxFlex="30%">
         <div class="explore_subtext">Life</div>
         <div class="general_text">
@@ -65,6 +65,7 @@
           justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta
           non lorem ac, volutpat ullamcorper nisl.
         </div>
+        <common-button [title]="'View'"></common-button>
       </div>
       <div class="_flex_col" fxFlex="30%">
         <div class="explore_subtext">Church</div>
@@ -73,6 +74,7 @@
           justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta
           non lorem ac, volutpat ullamcorper nisl.
         </div>
+        <common-button [title]="'View'"></common-button>
       </div>
       <div class="_flex_col" fxFlex="30%">
         <div class="explore_subtext">Work</div>
@@ -81,6 +83,7 @@
           justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta
           non lorem ac, volutpat ullamcorper nisl.
         </div>
+        <common-button [title]="'View'"></common-button>
       </div>
     </div>
   </div>
@@ -90,7 +93,7 @@
   >
     <div class="title_text">Team.</div>
     <div class="_flex _flex_align_item_center bio_wrapper">
-      <div class="image_wrapper">
+      <div class="image_wrapper" tooltipInfoPopup [tooltipText]="'Click to view more'" (click)="onClickOpenBioDetails()">
         <img src="../../../../assets/images/david.jpg" class="bio_image" />
         <div class="name_text">Rev. Dr. David Lau</div>
         <div>Pastor of Cultivation</div>
@@ -105,7 +108,7 @@
 
     <div class="_flex _flex_align_item_center bio_wrapper">
       <div class="image_wrapper">
-        <img src="../../../../assets/images/maymie.jpg" class="bio_image" />
+        <img src="../../../../assets/images/maymie.jpg" class="bio_image" tooltipInfoPopup [tooltipText]="'Click to view more'" (click)="onClickOpenBioDetails()"/>
         <div class="name_text">Pastor Maymie Lau</div>
         <div>P.E.A.C.E. (Mission) Pastor</div>
       </div>

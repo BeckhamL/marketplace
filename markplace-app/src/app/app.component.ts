@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'markplace-app';
+
+  onActivate($event) {
+    window.scroll(0,0);
+  } 
 }
