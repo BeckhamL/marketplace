@@ -2,7 +2,7 @@
 
 .about_wrapper {
   text-align: center;
-  padding: 70px;
+  // padding: 70px;
 }
 
 .title_text {
@@ -60,11 +60,33 @@
 }
 
 .section_wrapper {
-  margin: 30px 0px;
+  padding: 20px 70px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
 }
+
+.beige_background {
+  background-color: $background-beige;
+}
+
+.green_background {
+  background-color: $background-light-blue;
+}
+
 
 .questions_image {
   width: 500px;
+}
+
+.explore_subtext {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.width_100 {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
