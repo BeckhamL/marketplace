@@ -5,14 +5,17 @@ import { CommonComponentModule } from '../common/common.module';
 import { WorkshopMaterialComponent } from './workshop-material/workshop-material.component';
 import { UtilityModule } from '../../utility/utility.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialCommonModule } from '../../material/material.module';
+import { WorkshopListComponent } from './workshop-list/workshop-list.component';
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
     CommonComponentModule,
-    UtilityModule
+    UtilityModule,
+    MaterialCommonModule
   ],
-  declarations: [WorkshopMainComponent, WorkshopMaterialComponent],
-  exports: [WorkshopMainComponent, WorkshopMaterialComponent],
+  declarations: [WorkshopMainComponent, WorkshopMaterialComponent, WorkshopListComponent],
+  exports: [WorkshopMainComponent, WorkshopMaterialComponent, WorkshopListComponent],
 })
 export class WorkshopModule {}

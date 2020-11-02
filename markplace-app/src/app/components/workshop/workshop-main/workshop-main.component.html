@@ -1,7 +1,21 @@
-<div class="_flex _space_between workshop_wrapper">
-  <app-scroll-content-tracker fxFlex="20%" [currentWorkshop]="workshopData"></app-scroll-content-tracker>
+<div class="_flex_col workshop_wrapper">
+  <div class="title_text">
+    Find <span>WORKSHOPS</span> that peak <br> your curiosity and interest.
+  </div>
+  <div class="_flex _flex_align_item_center">
+    <div fxFlex="60%">
+      <div class="list_wrapper">
+        <app-workshop-list></app-workshop-list>
+      </div>
+
+    </div>
+    <div fxFlex="30%">
+      <div>Click on a workshop to view</div>
+    </div>
+  </div>
+  <!-- <app-scroll-content-tracker fxFlex="20%" [currentWorkshop]="workshopData"></app-scroll-content-tracker>
   <div fxFlex="60%">
     <app-workshop-material [workshop]="workshopData"></app-workshop-material>
   </div>
-  <app-category-item-list [title]="'Workshops'" fxFlex="20%"></app-category-item-list>
+  <app-category-item-list [title]="'Workshops'" fxFlex="20%"></app-category-item-list> -->
 </div>
