@@ -14,3 +14,9 @@ export class Topic {
   duration?: string;
   points?: string[];
 }
+
+export class WorkshopListItem {
+  title?: string;
+  briefSummary?: string;
+  briefDescription?: string;
+}

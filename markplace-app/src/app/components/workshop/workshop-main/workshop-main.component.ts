@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Workshop } from '../../../models/workshop.model';
+import { Workshop, WorkshopListItem } from '../../../models/workshop.model';
 
 @Component({
   selector: 'app-workshop-main',
@@ -73,7 +73,13 @@ export class WorkshopMainComponent implements OnInit {
     ],
   };
 
+  clickedWorkshopToShow: WorkshopListItem = null;
+
   constructor() {}
 
   ngOnInit() {}
+
+  onShowWorkshop(item: WorkshopListItem) {
+    this.clickedWorkshopToShow = item;
+  }
 }
