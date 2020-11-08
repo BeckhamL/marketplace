@@ -18,7 +18,7 @@
           <div class="workshop_title">{{clickedWorkshopToShow?.title}}</div>
           <div class="workshop_summary">{{clickedWorkshopToShow?.briefSummary}}</div>
           <div class="workshop_description">{{clickedWorkshopToShow?.longDescription}}</div>
-          <div class="_flex _flex_align_item_center _justify_end read_more_text">Read more <mat-icon>keyboard_arrow_right</mat-icon></div>
+          <div class="_flex _flex_align_item_center _justify_end read_more_text" (click)="onClickViewMore()">Read more <mat-icon>keyboard_arrow_right</mat-icon></div>
         </div>
       </ng-template>
     </div>

@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Workshop, WorkshopListItem } from '../../../models/workshop.model';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-workshop-main',
   templateUrl: './workshop-main.component.html',
@@ -75,11 +75,15 @@ export class WorkshopMainComponent implements OnInit {
 
   clickedWorkshopToShow: WorkshopListItem = null;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
   onShowWorkshop(item: WorkshopListItem) {
     this.clickedWorkshopToShow = item;
+  }
+
+  onClickViewMore() {
+    this.router.navigate(['/workshop/example']);
   }
 }
