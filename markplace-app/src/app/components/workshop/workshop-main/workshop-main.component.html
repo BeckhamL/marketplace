@@ -3,20 +3,23 @@
     Find <span>WORKSHOPS</span> that peak <br />
     your curiosity and interest.
   </div>
-  <div class="_flex _flex_align_item_center">
-    <div fxFlex="60%">
+  <div class="_flex _flex_align_item_start _space_between margin_top_30">
+    <div fxFlex="50%">
       <div class="list_wrapper">
         <app-workshop-list
           (clickedWorkshop)="onShowWorkshop($event)"
         ></app-workshop-list>
       </div>
     </div>
-    <div fxFlex="30%">
-      <div *ngIf="!clickedWorkshopToShow; else showWorkshop">Click on a workshop to view</div>
+    <div fxFlex="40%">
+      <div *ngIf="!clickedWorkshopToShow; else showWorkshop" class="def_text">Click on a workshop to view</div>
       <ng-template #showWorkshop>
-        <div>{{clickedWorkshopToShow?.title}}</div>
-        <div>{{clickedWorkshopToShow?.briefSummary}}</div>
-        <div>{{clickedWorkshopToShow?.briefDescription}}</div>
+        <div class="workshop_summary_wrapper">
+          <div class="workshop_title">{{clickedWorkshopToShow?.title}}</div>
+          <div class="workshop_summary">{{clickedWorkshopToShow?.briefSummary}}</div>
+          <div class="workshop_description">{{clickedWorkshopToShow?.longDescription}}</div>
+          <div class="_flex _flex_align_item_center _justify_end read_more_text">Read more <mat-icon>keyboard_arrow_right</mat-icon></div>
+        </div>
       </ng-template>
     </div>
   </div>

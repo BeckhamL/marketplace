@@ -19,4 +19,5 @@ export class WorkshopListItem {
   title?: string;
   briefSummary?: string;
   briefDescription?: string;
+  longDescription?: string;
 }

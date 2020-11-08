@@ -12,9 +12,12 @@ export class WorkshopListComponent implements OnInit {
 
   fakeItems: WorkshopListItem[] = [
     {
-      title: 'test 1',
-      briefSummary: 'this is a sum',
-      briefDescription: ' this is a desc',
+      title: 'When God shows up @ Work',
+      briefSummary: 'In this course we will navigate the workplace',
+      briefDescription:
+        'Finding meaning in the workplace can be difficult, learn to pick your battles',
+      longDescription:
+        'Donec vitae consectetur nibh, vitae sodales ligula. Ut eu augue quis odio efficitur dictum sed vitae est. Nulla id vestibulum sem. Sed id augue nulla. Nam cursus nisi vitae tortor lobortis volutpat. Nam vulputate dictum risus, quis auctor magna sagittis ut. Nulla dignissim mauris quis purus volutpat',
     },
     {
       title: 'test 2',
