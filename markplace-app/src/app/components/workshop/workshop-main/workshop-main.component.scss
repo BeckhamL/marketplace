@@ -56,3 +56,18 @@
 .read_more_text:hover {
   color: $site-blue;
 }
+
+.header_seperator {
+  width: 50%;
+  height: 200px;
+  background-color: orange;
+  margin: 5rem 0px;
+}
+
+.header_seperator2 {
+  z-index: 2;
+  width: 50%;
+  height: 200px;
+  background-color: orange;
+  margin: 5rem 0px;
+}
