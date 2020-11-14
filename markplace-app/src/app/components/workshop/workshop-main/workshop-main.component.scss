@@ -20,6 +20,18 @@
   margin-top: 30px;
 }
 
+.header_styling {
+  color: white;
+  padding: 10px;
+  background-color: #87a8b2;
+  display: inline-block;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 15px 0px;
+}
+
 .def_text {
   font-size: 50px;
   font-weight: 500;
@@ -45,12 +57,15 @@
 }
 
 .workshop_description {
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
 }
 
 .read_more_text {
   cursor: pointer;
   font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 40px;
 }
 
 .read_more_text:hover {
@@ -70,4 +85,9 @@
   height: 200px;
   background-color: orange;
   margin: 5rem 0px;
+}
+
+ul {
+  margin: 0;
+  text-decoration: none;
 }

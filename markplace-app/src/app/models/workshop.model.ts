@@ -20,4 +20,8 @@ export class WorkshopListItem {
   briefSummary?: string;
   briefDescription?: string;
   longDescription?: string;
+  dates?: string[];
+  demographic?: string[];
+  duration?: string;
+  benefit?: string;
 }

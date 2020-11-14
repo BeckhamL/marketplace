@@ -12,24 +12,53 @@
       </div>
     </div>
     <div fxFlex="40%">
-      <div *ngIf="!clickedWorkshopToShow; else showWorkshop" class="def_text">Click on a workshop to view</div>
+      <div *ngIf="!clickedWorkshopToShow; else showWorkshop" class="def_text">
+        Click on a workshop to view
+      </div>
       <ng-template #showWorkshop>
         <div class="workshop_summary_wrapper">
-          <div class="workshop_title">{{clickedWorkshopToShow?.title}}</div>
-          <div class="workshop_summary">{{clickedWorkshopToShow?.briefSummary}}</div>
-          <div class="workshop_description">{{clickedWorkshopToShow?.longDescription}}</div>
-          <div class="_flex _flex_align_item_center _justify_end read_more_text" (click)="onClickViewMore()">Read more <mat-icon>keyboard_arrow_right</mat-icon></div>
+          <div class="workshop_title">{{ clickedWorkshopToShow?.title }}</div>
+          <div class="_flex _flex_align_item_start">
+            <div class="_flex_col" fxFlex="50%">
+              <div class="workshop_summary">Dates</div>
+              <ul
+                *ngFor="let date of clickedWorkshopToShow?.dates; let i = index"
+              >
+                <li>Module {{ i + 1 }}: {{ date }}</li>
+              </ul>
+            </div>
+            <div class="_flex_col">
+              <div class="workshop_summary">Duration</div>
+              <div>{{ clickedWorkshopToShow?.duration }}</div>
+            </div>
+          </div>
+          <div class="header_styling">Brief Summary.</div>
+          <div class="workshop_summary">
+            {{ clickedWorkshopToShow?.briefSummary }}
+          </div>
+          <div class="workshop_description">
+            {{ clickedWorkshopToShow?.longDescription }}
+          </div>
+          <div class="header_styling">Who is it for?</div>
+          <div class="workshop_summary">
+            A typical cohort for this workshop typically consists of:
+          </div>
+          <ul *ngFor="let role of clickedWorkshopToShow?.demographic">
+            <li>{{ role }}</li>
+          </ul>
+          <div class="header_styling">What will I learn after all this?</div>
+          <div>{{ clickedWorkshopToShow?.benefit }}</div>
+          <div
+            class="_flex _flex_align_item_center _justify_end read_more_text"
+            (click)="onClickViewMore()"
+          >
+            View full workshop <mat-icon>keyboard_arrow_right</mat-icon>
+          </div>
         </div>
       </ng-template>
     </div>
   </div>
 
-  <div class="header_seperator">
-    <div>test</div>
-  </div>
-  <div class="header_seperator2">
-    <div>test</div>
-  </div>
   <!-- <app-scroll-content-tracker fxFlex="20%" [currentWorkshop]="workshopData"></app-scroll-content-tracker>
   <div fxFlex="60%">
     <app-workshop-material [workshop]="workshopData"></app-workshop-material>
