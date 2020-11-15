@@ -1,7 +1,7 @@
 @import "../../../../assets/scss/main.scss";
 
 .main_wrapper {
-  background-color: #91B7C7;
+  background-color: #91b7c7;
 }
 
 .main_cards {
@@ -16,7 +16,7 @@
 }
 
 .width_33 {
-  width: 33%;;
+  width: 33%;
 }
 
 .width_100 {
@@ -67,6 +67,19 @@
   background-color: #c1c1c1;
 }
 
+.info_card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.info_card_title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0px;
+  font-style: italic;
+}
+
 .bible_study_img {
   width: 600px;
 }
@@ -94,10 +107,9 @@ app-icon-button {
 }
 
 @media only screen and (max-width: 960px) {
-
   img {
     width: 150px;
-    height: 150px
+    height: 150px;
   }
 }
 
@@ -119,7 +131,7 @@ app-icon-button {
 }
 
 .static-one {
-  background-color:#330033;
+  background-color: #330033;
   color: white;
 }
 
@@ -148,8 +160,7 @@ app-icon-button {
 }
 
 .parallax_full::after {
-
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -160,8 +171,7 @@ app-icon-button {
 }
 
 .parallax_half::after {
-
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -172,9 +182,16 @@ app-icon-button {
 }
 
 .parallax-one::after {
-  background-image: url('/assets/images/cross.jpg');
+  background-image: url("/assets/images/cross.jpg");
 }
 
 .parallax-two::after {
-  background-image: url('/assets/images/bible.jpg');
+  background-image: url("/assets/images/bible.jpg");
+}
+
+mat-icon {
+  color: #ff0067;
+  font-size: 70px;
+  height: 70px;
+  width: 70px;
 }

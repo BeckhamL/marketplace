@@ -1,5 +1,7 @@
 <main class="main">
-  <section class="_flex _flex_align_item_center _justify_center section static-one">
+  <div
+    class="_flex_col _flex_align_item_center _justify_center section static-one"
+  >
     <div class="_flex_col _flex_align_item_start">
       <div class="title_text">MARKETPLACE</div>
       <div class="title_subtext">
@@ -11,96 +13,172 @@
         <div id="element" class="site_color"></div>
       </div>
     </div>
-  </section>
-  <div class="_flex">
-    <div fxFlex="30%">
-      <section class="section static static-four">
-        <div class="_flex_col section_header_text">
-          <span class="site_color">Transforming</span> 
-          <div>Work</div>
-        </div>
-        <div class="section_regular_text">A distinctive group resource with long-term impact on you and your workplace</div>
-      </section>
-
-    </div>
-    <div fxFlex="70%">
-      <section class="section parallax_half parallax-two">
-      </section>
-    </div>
   </div>
+
+  <section class="_flex_col _justify_center _flex_align_item_center section static static-four">
+    <div class="section_header_text">What is marketplace?</div>
+    <div class="_flex _flex_wrap">
+      <div class="_flex_col info_card">
+        <mat-icon>widgets</mat-icon>
+        <div class="info_card_title">15+ workshops </div>
+        <div>Numerous workshops that help professionals navigate their way in a busy life</div>
+      </div>
+      <div class="_flex_col info_card">
+        <mat-icon>cast_for_education</mat-icon>
+        <div class="info_card_title">8 courses </div>
+        <div>Numerous workshops that help professionals navigate their way in a busy life</div>
+      </div>
+      <div class="_flex_col info_card">
+        <mat-icon>sticky_note_2</mat-icon>
+        <div class="info_card_title">Weekly blogs </div>
+        <div>Numerous workshops that help professionals navigate their way in a busy life</div>
+      </div>
+      <div class="_flex_col info_card">
+        <mat-icon>hearing</mat-icon>
+        <div class="info_card_title">50+ testimonials </div>
+        <div>Numerous workshops that help professionals navigate their way in a busy life</div>
+      </div>
+      <div class="_flex_col info_card">
+        <mat-icon>face</mat-icon>
+        <div class="info_card_title">10+ pastors </div>
+        <div>Numerous workshops that help professionals navigate their way in a busy life</div>
+      </div>
+    </div>
+  </section>
+
   <section class="_flex _flex_align_item_center section static static-three">
     <div class="_flex _flex_align_item_start">
       <div class="_flex_col" fxFlex="50%">
         <div class="section_header_text">
-          <div>Work isn't <span class="site_color">easy</span>, <br> but it's full of <span class="site_color">opportunity</span>.</div>
+          <div>
+            Work isn't <span class="site_color">easy</span>, <br />
+            but it's full of <span class="site_color">opportunity</span>.
+          </div>
         </div>
         <div class="section_regular_text">
-          Our work is the means by which God gets done what he wants done in the world: people fed, housed, clothed, informed, educated…
-          <br>
-          <br>
-          Our work contributes toward God’s purposes, towards human flourishing, and towards care of his creation. Your work matters.
-          <br>
-          <br>
-          It also matters to God because you matter to God, your colleagues matter to God, and the organisation you work in matters to God. Our work isn’t perfect, our companies aren’t perfect, we aren’t perfect, but Jesus is good news for all of it. The restoration he brings, the redemption he brings, the truth and justice, the hope. And all these things he can bring through you.
-          <br>
-          <br>
-          We want to help you recognise all the ways God could be (and already is) at work in your work.
+          Our work is the means by which God gets done what he wants done in the
+          world: people fed, housed, clothed, informed, educated…
+          <br />
+          <br />
+          Our work contributes toward God’s purposes, towards human flourishing,
+          and towards care of his creation. Your work matters.
+          <br />
+          <br />
+          It also matters to God because you matter to God, your colleagues
+          matter to God, and the organisation you work in matters to God. Our
+          work isn’t perfect, our companies aren’t perfect, we aren’t perfect,
+          but Jesus is good news for all of it. The restoration he brings, the
+          redemption he brings, the truth and justice, the hope. And all these
+          things he can bring through you.
+          <br />
+          <br />
+          We want to help you recognise all the ways God could be (and already
+          is) at work in your work.
         </div>
       </div>
       <div class="_flex_col _flex_align_item_center" fxFlex="50%">
-        <div class="section_header_text">View more <span class="site_color">resources</span></div>
-        <div class="_flex">
-          <app-icon-button [config]="{icon: 'house', style: 'default', description: 'Churches'}"></app-icon-button>
-          <app-icon-button [config]="{icon: 'face', style: 'default', description: 'Pastors'}"></app-icon-button>
-          <app-icon-button [config]="{icon: 'groups', style: 'default', description: 'Small groups'}"></app-icon-button>
+        <div class="section_header_text">
+          View more <span class="site_color">resources</span>
         </div>
         <div class="_flex">
-          <app-icon-button [config]="{icon: 'headset', style: 'default', description: 'study'}"></app-icon-button>
-          <app-icon-button [config]="{icon: 'sports_esports', style: 'default', description: 'Activities'}"></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'house',
+              style: 'default',
+              description: 'Churches'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'face',
+              style: 'default',
+              description: 'Pastors'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'groups',
+              style: 'default',
+              description: 'Small groups'
+            }"
+          ></app-icon-button>
         </div>
-
+        <div class="_flex">
+          <app-icon-button
+            [config]="{
+              icon: 'headset',
+              style: 'default',
+              description: 'study'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'sports_esports',
+              style: 'default',
+              description: 'Activities'
+            }"
+          ></app-icon-button>
+        </div>
       </div>
     </div>
-
   </section>
   <!-- <section class="section parallax_full parallax-one"></section> -->
-  <section class="_flex_col _flex_align_item_center _space_evenly section static static-three">
-    <div class="section_header_text">Check out our latest <span class="site_color">workshops:</span></div>
+  <section
+    class="_flex_col _flex_align_item_center _space_evenly section static static-three"
+  >
+    <div class="section_header_text">
+      Check out our latest <span class="site_color">workshops:</span>
+    </div>
     <div class="_flex workshop_cards">
       <common-flip-card></common-flip-card>
       <common-flip-card></common-flip-card>
       <common-flip-card></common-flip-card>
     </div>
     <div class="section_regular_text">
-      Discover more workshops that cover a wide range of engaging, relevant, and thought-provoking topics.
+      Discover more workshops that cover a wide range of engaging, relevant, and
+      thought-provoking topics.
     </div>
     <common-button [title]="'View all workshops'"></common-button>
   </section>
-  <section class="_flex_col _flex_align_item_center _space_evenly section static static-four">
-    <div class="section_header_text">Discover our most recent <span class="site_color">outline:</span></div>
+  <section
+    class="_flex_col _flex_align_item_center _space_evenly section static static-four"
+  >
+    <div class="section_header_text">
+      Discover our most recent <span class="site_color">outline:</span>
+    </div>
     <div class="_flex _flex_align_item_center _space_evenly">
       <div class="_flex_col workshop_cards">
         <common-flip-card [flipDirection]="'horizontal'"></common-flip-card>
       </div>
       <div class="_flex_col _space_evenly height_100" fxFlex="30%">
         <div class="section_regular_text">
-          Discover more workshops that cover a wide range of engaging, relevant, and thought-provoking topics.
+          Discover more workshops that cover a wide range of engaging, relevant,
+          and thought-provoking topics.
         </div>
         <common-button [title]="'View all outlines'"></common-button>
       </div>
     </div>
   </section>
-  <section class="_flex _flex_align_item_center _justify_center section static static-three height_100">
+  <section
+    class="_flex _flex_align_item_center _justify_center section static static-three height_100"
+  >
     <div class="_flex_col _flex_align_item_center">
       <div class="_flex _flex_align_item_center">
         <div class="_flex_col _flex_align_item_center">
-          <div class="section_header_text">Latest from our <span class="site_color">blog:</span></div>
+          <div class="section_header_text">
+            Latest from our <span class="site_color">blog:</span>
+          </div>
           <div class="_flex">
             <app-blog-card></app-blog-card>
             <app-blog-card></app-blog-card>
             <app-blog-card></app-blog-card>
           </div>
-          <div class="_flex _justify_end _flex_align_item_center width_100 site_color pointer" routerLink="/blogs">view all <mat-icon>keyboard_arrow_right</mat-icon></div>
+          <div
+            class="_flex _justify_end _flex_align_item_center width_100 site_color pointer"
+            routerLink="/blogs"
+          >
+            view all <mat-icon>keyboard_arrow_right</mat-icon>
+          </div>
         </div>
       </div>
       <div class="_flex _flex_align_item_center">
@@ -111,7 +189,7 @@
             <app-email-input></app-email-input>
           </div>
         </div>
-        <img src="../../../../assets/images/discover.svg">
+        <img src="../../../../assets/images/discover.svg" />
       </div>
     </div>
   </section>
