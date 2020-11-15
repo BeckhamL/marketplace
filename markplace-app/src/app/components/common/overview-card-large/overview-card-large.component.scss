@@ -1,0 +1,42 @@
+@import "../../../../assets/scss/main.scss";
+
+.card_wrapper {
+  width: 350px;
+  box-shadow: 0px 3px 6px #c1c1c1;
+  margin: 20px;
+
+}
+
+.text_wrapper {
+  padding: 20px;
+  background-color: white;
+  height: 250px;
+  border-bottom: 10px solid $site-blue;
+}
+
+.title_text {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  min-height: 70px;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+    padding: 10px;
+    border-radius: 40px;
+    background: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid $site-pink;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $site-pink;
+    color: white;
+}

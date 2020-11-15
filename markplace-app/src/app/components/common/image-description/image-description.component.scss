@@ -1,7 +1,6 @@
 @import "../../../../assets/scss/main.scss";
 
 .description_container {
-  cursor: pointer;
   width: 650px;
 }
 
@@ -25,6 +24,7 @@
 
 .post_image {
   position: relative;
+  cursor: pointer;
 
   .category {
     color: #fff;
@@ -54,4 +54,5 @@
 img {
   width: 650px;
   margin-bottom: 25px;
+  cursor: pointer;
 }

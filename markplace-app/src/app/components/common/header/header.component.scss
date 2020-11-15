@@ -4,11 +4,13 @@
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 5px;
+  color: white;
   cursor: pointer;
 }
 
 .content_tab {
   margin: 5px 15px;
+  color: white;
   cursor: pointer;
 }
 
@@ -36,6 +38,8 @@ mat-icon {
 }
 
 mat-toolbar {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px;
+  background-color: #330033;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
