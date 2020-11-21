@@ -11,6 +11,7 @@ export class WorkshopMainComponent implements OnInit {
   workshopData: Workshop = {
     title: 'When God shows up @ Work',
     author: 'David Lau',
+    id: 1,
     part: [
       {
         topic: [
@@ -117,12 +118,7 @@ export class WorkshopMainComponent implements OnInit {
   }
 
   onClickViewMore() {
-    this.router.navigate(['/workshop/example']);
+    this.router.navigate(['/workshop/1']);
   }
 
-  onClick() {
-    this.workshopService.addToUsersFavourite().subscribe( res => {
-      console.log(res)
-    });
-  }
 }

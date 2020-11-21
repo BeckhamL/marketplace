@@ -13,7 +13,7 @@ export class ScrollContentTrackerComponent implements OnInit {
 
   highlightPoints = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.getTitles();

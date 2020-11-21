@@ -2,6 +2,7 @@ export class Workshop {
   title: string;
   author: string;
   part?: Part[];
+  id: number;
 }
 
 export class Part {

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
+import { Workshop } from '../models/workshop.model';
 
 @Injectable({
   providedIn: 'root',
@@ -10,11 +11,11 @@ export class WorkshopService {
 
   }
 
-  addToUsersFavourite() {
+  getWorkshop() {
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get('http://localhost:3000/user');
+    return this.httpClient.get('http://localhost:3000/workshops');
   }
 }

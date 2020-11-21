@@ -1,21 +1,31 @@
-<div>
-  <div class="_flex_col margin_bottom_40">
-    <div class="workshop_title">{{ workshop?.title }}</div>
-    <div class="author_text">Written by {{ workshop?.author }}</div>
-  </div>
+<div *ngIf="isLoaded" class="content_wrapper">
+  <app-scroll-content-tracker
+    fxFlex="20%"
+    [currentWorkshop]="workshopData"
+  ></app-scroll-content-tracker>
+  <div>
+    <div class="_flex_col margin_bottom_40">
+      <div class="workshop_title">{{ workshop[0]?.title }}</div>
+      <div class="author_text">Written by {{ workshop[0]?.author }}</div>
+    </div>
 
-  <div *ngFor="let part of workshop?.part; let i = index">
-    <div>{{ part?.description }}</div>
-    <div>Part {{ i + 1 }}</div>
-    <div *ngFor="let topic of part?.topic">
-      <div class="topic_title">
-        {{ topic?.title }}
-        <span class="duration_text">{{ topic?.duration }}</span>
+    <div *ngFor="let part of workshop[0]?.part; let i = index">
+      <div>{{ part?.description }}</div>
+      <div>Part {{ i + 1 }}</div>
+      <div *ngFor="let topic of part?.topic">
+        <div class="topic_title">
+          {{ topic?.title }}
+          <span class="duration_text">{{ topic?.duration }}</span>
+        </div>
+        <div class="desc_text">{{ topic?.description }}</div>
+        <ol>
+          <li *ngFor="let point of topic?.points">{{ point }}</li>
+        </ol>
       </div>
-      <div class="desc_text">{{ topic?.description }}</div>
-      <ol>
-        <li *ngFor="let point of topic?.points">{{ point }}</li>
-      </ol>
     </div>
   </div>
+  <app-category-item-list
+    [title]="'Workshops'"
+    fxFlex="20%"
+  ></app-category-item-list>
 </div>
