@@ -126,7 +126,7 @@ app-icon-button {
 /* General styling, not necessarily related to parallax effect  */
 .section {
   position: relative;
-  padding: 20px;
+  padding: 70px;
   height: 600px;
 }
 
@@ -189,7 +189,7 @@ app-icon-button {
   background-image: url("/assets/images/bible.jpg");
 }
 
-mat-icon {
+.desc_icon {
   color: #ff0067;
   font-size: 70px;
   height: 70px;
