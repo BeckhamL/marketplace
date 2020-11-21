@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Workshop, WorkshopListItem } from '../../../models/workshop.model';
 import { Router } from '@angular/router';
+import { WorkshopService } from 'src/app/services/workshop.service';
 @Component({
   selector: 'app-workshop-main',
   templateUrl: './workshop-main.component.html',
@@ -107,7 +108,7 @@ export class WorkshopMainComponent implements OnInit {
 
   clickedWorkshopToShow: WorkshopListItem = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private workshopService: WorkshopService) {}
 
   ngOnInit() {}
 
@@ -117,5 +118,11 @@ export class WorkshopMainComponent implements OnInit {
 
   onClickViewMore() {
     this.router.navigate(['/workshop/example']);
+  }
+
+  onClick() {
+    this.workshopService.addToUsersFavourite().subscribe( res => {
+      console.log(res)
+    });
   }
 }

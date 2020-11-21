@@ -13,6 +13,7 @@ import { UtilityModule } from './utility/utility.module';
 import { OutlinesModule } from './components/outlines/outlines.module';
 import { BlogModule } from './components/blogs/blog.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -27,7 +28,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     UtilityModule,
     FlexLayoutModule,
     OutlinesModule,
-    BlogModule
+    BlogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
