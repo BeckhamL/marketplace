@@ -4,7 +4,7 @@ import {
   LandingCardPosition,
 } from '../landing-page-card/landing-page-card.model';
 import Typed from 'typed.js';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -14,8 +14,7 @@ export class LandingPageComponent implements OnInit {
   landingCards: LandingCardConfig[];
   typed: Typed;
 
-
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.typed = new Typed('#element', {
@@ -25,7 +24,7 @@ export class LandingPageComponent implements OnInit {
       smartBackspace: true,
       loop: true,
       showCursor: false,
-      shuffle: true
+      shuffle: true,
     });
     this.landingCards = [
       {
@@ -50,5 +49,9 @@ export class LandingPageComponent implements OnInit {
         imageValue: '/assets/images/security.svg',
       },
     ];
+  }
+
+  onClickViewAllBlogs() {
+    this.router.navigate(['/blogs']);
   }
 }

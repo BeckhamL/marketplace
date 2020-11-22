@@ -102,10 +102,6 @@ img {
   cursor: pointer;
 }
 
-app-icon-button {
-  margin: 15px;
-}
-
 @media only screen and (max-width: 960px) {
   img {
     width: 150px;
@@ -119,15 +115,25 @@ app-icon-button {
   overflow-x: hidden;
 }
 
-// .main::-webkit-scrollbar {
-//   display: none;
-// }
+.first_section {
+  padding-top: 10rem;
+}
 
-/* General styling, not necessarily related to parallax effect  */
+.w1 {
+  fill: #800080;
+}
+
+.w2 {
+  fill: #660066;
+}
+
+.w3 {
+  fill: #f6efe8;
+}
+
 .section {
-  position: relative;
   padding: 70px;
-  height: 600px;
+  // height: 600px;
 }
 
 .static-one {
@@ -194,4 +200,8 @@ app-icon-button {
   font-size: 70px;
   height: 70px;
   width: 70px;
+}
+
+app-icon-button {
+  margin: 15px;
 }
