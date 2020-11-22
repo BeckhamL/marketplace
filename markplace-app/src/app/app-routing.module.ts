@@ -7,6 +7,8 @@ import { OutlineMainComponent } from './components/outlines/outline-main/outline
 import { BlogMainComponent } from './components/blogs/blog-main/blog-main.component';
 import { WorkshopMaterialComponent } from './components/workshop/workshop-material/workshop-material.component';
 import { OutlinesMaterialComponent } from './components/outlines/outlines-material/outlines-material.component';
+import { BlogMaterialComponent } from './components/blogs/blog-material/blog-material.component';
+
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'outlines', component: OutlineMainComponent },
   { path: 'outline/:id', component: OutlinesMaterialComponent },
   { path: 'blogs', component: BlogMainComponent },
+  { path: 'blog/:id', component: BlogMaterialComponent },
 ];
 
 @NgModule({

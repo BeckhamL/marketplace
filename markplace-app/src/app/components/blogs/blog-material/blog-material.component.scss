@@ -1,0 +1,33 @@
+@import "../../../../assets/scss/main.scss";
+
+.blog_wrapper {
+  padding: 70px;
+}
+
+.blog_content_wrapper {
+  width: 50%;
+}
+
+.title_text {
+  font-size: 65px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 40px;
+}
+
+.content_text {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.margin_top_20 {
+    margin-top: 20px;
+}
+
+.margin_right_20 {
+    margin-right: 20px;
+}
+
+.blog_image {
+  max-width: 100%;
+}

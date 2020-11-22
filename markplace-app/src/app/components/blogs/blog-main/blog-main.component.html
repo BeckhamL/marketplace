@@ -13,14 +13,14 @@
   <div class="_flex _justify_center">
     <div class="_flex_col _flex_align_item_center" fxFlex="40%">
       <div class="header_text">Most recent</div>
-      <common-image-description></common-image-description>
+      <common-image-description (click)="onClickBlog()"></common-image-description>
     </div>
   
     <div class="_flex_col _flex_align_item_center list_column">
       <div class="header_text">Popular</div>
-      <common-overview-card></common-overview-card>
-      <common-overview-card></common-overview-card>
-      <common-overview-card></common-overview-card>
+      <common-overview-card (click)="onClickBlog()"></common-overview-card>
+      <common-overview-card (click)="onClickBlog()"></common-overview-card>
+      <common-overview-card (click)="onClickBlog()"></common-overview-card>
     </div>
   </div>
 

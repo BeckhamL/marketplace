@@ -1,0 +1,15 @@
+<div
+  class="_flex_col _justify_center _flex_align_item_center blog_wrapper"
+  *ngIf="isLoaded"
+>
+  <div class="blog_content_wrapper">
+    <img src="/assets/images/image2.jpg" class="blog_image">
+    <div class="title_text">{{ blog[0]?.title }}</div>
+    <div class="_flex _flex_align_item_center margin_top_20">
+      <div class="margin_right_20">Written by {{ blog[0]?.author }}</div>
+      <div>{{ blog[0]?.date }}</div>
+    </div>
+
+    <div class="content_text">{{ blog[0]?.content }}</div>
+  </div>
+</div>
