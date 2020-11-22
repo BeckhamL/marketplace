@@ -1,14 +1,41 @@
-<div class="flip-card" [ngClass]="{'flip-card-horizontal' : flipDirection === 'horizontal' }">
-  <div class="flip-card-inner flip_card_wrapper" [ngClass]="{'flip-card-inner-horizontal' : flipDirection === 'horizontal' }">
+<div
+  class="flip-card"
+  [ngClass]="{ 'flip-card-horizontal': flipDirection === 'horizontal' }"
+>
+  <div
+    class="flip-card-inner flip_card_wrapper"
+    [ngClass]="{ 'flip-card-inner-horizontal': flipDirection === 'horizontal' }"
+  >
     <div class="_flex _space_around flip-card-front">
-      <img src="../../../../assets/images/forest.jpg">
-      <div class="_flex_col _space_around">
+      <img src="../../../../assets/images/forest.jpg" />
+      <div class="_flex_col _flex_align_item_start _space_between text_wrapper">
         <div class="blog_title">3 Common mistakes when finding a job</div>
-        <div>David</div>
+        <div class="_flex_col _flex_align_item_start">
+          <div class="subtext"><span>Host</span>: David</div>
+          <div class="subtext"><span>Date</span>: Oct 24</div>
+        </div>
+        <div class="hover_text">*Hover for more info</div>
       </div>
     </div>
-    <div class="flip-card-back" [ngClass]="{'flip-card-back-horizontal' : flipDirection === 'horizontal' }">
-        <div>This is a fake description</div>
+    <div
+      class="flip-card-back"
+      [ngClass]="{
+        'flip-card-back-horizontal': flipDirection === 'horizontal'
+      }"
+    >
+    <div class="_flex_col _space_between card_back_wrapper">
+      <div class="desc_wrapper">
+        <div class="desc_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis,
+          ipsum sit amet elementum hendrerit, nisl nisi dictum diam, quis congue
+          justo massa ac metus. Sed vel sagittis elit, eget placerat justo.
+        </div>
+      </div>
+      <div (click)="onClickWorkshop()" class="_flex _flex_align_item_center _justify_end view_workshop">
+        <div>View Workshop</div>
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </div>
+    </div>
     </div>
   </div>
 </div>
