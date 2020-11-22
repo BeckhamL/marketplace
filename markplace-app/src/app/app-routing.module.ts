@@ -9,7 +9,7 @@ import { WorkshopMaterialComponent } from './components/workshop/workshop-materi
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'workshop', component: WorkshopMainComponent },
+  { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },
   { path: 'blogs', component: BlogMainComponent },

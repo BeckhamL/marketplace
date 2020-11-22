@@ -5,25 +5,18 @@
   margin: 10px 0px;
   cursor: pointer;
   outline: none;
-  background-color: #cb4e4e;
+  background-color: $site-pink;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 6px #ab3c3c;
+  border-radius: 10px;
 }
 
 .button_wrapper:hover {
-  background-color: #b64646
-}
-
-.button_wrapper:active {
-  background-color: #cb4e4e;
-  box-shadow: 0 5px #ab3c3c;
-  transform: translateY(4px);
+  background-color: #cc0052;
+  box-shadow: 0px 3px 6px #c1c1c1;
 }
 
 .button_text {
   color: white;
-  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
 }

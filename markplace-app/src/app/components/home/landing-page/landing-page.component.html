@@ -162,7 +162,7 @@
       Discover more workshops that cover a wide range of engaging, relevant, and
       thought-provoking topics.
     </div>
-    <common-button [title]="'View all workshops'"></common-button>
+    <common-button [title]="'View all workshops'" (click)="onClickViewAllBlogs('workshops')"></common-button>
   </section>
   <section
     class="_flex_col _flex_align_item_center _space_evenly section static static-four"
@@ -179,7 +179,7 @@
           Discover more workshops that cover a wide range of engaging, relevant,
           and thought-provoking topics.
         </div>
-        <common-button [title]="'View all outlines'"></common-button>
+        <common-button [title]="'View all outlines'" (click)="onClickViewAllBlogs('outlines')"></common-button>
       </div>
     </div>
   </section>
@@ -199,7 +199,7 @@
           </div>
           <div
             class="_flex _justify_end _flex_align_item_center width_100 site_color pointer"
-            (click)="onClickViewAllBlogs()"
+            (click)="onClickViewAllBlogs('blogs')"
           >
             view all <mat-icon>keyboard_arrow_right</mat-icon>
           </div>

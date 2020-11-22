@@ -18,9 +18,9 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit() {
     this.typed = new Typed('#element', {
-      strings: ['Learn', 'Grow', 'Think', 'Discover'],
-      typeSpeed: 100,
-      backSpeed: 80,
+      strings: ['Learn', 'Grow', 'Think', 'Discover', 'Imagine'],
+      typeSpeed: 120,
+      backSpeed: 120,
       smartBackspace: true,
       loop: true,
       showCursor: false,
@@ -51,7 +51,7 @@ export class LandingPageComponent implements OnInit {
     ];
   }
 
-  onClickViewAllBlogs() {
-    this.router.navigate(['/blogs']);
+  onClickViewAllBlogs(route: string) {
+    this.router.navigate([`/${route}`]);
   }
 }
