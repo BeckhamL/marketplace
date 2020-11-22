@@ -6,12 +6,14 @@ import { WorkshopMainComponent } from './components/workshop/workshop-main/works
 import { OutlineMainComponent } from './components/outlines/outline-main/outline-main.component';
 import { BlogMainComponent } from './components/blogs/blog-main/blog-main.component';
 import { WorkshopMaterialComponent } from './components/workshop/workshop-material/workshop-material.component';
+import { OutlinesMaterialComponent } from './components/outlines/outlines-material/outlines-material.component';
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },
+  { path: 'outline/:id', component: OutlinesMaterialComponent },
   { path: 'blogs', component: BlogMainComponent },
 ];
 

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Outline } from 'src/app/models/outlines.model';
+import { OutlineService } from 'src/app/services/outline.service';
 
 @Component({
   selector: 'app-outlines-material',
@@ -8,8 +9,8 @@ import { Outline } from 'src/app/models/outlines.model';
 })
 export class OutlinesMaterialComponent implements OnInit {
 
-  @Input()
-  outline: Outline;
+  outline: any;
+  isLoaded = false;
 
   columnDefs = ['Date', 'Topic', 'Description', 'Testimony/Case'];
 
@@ -20,9 +21,22 @@ export class OutlinesMaterialComponent implements OnInit {
     {'Date': '6/28', 'Topic' : 'Building partners @ work', 'Description': 'Next steps for your journey' }
   ]
   
-  constructor() { }
+  constructor(private outlineService: OutlineService) { }
 
   ngOnInit() {
+    this.getOutlineData();
   }
+
+  getOutlineData() {
+    this.outlineService.getOutline().subscribe(outline => {
+      this.outline = outline;
+
+      if (this.outline) {
+        this.isLoaded = true;
+      }
+    })
+  }
+
+
 
 }

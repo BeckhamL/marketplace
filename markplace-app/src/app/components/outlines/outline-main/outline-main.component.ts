@@ -10,6 +10,7 @@ export class OutlineMainComponent implements OnInit {
   outline: Outline = {
     title: 'Saints @ Work',
     date: 'June 2020',
+    id: 1,
     description: '10:30 - 11:30 am, EST Canada on Zoom!',
     instructors: ['Pastor David', 'RHCCC Marketplace Ministry Team'],
     scriptures: [

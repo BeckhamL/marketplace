@@ -1,24 +1,26 @@
-<div class="_flex _flex_align_item_center">
-  <div class="title">Course: {{ outline?.title }}</div>
-  <mat-icon tooltipInfoPopup [tooltipText]="'Click to download'"
-    >get_app</mat-icon
-  >
-</div>
-
-<div>{{ outline?.date }}</div>
-<div>{{ outline?.description }}</div>
-<div class="_flex">
-  <div>Instructors:</div>
-  <div *ngFor="let instructor of outline?.instructors; let last = last">
-    {{ instructor }}
+<div class="_flex_col outline_wrapper" *ngIf="isLoaded">
+  <div class="_flex _flex_align_item_center">
+    <div class="title">Course: {{ outline[0]?.title }}</div>
+    <mat-icon tooltipInfoPopup [tooltipText]="'Click to download'"
+      >get_app</mat-icon
+    >
   </div>
-</div>
-<app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
-<div class="subheaders">Kep scripture references</div>
-<ul>
-  <li *ngFor="let scripture of outline?.scriptures">{{ scripture }}</li>
-</ul>
-<div class="subheaders">Questions</div>
-<div *ngFor="let question of outline?.questions">
-  <div>{{ question }}</div>
+
+  <div>{{ outline[0]?.date }}</div>
+  <div>{{ outline[0]?.description }}</div>
+  <div class="_flex">
+    <div>Instructors:</div>
+    <div *ngFor="let instructor of outline[0]?.instructors; let last = last">
+      {{ instructor }}
+    </div>
+  </div>
+  <app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
+  <div class="subheaders">Kep scripture references</div>
+  <ul>
+    <li *ngFor="let scripture of outline[0]?.scriptures">{{ scripture }}</li>
+  </ul>
+  <div class="subheaders">Questions</div>
+  <div *ngFor="let question of outline[0]?.questions">
+    <div>{{ question }}</div>
+  </div>
 </div>
