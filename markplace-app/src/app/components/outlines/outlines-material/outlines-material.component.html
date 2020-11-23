@@ -14,8 +14,9 @@
       {{ instructor }}
     </div>
   </div>
+  <div class="subheaders">Important dates</div>
   <app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
-  <div class="subheaders">Kep scripture references</div>
+  <div class="subheaders">Key scripture references</div>
   <ul>
     <li *ngFor="let scripture of outline[0]?.scriptures">{{ scripture }}</li>
   </ul>

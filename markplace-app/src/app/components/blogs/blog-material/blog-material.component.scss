@@ -2,6 +2,7 @@
 
 .blog_wrapper {
   padding: 70px;
+  margin-top: 64px;
 }
 
 .blog_content_wrapper {
@@ -12,7 +13,6 @@
   font-size: 65px;
   font-weight: bold;
   letter-spacing: 0.5px;
-  margin-top: 40px;
 }
 
 .content_text {
@@ -32,6 +32,23 @@
   max-width: 100%;
 }
 
+.image_desc {
+  font-size: 16px;
+  font-style: italic;
+}
+
 .social_links {
   margin-top: 5rem;
+}
+
+.more_blogs_text {
+  margin-top: 40px;
+  font-weight: 500;
+  padding-bottom: 24px;
+  font-size: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+common-overview-card {
+  margin: 15px 0px;
 }

@@ -1,11 +1,12 @@
-@import '../../../../assets/scss/layout.scss';
+@import '../../../../assets/scss/main.scss';
 
 .outline_wrapper {
   padding: 70px;
+  margin-top: 64px;
 }
 
 .title {
-  font-size: 44px;
+  font-size: 55px;
   font-weight: bold;
 }
 
@@ -25,5 +26,5 @@ mat-icon {
 }
 
 mat-icon:hover {
-  color: #0645AD ;
+  color: $site-blue;
 }

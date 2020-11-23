@@ -1,16 +1,12 @@
 @import "../../../../assets/scss/main.scss";
 
 .card_wrapper {
-  width: 450px;
-  background: #e3dccf;
-  padding: 10px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
+  max-width: 400px;
+  // background: #e3dccf;
+  // padding: 10px;
+  // border-bottom-left-radius: 40px;
+  // border-top-right-radius: 40px;
   cursor: pointer;
-}
-
-.card_wrapper:hover {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 20px 20px;
 }
 
 .date_text {
@@ -30,6 +26,6 @@
 img {
   width: 250px;
   margin-right: 10px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
+  // border-bottom-left-radius: 30px;
+  // border-top-right-radius: 30px;
 }

@@ -4,6 +4,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 20px 0px;
+  box-shadow: 0px 2px 6px #c1c1c1;
 }
 
  td,  th {
@@ -19,6 +20,4 @@ tr:nth-child(even){background-color: #f2f2f2;}
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: $site-pink;
-  color: white;
 }

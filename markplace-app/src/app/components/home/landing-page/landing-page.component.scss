@@ -102,13 +102,6 @@ img {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 960px) {
-  img {
-    width: 150px;
-    height: 150px;
-  }
-}
-
 .main {
   //height: 100vh;
   perspective: 2px;
@@ -204,4 +197,13 @@ img {
 
 app-icon-button {
   margin: 15px;
+}
+
+/* RESPONSIVE */ 
+
+@media only screen and (max-width: 960px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
 }
