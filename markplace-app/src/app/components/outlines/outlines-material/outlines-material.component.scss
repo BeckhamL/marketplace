@@ -14,10 +14,28 @@
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 0.4px;
+  margin: 10px 0px;
+}
+
+.date_notif {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 27px;
+  color: white;
+  margin-left: 10px;
 }
 
 .socials_links {
   margin-top: 5rem;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
 }
 
 mat-icon {

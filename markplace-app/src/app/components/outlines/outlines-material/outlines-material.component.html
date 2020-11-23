@@ -6,15 +6,21 @@
     >
   </div>
 
-  <div>{{ outline[0]?.date }}</div>
-  <div>{{ outline[0]?.description }}</div>
-  <div class="_flex">
-    <div>Instructors:</div>
-    <div *ngFor="let instructor of outline[0]?.instructors; let last = last">
-      {{ instructor }}
+  <div class="margin_top_20">
+    <div class="_flex _flex_align_item_center">
+      <div>{{ outline[0]?.date }}</div>
+      <div>{{ outline[0]?.description }}</div>
+    </div>
+  
+    <div class="_flex">
+      <div>Instructors:</div>
+      <div *ngFor="let instructor of outline[0]?.instructors; let last = last">
+        {{ instructor }}
+      </div>
     </div>
   </div>
-  <div class="subheaders">Important dates</div>
+
+  <div class="_flex _flex_align_item_center subheaders">Important dates <span class="date_notif">{{rowDefs?.length}}</span></div>
   <app-table [columnDefs]="columnDefs" [rowDefs]="rowDefs"></app-table>
   <div class="subheaders">Key scripture references</div>
   <ul>
