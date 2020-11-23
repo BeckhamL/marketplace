@@ -1,9 +1,19 @@
-<div class="footer_wrapper">
-
-  <div class="_flex_col">
-    <div class="nav_text" (click)="onClickNav('/')">home.</div>
-    <div class="nav_text" (click)="onClickNav('/about')">about.</div>
-    <div class="nav_text" (click)="onClickNav('/workshop')">workshop.</div>
-    <div class="nav_text" (click)="onClickNav('/outlines')">course outlines.</div>
+<div class="_flex _flex_align_item_start footer_wrapper">
+  <div class="_flex_col" fxFlex="33%">
+    <div class="marketplace_text">MARKETPLACE</div>
+    <div class="nav_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Mauris vel faucibus urna.</div>
+  </div>
+  <div class="_flex_col" fxFlex="20%">
+    <div class="header_text">Content</div>
+    <div class="nav_text" (click)="onClickNav('/')">/ home.</div>
+    <div class="nav_text" (click)="onClickNav('/about')">/ about.</div>
+    <div class="nav_text" (click)="onClickNav('/workshops')">/ workshops.</div>
+    <div class="nav_text" (click)="onClickNav('/outlines')">/ course outlines.</div>
+  </div>
+  <div class="_flex_col" fxFlex="20%">
+    <div class="header_text">About</div>
+    <div class="nav_text">/ contact us.</div>
+    <div class="nav_text">/ development team.</div>
+    <div class="nav_text">/ legal.</div>
   </div>
 </div>

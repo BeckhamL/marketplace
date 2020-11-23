@@ -5,12 +5,23 @@
   background-color: #330033;
 }
 
-.nav_text {
-  font-size: 30px;
+.marketplace_text {
+  font-size: 40px;
   font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.header_text {
+  font-weight: 500;
+  color: $site-pink;
+  margin: 10px 0px;
+}
+
+.nav_text {
+  font-weight: 500;
   color: white;
   margin: 10px 0px;
-  letter-spacing: 1.5px;
 }
 
 .nav_text:hover {
