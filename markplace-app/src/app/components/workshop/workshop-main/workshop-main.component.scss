@@ -1,15 +1,43 @@
 @import "../../../../assets/scss/main.scss";
 
 .workshop_wrapper {
-  padding: 70px;
+  // padding-top: 70px;
   margin-top: 64px;
   background-color: $background-beige;
 }
 
+.list_background {
+  background-color: white;
+  padding: 20px 0px;
+}
+
+.list_inner {
+  position: fixed;
+}
+
+.list_title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.list_subtext {
+  font-size: 15px;
+  font-style: italic;
+  color: #c1c1c1;
+}
+
+.content_wrapper {
+  padding: 70px;
+}
+
 .title_text {
+  position: absolute;
   font-size: 60px;
   font-weight: 500;
   letter-spacing: 1px;
+  right: 20px;
+  top: 300px;
+  color: white;
 
   span {
     color: $site-pink;
@@ -90,4 +118,16 @@
 ul {
   margin: 0;
   text-decoration: none;
+}
+
+.image_wrapper {
+  height: 600px;
+  overflow: hidden;
+}
+
+img {
+  width: 100vw;
+  position: relative;
+  top: -200px;
+  filter: brightness(50%);
 }

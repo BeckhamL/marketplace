@@ -3,10 +3,10 @@
     <mat-expansion-panel *ngFor="let item of fakeItems" (opened)="onExpansionPanelOpen(item)">
       <mat-expansion-panel-header>
         <mat-panel-title> {{item?.title}}</mat-panel-title>
-        <mat-panel-description>
-          {{item?.briefSummary}}
-        </mat-panel-description>
       </mat-expansion-panel-header>
+      <mat-panel-description>
+        {{item?.briefSummary}}
+      </mat-panel-description>
       <p> {{item?.briefDescription}}</p>
     </mat-expansion-panel>
   </mat-accordion>
