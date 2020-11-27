@@ -1,12 +1,27 @@
 <div class="_flex_col outlines_wrapper">
+
+  <div class="image_wrapper">
+    <img src="/assets/images/group_study.jpg">
+  </div>
   <div class="title_text">
     <span>COURSE OUTLINES</span> to follow <br />
     and learn along with.
   </div>
-  <div class="_flex _flex_align_item_center _justify_center _flex_wrap overview_wrapper">
-    <common-overview-card-large></common-overview-card-large>
-    <common-overview-card-large></common-overview-card-large>
-    <common-overview-card-large></common-overview-card-large>
-    <common-overview-card-large></common-overview-card-large>
+  <div class="_flex_col _flex_align_item_center _justify_center _flex_wrap overview_wrapper">
+
+    <div class="_flex _justify_center category_buttons margin_bottom_50">
+      <app-icon-button [config]="{icon: 'visibility', style: 'default', description: 'Discover'}"></app-icon-button>
+      <app-icon-button [config]="{icon: 'business_center', style: 'default', description: 'Corporate'}"></app-icon-button>
+      <app-icon-button [config]="{icon: 'follow_the_signs', style: 'default', description: 'Growth'}"></app-icon-button>
+      <app-icon-button [config]="{icon: 'spa', style: 'default', description: 'Mental Health'}"></app-icon-button>
+    </div>
+
+    <div class="_flex _flex_align_item_center">
+      <common-overview-card-large></common-overview-card-large>
+      <common-overview-card-large></common-overview-card-large>
+      <common-overview-card-large></common-overview-card-large>
+      <common-overview-card-large></common-overview-card-large>
+    </div>
+
   </div>
 </div>
