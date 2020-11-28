@@ -71,7 +71,7 @@
   </section>
 
   <section class="_flex _flex_align_item_center section static static-three">
-    <div class="_flex _flex_align_item_start">
+    <div class="_flex _flex_align_item_start _justify_center">
       <div class="_flex_col" fxFlex="50%">
         <div class="section_header_text">
           <div>
@@ -98,50 +98,6 @@
           <br />
           We want to help you recognise all the ways God could be (and already
           is) at work in your work.
-        </div>
-      </div>
-      <div class="_flex_col _flex_align_item_center" fxFlex="50%">
-        <div class="section_header_text">
-          View more <span class="site_color">resources</span>
-        </div>
-        <div class="_flex">
-          <app-icon-button
-            [config]="{
-              icon: 'house',
-              style: 'default',
-              description: 'Churches'
-            }"
-          ></app-icon-button>
-          <app-icon-button
-            [config]="{
-              icon: 'face',
-              style: 'default',
-              description: 'Pastors'
-            }"
-          ></app-icon-button>
-          <app-icon-button
-            [config]="{
-              icon: 'groups',
-              style: 'default',
-              description: 'Small groups'
-            }"
-          ></app-icon-button>
-        </div>
-        <div class="_flex">
-          <app-icon-button
-            [config]="{
-              icon: 'headset',
-              style: 'default',
-              description: 'study'
-            }"
-          ></app-icon-button>
-          <app-icon-button
-            [config]="{
-              icon: 'sports_esports',
-              style: 'default',
-              description: 'Activities'
-            }"
-          ></app-icon-button>
         </div>
       </div>
     </div>
@@ -201,16 +157,70 @@
           </div>
         </div>
       </div>
-      <div class="_flex _flex_align_item_center">
-        <div class="_flex_col">
-          <div class="section_bold_text">Join our mailing list</div>
-          <div>Get started to find meaning in the marketplace</div>
-          <div class="email_wrapper">
-            <app-email-input></app-email-input>
-          </div>
-        </div>
-        <img src="../../../../assets/images/discover.svg" />
+    </div>
+  </section>
+  <section class="_flex _flex_align_item_center _justify_center section static static-three">
+    <div class="_flex _flex_align_item_center _space_evenly" fxFlex="100%">
+      <div class="section_header_text">
+        Can't find what you're <br>
+        looking for? <br>
+        Check out other <br>
+        <span class="site_color">resources</span> we have
       </div>
+      <div class="_flex_col _flex_align_item_center">
+        <div class="_flex">
+          <app-icon-button
+            [config]="{
+              icon: 'house',
+              style: 'default',
+              description: 'Churches'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'face',
+              style: 'default',
+              description: 'Pastors'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'groups',
+              style: 'default',
+              description: 'Small groups'
+            }"
+          ></app-icon-button>
+        </div>
+        <div class="_flex">
+          <app-icon-button
+            [config]="{
+              icon: 'headset',
+              style: 'default',
+              description: 'study'
+            }"
+          ></app-icon-button>
+          <app-icon-button
+            [config]="{
+              icon: 'sports_esports',
+              style: 'default',
+              description: 'Activities'
+            }"
+          ></app-icon-button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="_flex _flex_align_item_center _justify_center section static static-four">
+    <div class="_flex _flex_align_item_center">
+      <div class="_flex_col">
+        <div class="section_bold_text">Join our mailing list</div>
+        <div>Get started to find meaning in the marketplace</div>
+        <div class="email_wrapper">
+          <app-email-input></app-email-input>
+        </div>
+      </div>
+      <img src="../../../../assets/images/discover.svg" />
     </div>
   </section>
 </div>
