@@ -5,6 +5,19 @@
   // padding: 70px;
 }
 
+.title_text_header {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.title_subtext {
+  font-size: 24px;
+  letter-spacing: 0.36px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .title_text {
   font-size: 50px;
   font-weight: bold;
@@ -17,6 +30,10 @@
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.site_color {
+  color: $site-pink;
 }
 
 .about_text {
@@ -61,7 +78,6 @@
 
 .section_wrapper {
   padding: 70px;
-  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -72,6 +88,10 @@
 
 .green_background {
   background-color: $background-light-blue;
+}
+
+.purple_background {
+  background-color: #330033;
 }
 
 .margin_top_40 {
@@ -93,6 +113,25 @@
   font-size: 40px;
   color: $site-blue;
 }
+
+.header_section {
+  padding-top: 10rem;
+  width: 100%;
+  color: white;
+}
+
+.w1 {
+  fill: #800080;
+}
+
+.w2 {
+  fill: #660066;
+}
+
+.w3 {
+  fill: #f6efe8;
+}
+
 
 @media only screen and (max-width: 1000px) {
   ._flex {

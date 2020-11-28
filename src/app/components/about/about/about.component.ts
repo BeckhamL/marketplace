@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import Typed from 'typed.js';
 import { BioDetailsComponent } from '../bio-details/bio-details.component';
 @Component({
   selector: 'app-about',
@@ -8,9 +9,19 @@ import { BioDetailsComponent } from '../bio-details/bio-details.component';
 })
 export class AboutComponent implements OnInit {
 
+  typed: Typed;
   constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
+    this.typed = new Typed('#element', {
+      strings: ['Learn', 'Grow', 'Think', 'Discover', 'Imagine'],
+      typeSpeed: 120,
+      backSpeed: 120,
+      smartBackspace: true,
+      loop: true,
+      showCursor: false,
+      shuffle: true,
+    });
   }
 
   onClickOpenBioDetails() {

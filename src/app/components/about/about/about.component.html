@@ -1,5 +1,43 @@
 <div class="_flex_col _flex_align_item_start about_wrapper">
   <div
+    class="_flex_col _flex_align_item_center _justify_center header_section purple_background"
+  >
+    <div class="_flex_col _flex_align_item_start">
+      <div class="title_text_header">MARKETPLACE</div>
+      <div class="title_subtext">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum
+        dolor vel tempus pulvinar. Ut vitae leo metus. Duis felis metus,
+      </div>
+      <div class="_flex title_text_header">
+        <div>Join us to:</div>
+        <div id="element" class="site_color"></div>
+      </div>
+    </div>
+    <svg
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 1440 320"
+      version="1.1"
+    >
+      <path
+        class="w1"
+        d="m-1.2 155.9c0 0 45.8-1.8 68.7-0.8 96.9 4.3 213.1 15.7 289.6 28.9 120 19 241.7 41.5 361.7 62.8 120 21.7 269.8 29.2 389.8 2.9C1228.6 222.9 1320 108 1380 76l60-32v224l-60 52-293-1.1H734L363.5 317.2 75.8 322.4 0 268c0 0-1.2-81.2-1.2-112.1z"
+      />
+
+      <path
+        class="w2"
+        d="m-1.2 186.8c0 0 45-1.1 67.5-2 190.8-7.9 184.4-4 297.5 2 120 5.3 241.2 42.3 361.2 63.6 120 21.7 245 23 365-3.3 120-26.7 194-95.4 290.1-145.1 20.1-10.4 60-32 60-32V294H1380 1080 720 360 60 0Z"
+      />
+
+      <path
+        class="w3"
+        d="M0 224 60 213.3C120 203 228.9 182.5 348.9 188.2 468.9 193.5 600 224 720 245.3 840 267 960 277 1080 250.7 1200 224 1320 160 1380 128l60-32V320H1380 1080 720 360 60 0Z"
+      />
+    </svg>
+  </div>
+  <div
     class="_flex_col _flex_align_item_start section_wrapper beige_background"
   >
     <div class="title_text">Purpose.</div>
@@ -93,7 +131,12 @@
   >
     <div class="title_text">Team.</div>
     <div class="_flex _flex_align_item_center bio_wrapper">
-      <div class="image_wrapper" tooltipInfoPopup [tooltipText]="'Click to view more'" (click)="onClickOpenBioDetails()">
+      <div
+        class="image_wrapper"
+        tooltipInfoPopup
+        [tooltipText]="'Click to view more'"
+        (click)="onClickOpenBioDetails()"
+      >
         <img src="../../../../assets/images/david.jpg" class="bio_image" />
         <div class="name_text">Rev. Dr. David Lau</div>
         <div>Pastor of Cultivation</div>
@@ -108,7 +151,13 @@
 
     <div class="_flex _flex_align_item_center bio_wrapper">
       <div class="image_wrapper">
-        <img src="../../../../assets/images/maymie.jpg" class="bio_image" tooltipInfoPopup [tooltipText]="'Click to view more'" (click)="onClickOpenBioDetails()"/>
+        <img
+          src="../../../../assets/images/maymie.jpg"
+          class="bio_image"
+          tooltipInfoPopup
+          [tooltipText]="'Click to view more'"
+          (click)="onClickOpenBioDetails()"
+        />
         <div class="name_text">Pastor Maymie Lau</div>
         <div>P.E.A.C.E. (Mission) Pastor</div>
       </div>
@@ -124,9 +173,9 @@
   <div class="_flex_col _flex_align_item_start section_wrapper">
     <div class="title_text">Questions?</div>
     <div class="general_text">
-      We're all on this journey <span class="special_bold_text">together</span>, if you have any questions, please don't
-      hesitate to contact us. We may not have the answer, but we could point you
-      in the right direction.
+      We're all on this journey <span class="special_bold_text">together</span>,
+      if you have any questions, please don't hesitate to contact us. We may not
+      have the answer, but we could point you in the right direction.
     </div>
     <div class="_flex _flex_align_item_center">
       <div class="_flex_col _flex_align_item_start">
