@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { OverviewCardLargeComponent } from './overview-card-large/overview-card-large.component';
 import { ShareableSocialsComponent } from './shareable-socials/shareable-socials.component';
+import { SolidInfoCardComponent } from './solid-info-card/solid-info-card.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
   exports: [
@@ -32,7 +33,8 @@ import { ShareableSocialsComponent } from './shareable-socials/shareable-socials
     ImageDescriptionComponent,
     FooterComponent,
     OverviewCardLargeComponent,
-    ShareableSocialsComponent
+    ShareableSocialsComponent,
+    SolidInfoCardComponent
   ],
   declarations: [
     HeaderComponent,
@@ -48,7 +50,8 @@ import { ShareableSocialsComponent } from './shareable-socials/shareable-socials
     ImageDescriptionComponent,
     FooterComponent,
     OverviewCardLargeComponent,
-    ShareableSocialsComponent
+    ShareableSocialsComponent,
+    SolidInfoCardComponent
   ],
 })
 export class CommonComponentModule {}

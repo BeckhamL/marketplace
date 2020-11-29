@@ -1,0 +1,32 @@
+@import "../../../../assets/scss/main.scss";
+
+.info_card_wrapper {
+  background-color: #330033;
+  padding: 40px;
+  color: white;
+}
+
+.title_text {
+  font-size: 25px;
+  border-bottom: 1px solid;
+  display: inline;
+}
+
+.pop_text {
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 70%;
+  height: 200px;
+}
+
+.description_text {
+  height: 150px;
+}
+
+mat-icon {
+    margin-left: 10px;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
