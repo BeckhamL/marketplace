@@ -18,8 +18,10 @@ import { OverviewCardLargeComponent } from './overview-card-large/overview-card-
 import { ShareableSocialsComponent } from './shareable-socials/shareable-socials.component';
 import { SolidInfoCardComponent } from './solid-info-card/solid-info-card.component';
 import { ImageGridComponent } from './image-grid/image-grid.component';
+import { TextImageCarouselComponent } from './text-image-carousel/text-image-carousel.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 @NgModule({
-  imports: [CommonModule, MaterialCommonModule, FlexLayoutModule],
+  imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule],
   exports: [
     HeaderComponent,
     ScrollContentTrackerComponent,
@@ -36,7 +38,8 @@ import { ImageGridComponent } from './image-grid/image-grid.component';
     OverviewCardLargeComponent,
     ShareableSocialsComponent,
     SolidInfoCardComponent,
-    ImageGridComponent
+    ImageGridComponent,
+    TextImageCarouselComponent
   ],
   declarations: [
     HeaderComponent,
@@ -54,7 +57,8 @@ import { ImageGridComponent } from './image-grid/image-grid.component';
     OverviewCardLargeComponent,
     ShareableSocialsComponent,
     SolidInfoCardComponent,
-    ImageGridComponent
+    ImageGridComponent,
+    TextImageCarouselComponent
   ],
 })
 export class CommonComponentModule {}

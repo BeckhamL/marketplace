@@ -14,6 +14,7 @@ import { OutlinesModule } from './components/outlines/outlines.module';
 import { BlogModule } from './components/blogs/blog.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     OutlinesModule,
     BlogModule,
-    HttpClientModule
+    HttpClientModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
