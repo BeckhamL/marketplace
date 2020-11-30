@@ -35,11 +35,12 @@
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 3px;
+  margin-bottom: 3rem;
 }
 
 .title_subtext {
   font-size: 30px;
-  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .section_regular_text {
@@ -194,8 +195,45 @@ app-icon-button {
   margin-top: 64px;
 }
 
+.header_section {
+  height: 650px;
+}
+
 .header_image {
   height: 650px;
+}
+
+.header_column1 {
+  div:nth-child(1) {
+    color: #c1c1c1;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+.header_column2 {
+
+  height: 60%;
+
+  div:nth-child(1) {
+    color: #c1c1c1;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  div:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  div:nth-child(3) {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  div:nth-child(3):hover {
+    cursor: pointer;
+  }
 }
 
 .about_button {
@@ -204,6 +242,7 @@ app-icon-button {
   background-color: #330033;
   border-top-right-radius: 20px;
   text-align: center;
+  margin-bottom: 5rem;
   cursor: pointer;
 
   mat-icon {
