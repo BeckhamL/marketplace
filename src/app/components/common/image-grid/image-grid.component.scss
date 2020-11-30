@@ -1,0 +1,25 @@
+@import "../../../../assets/scss/main.scss";
+
+.image_wrapper {
+  margin: 20px 0px;
+}
+
+.image_wrapper:hover {
+  cursor: pointer;
+}
+
+.image_subtext {
+  color: #c1c1c1;
+  margin-bottom: 10px;
+}
+
+.image_title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
