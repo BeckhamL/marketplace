@@ -283,9 +283,12 @@ app-icon-button {
   border: 1px solid black;
   padding: 10px;
   cursor: pointer;
+  width: 150px;
+
   div {
     font-weight: bold;
   }
+
   mat-icon {
     margin-left: 10px;
   }
@@ -321,6 +324,32 @@ app-icon-button {
   padding: 100px 50px;
   background-color: #330033;
   color: white;
+}
+
+.section_4 {
+  margin-bottom: 90px;
+}
+
+.section_5 {
+  margin: -50px;
+  padding: 100px 50px;
+  background-color: #330033;
+  color: white;
+}
+
+.tools_info {
+  height: 500px;
+  width: 60%;
+  background-color: $background-olive;
+  position: relative;
+}
+
+.tools_image {
+  position: absolute;
+  right: -20%;
+  bottom: 20%;
+  width: 400px;
+  height: 300px;
 }
 
 .margin_bottom_40 {
