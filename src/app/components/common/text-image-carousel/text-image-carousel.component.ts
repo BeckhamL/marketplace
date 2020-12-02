@@ -12,4 +12,8 @@ export class TextImageCarouselComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickCarousel() {
+    console.log('hi')
+  }
+
 }
