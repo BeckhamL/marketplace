@@ -33,11 +33,13 @@ db.initialize(
   }
 );
 
-server.use(express.static(__dirname + "/dist/markplace-app"));
+if (process.env.NODE_ENV === 'production') {
+  server.use(express.static(__dirname + "/dist/markplace-app"));
 
-server.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
-});
+  server.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
+  });
+}
 
 server.listen((process.env.PORT || 3000), () => {
   console.log(`Server listening at 3000`);
