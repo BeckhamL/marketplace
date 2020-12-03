@@ -1,50 +1,45 @@
-const express = require('express');
-const path = require('path');
-require('dotenv').config();
-const cors = require('cors');
-const app = express();
+require("dotenv").config();
+const cors = require("cors");
+const path = require("path");
+const express = require("express");
+const server = express();
 
-const mongoose = require('mongoose');
-const url = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/marketplace';
+const body_parser = require("body-parser");
 
-app.use(express.json());
-app.use(express.static(__dirname + "/dist/markplace-app"));
-app.use(cors())
+// parse JSON (application/json content-type)
+server.use(body_parser.json());
+server.use(express.json());
+server.use(express.static(__dirname + "/dist/markplace-app"));
+server.use(cors());
 
-mongoose.connect(url, {useNewUrlParser: true});
-const db = mongoose.connection;
+const port = 3000;
 
-db.once('open', _ => {
-  console.log('Database connected:', url)
-})
-  
-db.on('error', err => {
-  console.error('connection error:', err)
-})
+const db = require("./db");
+const dbName = process.env.dbName;
+const collectionName = process.env.collectionName;
 
-app.get('/workshops', function(req, res) {
-  db.collection('workshops').find({}).toArray(function(err, docs) {
-      if(err) { console.error(err) }
-      res.send(JSON.stringify(docs))
-  })
+db.initialize(
+  dbName,
+  collectionName,
+  function (dbCollection) {
+    server.get("/workshops/:id", (request, response) => {
+      const itemId = request.params.id;
+
+      dbCollection.findOne({ _id: itemId }, (error, result) => {
+        if (error) throw error;
+        response.json(result);
+      });
+    });
+
+    server.get("/*", function (req, res) {
+      res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
+    });
+  },
+  function (err) {
+    throw err;
+  }
+);
+
+server.listen(port, () => {
+  console.log(`Server listening at ${port}`);
 });
-
-app.get('/outlines', function(req, res) {
-  db.collection('outlines').find({}).toArray(function(err, docs) {
-      if(err) { console.error(err) }
-      res.send(JSON.stringify(docs))
-  })
-});
-
-app.get('/blogs', function(req, res) {
-  db.collection('blogs').find({}).toArray(function(err, docs) {
-      if(err) { console.error(err) }
-      res.send(JSON.stringify(docs))
-  })
-});
-
-app.get('/*', function(req,res) {
-  res.sendFile(path.join(__dirname + '/dist/markplace-app/index.html'));
-});
-
-app.listen(process.env.PORT || 3000);
