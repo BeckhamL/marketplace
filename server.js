@@ -9,10 +9,7 @@ const body_parser = require("body-parser");
 // parse JSON (application/json content-type)
 server.use(body_parser.json());
 server.use(express.json());
-server.use(express.static(__dirname + "/dist/markplace-app"));
 server.use(cors());
-
-const port = 3000;
 
 const db = require("./db");
 const dbName = process.env.dbName;
@@ -31,15 +28,22 @@ db.initialize(
       });
     });
 
-    server.get("/*", function (req, res) {
-      res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
-    });
   },
   function (err) {
     throw err;
   }
 );
 
-server.listen(port, () => {
-  console.log(`Server listening at ${port}`);
+if (process.env.NODE_ENV === 'dev') {
+
+  server.use(express.static(__dirname + "/dist/markplace-app"));
+
+  server.get("/*", function (req, res) {
+    res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
+  });
+
+}
+
+server.listen(3000, () => {
+  console.log(`Server listening at 3000`);
 });
