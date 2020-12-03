@@ -27,22 +27,17 @@ db.initialize(
         response.json(result);
       });
     });
-
   },
   function (err) {
     throw err;
   }
 );
 
-if (process.env.NODE_ENV === 'dev') {
+server.use(express.static(__dirname + "/dist/markplace-app"));
 
-  server.use(express.static(__dirname + "/dist/markplace-app"));
-
-  server.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
-  });
-
-}
+server.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
+});
 
 server.listen(3000, () => {
   console.log(`Server listening at 3000`);
