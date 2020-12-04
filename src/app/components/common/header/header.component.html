@@ -32,6 +32,13 @@
       Blogs
     </div>
     <div class="content_tab">Case Studies</div>
+    <div
+    class="content_tab"
+    (click)="onClickNavigation('tools')"
+    [ngClass]="{ activeRoute: currentRoute === 'tools' }"
+  >
+    Tools
+  </div>
   </div>
   <div *ngIf="innerWidth < 1000">
     <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
