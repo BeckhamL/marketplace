@@ -1,92 +1,26 @@
-// require("dotenv").config();
-// const cors = require("cors");
-// const path = require("path");
-// const express = require("express");
-// const server = express();
-// const MongoClient = require("mongodb").MongoClient;
-// const body_parser = require("body-parser");
-
-// // parse JSON (application/json content-type)
-// server.use(body_parser.json());
-// server.use(express.json());
-// server.use(cors());
-
-// //const db = require("./db");
-// const dbConnectionUrl = process.env.MONGO_URI;
-// const dbName = process.env.dbName;
-// const collectionName = process.env.collectionName;
-
-// function initialize(
-//   dbName,
-//   dbCollectionName,
-//   successCallback
-// ) {
-//   MongoClient.connect(dbConnectionUrl, function (err, dbInstance) {
-//     if (err) {
-//       console.log(`[MongoDB connection] ERROR: ${err}`);
-//     } else {
-//       const dbObject = dbInstance.db(dbName);
-//       const dbCollection = dbObject.collection(dbCollectionName);
-//       console.log("[MongoDB connection] SUCCESS");
-
-//       successCallback(dbCollection);
-//     }
-//   });
-// }
-
-// initialize(
-//   dbName,
-//   collectionName,
-//   function (dbCollection) {
-//     server.get("/workshops/:id", (request, response) => {
-//       const itemId = request.params.id;
-
-//       dbCollection.findOne({ _id: itemId }, (error, result) => {
-//         if (error) throw error;
-//         response.json(result);
-//       });
-//     });
-//   },
-//   function (err) {
-//     throw err;
-//   }
-// );
-
-// if (process.env.NODE_ENV === 'production') {
-//   server.use(express.static(__dirname + "/dist/markplace-app"));
-
-//   server.get("/*", function (req, res) {
-//     res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
-//   });
-// }
-
-// server.listen(process.env.PORT || 3000, () => {
-//   console.log(`Server listening at 3000`);
-// });
-
-const express = require('express');
-const mongoose = require('mongoose');
-const path = require('path');
+const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const cors = require('cors');
 require("dotenv").config();
 
 const app = express();
+app.use(cors())
 const PORT = process.env.PORT || 3000;
 
-const routes = require('./routes/api');
+const routes = require("./routes/api");
 
 mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-mongoose.connection.on('connected', () => {
-  console.log('Mongoose is connected!!!!');
-});
+mongoose.connection.on("connected", () => {});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static(__dirname + "/dist/markplace-app"));
 
   app.get("/*", function (req, res) {
@@ -94,6 +28,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.use('/api', routes);
+app.use("/api", routes);
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));
