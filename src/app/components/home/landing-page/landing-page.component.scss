@@ -338,18 +338,29 @@ app-icon-button {
 }
 
 .tools_info {
-  height: 500px;
+  height: 400px;
   width: 60%;
   background-color: $background-olive;
+  padding: 20px;
   position: relative;
 }
 
 .tools_image {
   position: absolute;
   right: -20%;
-  bottom: 20%;
+  bottom: 15%;
   width: 400px;
   height: 300px;
+}
+
+.tools_info_wrapper {
+  padding: 20px;
+  
+  div:nth-child(1) {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
 }
 
 .margin_bottom_40 {

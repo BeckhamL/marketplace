@@ -40,7 +40,7 @@ export class LandingPageComponent implements OnInit {
     ];
   }
 
-  onClickViewAllBlogs(route: string) {
+  onClickChangeRoute(route: string) {
     this.router.navigate([`/${route}`]);
   }
 }
