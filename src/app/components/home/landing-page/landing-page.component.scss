@@ -364,13 +364,37 @@ app-icon-button {
 }
 
 .margin_bottom_40 {
-  margin-bottom: 40px;
+  margin-bottom: 5rem;
+}
+
+.carousel_wrapper {
+  margin: 40px 0px;
 }
 
 common-solid-info-card {
   width: 49%;
 }
 
-.carousel_wrapper {
-  margin: 40px 0px;
+common-blog-carousel {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 2560px) {
+  .header_image {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1860px) {
+  .header_image {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .header_image {
+    height: 50%;
+  }
 }

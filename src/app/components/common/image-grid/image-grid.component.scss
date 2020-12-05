@@ -4,10 +4,6 @@
   margin: 20px 0px;
 }
 
-.image_wrapper:hover {
-  cursor: pointer;
-}
-
 .image_subtext {
   color: #c1c1c1;
   margin-bottom: 10px;
@@ -16,6 +12,11 @@
 .image_title {
   font-size: 25px;
   font-weight: 500;
+}
+
+.read_more {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 img {

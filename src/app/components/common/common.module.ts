@@ -20,6 +20,7 @@ import { SolidInfoCardComponent } from './solid-info-card/solid-info-card.compon
 import { ImageGridComponent } from './image-grid/image-grid.component';
 import { TextImageCarouselComponent } from './text-image-carousel/text-image-carousel.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { BlogCarouselComponent } from './blog-carousel/blog-carousel.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule],
   exports: [
@@ -39,7 +40,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     ShareableSocialsComponent,
     SolidInfoCardComponent,
     ImageGridComponent,
-    TextImageCarouselComponent
+    TextImageCarouselComponent,
+    BlogCarouselComponent
   ],
   declarations: [
     HeaderComponent,
@@ -58,7 +60,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     ShareableSocialsComponent,
     SolidInfoCardComponent,
     ImageGridComponent,
-    TextImageCarouselComponent
+    TextImageCarouselComponent,
+    BlogCarouselComponent
   ],
 })
 export class CommonComponentModule {}
