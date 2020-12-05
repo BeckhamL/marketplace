@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+      "target": "http://rh3c-marketplace.herokuapp.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
