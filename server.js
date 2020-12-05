@@ -8,7 +8,7 @@ const app = express();
 app.use(cors())
 const PORT = process.env.PORT || 3000;
 
-const routes = require("./routes/api");
+const workshops = require("./routes/workshops");
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -20,7 +20,7 @@ mongoose.connection.on("connected", () => {});
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api", routes);
+app.use("/workshops", workshops);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(__dirname + "/dist/markplace-app"));

@@ -16,6 +16,6 @@ export class WorkshopService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get('/api/blogs');
+    return this.httpClient.get('/workshops/workshops');
   }
 }
