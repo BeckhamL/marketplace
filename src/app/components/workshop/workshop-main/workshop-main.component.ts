@@ -71,7 +71,6 @@ export class WorkshopMainComponent implements OnInit {
             ],
           },
         ],
-        
       },
       {
         topic: [
@@ -103,13 +102,16 @@ export class WorkshopMainComponent implements OnInit {
             ],
           },
         ],
-      }
+      },
     ],
   };
 
   clickedWorkshopToShow: WorkshopListItem = null;
 
-  constructor(private router: Router, private workshopService: WorkshopService) {}
+  constructor(
+    private router: Router,
+    private workshopService: WorkshopService
+  ) {}
 
   ngOnInit() {}
 
@@ -120,5 +122,4 @@ export class WorkshopMainComponent implements OnInit {
   onClickViewMore() {
     this.router.navigate(['/workshop/1']);
   }
-
 }
