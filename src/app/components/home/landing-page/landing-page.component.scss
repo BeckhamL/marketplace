@@ -316,7 +316,17 @@ app-icon-button {
 }
 
 .section_2 {
-  margin-bottom: 90px;
+  background-color: $background-yellow;
+  margin: 0px -50px 5rem -50px;
+}
+
+.section_2_left {
+  padding: 50px;
+}
+
+.workshops_image {
+  width: 50%;
+  height: 100%;
 }
 
 .section_3 {
@@ -337,6 +347,32 @@ app-icon-button {
   color: white;
 }
 
+.outlines_info {
+  height: 400px;
+  width: 60%;
+  background-color: #f6efe8;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.outlines_image {
+  left: -20%;
+  bottom: 15%;
+  width: 500px;
+  height: 100%;
+}
+
+.outlines_info_wrapper {
+  padding: 0px 20px;
+  
+  div:nth-child(1) {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
 .tools_info {
   height: 400px;
   width: 60%;
@@ -351,6 +387,7 @@ app-icon-button {
   bottom: 15%;
   width: 400px;
   height: 300px;
+  border-radius: 10px;
 }
 
 .tools_info_wrapper {

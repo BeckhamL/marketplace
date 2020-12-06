@@ -1,5 +1,7 @@
 <div class="landing_page_wrapper">
-  <div class="_flex _flex_align_item_center _space_between margin_bottom_40 header_section">
+  <div
+    class="_flex _flex_align_item_center _space_between margin_bottom_40 header_section"
+  >
     <div class="_flex_col header_column1">
       <div>- THIS IS</div>
       <div class="title_text">Marketplace</div>
@@ -61,42 +63,67 @@
     <common-solid-info-card></common-solid-info-card>
     <common-solid-info-card></common-solid-info-card>
   </div>
-  <div class="section_2">
+
+  <div class="_flex section_2">
+    <div class="section_2_left" fxFlex="50%">
+      <div class="_flex _justify_start">
+        <div class="_flex_col">
+          <div class="_flex_col">
+            <div class="section_header_subtext">
+              Purpose driven lessons <span>Specific scenarios</span>
+            </div>
+            <div class="section_header_text">Workshops</div>
+  
+          </div>
+          <div
+            class="_flex _flex_align_item_center _justify_center view_more_button"
+            (click)="onClickChangeRoute('workshops')"
+          >
+            <div>View more</div>
+            <mat-icon>trending_flat</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="/assets/images/studying2.jpg" class="workshops_image">
+  </div>
+
+  <div class="margin_bottom_40">
     <div class="_flex _flex_align_item_center _space_between">
       <div class="_flex_col">
-        <div class="section_header_text">Workshops</div>
-        <div class="section_header_subtext">
-          Purpose driven lessons <span>Specific scenarios</span>
+        <div class="_flex_col">
+          <div class="section_header_subtext">
+            Course outlines <span>Specific scenarios</span>
+          </div>
+          <div class="section_header_text">
+            A community for <br />
+            your journey
+          </div>
+          <div class="section_header_subtext">
+            Joining a community is one of the most <br>
+            important parts of being a working
+          </div>
         </div>
       </div>
       <div
         class="_flex _flex_align_item_center _justify_center view_more_button"
-        (click)="onClickChangeRoute('workshops')"
       >
         <div>View more</div>
         <mat-icon>trending_flat</mat-icon>
       </div>
     </div>
-    <common-image-grid></common-image-grid>
-  </div>
-  <div class="margin_bottom_40">
-    <div class="_flex _flex_align_item_center _space_between">
-      <div class="_flex_col">
-        <div class="section_header_text">Course outlines</div>
-        <div class="section_header_subtext">
-          Purpose driven lessons <span>Specific scenarios</span>
+    <div class="_flex _justify_end">
+      <div class="_flex _flex_align_item_start outlines_info">
+        <img src="/assets/images/pink.jpg" class="outlines_image" />
+        <div class="_flex_col outlines_info_wrapper">
+          <div>My journey at work</div>
+          <div>
+            This is a fake description <br />
+            toronto raptors
+          </div>
         </div>
       </div>
-      <div
-        class="_flex _flex_align_item_center _justify_center view_more_button"
-        (click)="onClickChangeRoute('outlines')"
-      >
-        <div>View all</div>
-        <mat-icon>trending_flat</mat-icon>
-      </div>
-    </div>
-    <div class="carousel_wrapper">
-      <common-text-image-carousel></common-text-image-carousel>
     </div>
   </div>
 
@@ -163,7 +190,9 @@
       <div class="_flex_col">
         <div class="_flex_col">
           <div class="section_header_subtext">Blogs</div>
-          <div class="section_header_text">Hear testimonials from  brothers and sisters</div>
+          <div class="section_header_text">
+            Hear testimonials from brothers and sisters
+          </div>
         </div>
         <div
           class="_flex _flex_align_item_center _justify_center view_more_button"
@@ -179,7 +208,7 @@
   <div class="_flex _flex_align_item_center _justify_center margin_bottom_40">
     <div class="_flex _flex_align_item_center">
       <div class="_flex_col">
-        <div class="section_bold_text">Join our mailing list</div>
+        <div class="section_header_text">Join our mailing list</div>
         <div>Get started to find meaning in the marketplace</div>
         <div class="email_wrapper">
           <app-email-input></app-email-input>
