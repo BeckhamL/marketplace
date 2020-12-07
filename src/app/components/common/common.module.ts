@@ -21,6 +21,7 @@ import { ImageGridComponent } from './image-grid/image-grid.component';
 import { TextImageCarouselComponent } from './text-image-carousel/text-image-carousel.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { BlogCarouselComponent } from './blog-carousel/blog-carousel.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule],
   exports: [
@@ -41,7 +42,8 @@ import { BlogCarouselComponent } from './blog-carousel/blog-carousel.component';
     SolidInfoCardComponent,
     ImageGridComponent,
     TextImageCarouselComponent,
-    BlogCarouselComponent
+    BlogCarouselComponent,
+    ImageCarouselComponent
   ],
   declarations: [
     HeaderComponent,
@@ -61,7 +63,8 @@ import { BlogCarouselComponent } from './blog-carousel/blog-carousel.component';
     SolidInfoCardComponent,
     ImageGridComponent,
     TextImageCarouselComponent,
-    BlogCarouselComponent
+    BlogCarouselComponent,
+    ImageCarouselComponent
   ],
 })
 export class CommonComponentModule {}

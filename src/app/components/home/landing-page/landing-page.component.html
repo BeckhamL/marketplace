@@ -1,6 +1,6 @@
 <div class="landing_page_wrapper">
   <div
-    class="_flex _flex_align_item_center _space_between margin_bottom_40 header_section"
+    class="_flex _flex_align_item_center _space_between margin_bottom_5rem header_section"
   >
     <div class="_flex_col header_column1">
       <div>- THIS IS</div>
@@ -59,37 +59,58 @@
       </div>
     </div>
   </div>
-  <div class="_flex _space_between margin_bottom_40">
+  <div class="_flex _space_between margin_bottom_5rem">
     <common-solid-info-card></common-solid-info-card>
     <common-solid-info-card></common-solid-info-card>
   </div>
 
   <div class="_flex section_2">
-    <div class="section_2_left" fxFlex="50%">
+    <div class="_flex_col _space_between section_2_left" fxFlex="50%">
       <div class="_flex _justify_start">
-        <div class="_flex_col">
-          <div class="_flex_col">
-            <div class="section_header_subtext">
-              Purpose driven lessons <span>Specific scenarios</span>
-            </div>
-            <div class="section_header_text">Workshops</div>
-  
+        <div class="_flex_col" fxFlex="100%">
+          <div class="section_header_subtext">
+            Purpose driven lessons <span>Specific scenarios</span>
           </div>
-          <div
-            class="_flex _flex_align_item_center _justify_center view_more_button"
-            (click)="onClickChangeRoute('workshops')"
-          >
-            <div>View more</div>
-            <mat-icon>trending_flat</mat-icon>
+          <div class="section_header_text">Workshops</div>
+
+          <div class="_flex _flex_align_item_center _space_between">
+            <div class="_flex_col workshops_info_wrapper">
+              <div>My journey at work</div>
+              <div>
+                Life doesn't start out easy <br />
+                The job market is hard to navigate
+              </div>
+            </div>
+            <div class="_flex_col workshops_info_wrapper">
+              <div>Praying over my resume</div>
+              <div>
+                Find comfort in your skills <br />
+                Clever instinct makes sense
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="_flex_col workshops_info_wrapper">
+        <div>Understanding my role</div>
+        <div>
+          Work smart and hard <br />
+          but work in God's timing
+        </div>
+      </div>
+      <div
+        class="_flex _flex_align_item_center _justify_center view_more_button"
+        (click)="onClickChangeRoute('workshops')"
+      >
+        <div>View more</div>
+        <mat-icon>trending_flat</mat-icon>
+      </div>
     </div>
 
-    <img src="/assets/images/studying2.jpg" class="workshops_image">
+    <img src="/assets/images/studying2.jpg" class="workshops_image" />
   </div>
 
-  <div class="margin_bottom_40">
+  <div class="margin_bottom_5rem">
     <div class="_flex _flex_align_item_center _space_between">
       <div class="_flex_col">
         <div class="_flex_col">
@@ -97,12 +118,8 @@
             Course outlines <span>Specific scenarios</span>
           </div>
           <div class="section_header_text">
-            A community for <br />
-            your journey
-          </div>
-          <div class="section_header_subtext">
-            Joining a community is one of the most <br>
-            important parts of being a working
+            Learn together, <br />
+            see progress together
           </div>
         </div>
       </div>
@@ -113,21 +130,20 @@
         <mat-icon>trending_flat</mat-icon>
       </div>
     </div>
-    <div class="_flex _justify_end">
-      <div class="_flex _flex_align_item_start outlines_info">
-        <img src="/assets/images/pink.jpg" class="outlines_image" />
-        <div class="_flex_col outlines_info_wrapper">
-          <div>My journey at work</div>
-          <div>
-            This is a fake description <br />
-            toronto raptors
-          </div>
-        </div>
+    <div class="_flex_col _flex_align_item_center margin_bottom_20">
+      <div class="section_header_text text_center">
+        A community for <br />
+        your journey
       </div>
     </div>
+    <div class="section_header_subtext margin_bottom_20">
+      With over 30 courses, learn the skills <br />
+      necessary to thrive at work
+    </div>
+    <common-image-carousel></common-image-carousel>
   </div>
 
-  <div class="_flex_col margin_bottom_40">
+  <div class="_flex_col margin_bottom_5rem">
     <div class="_flex _justify_end">
       <div class="_flex_col">
         <div class="_flex_col">
@@ -185,7 +201,52 @@
     </div>
   </div>
 
-  <div class="_flex _flex_align_item_start _space_between margin_bottom_40">
+  <div class="_flex case_section">
+    <img src="/assets/images/studying3.jpg" class="workshops_image" />
+    <div class="_flex_col _space_between section_2_right" fxFlex="50%">
+      <div class="_flex _justify_start">
+        <div class="_flex_col" fxFlex="100%">
+          <div class="section_header_subtext">
+            Relatable experiences <span>Personal stories</span>
+          </div>
+          <div class="section_header_text">Case Studies</div>
+
+          <div class="_flex _flex_align_item_center _space_between">
+            <div class="_flex_col workshops_info_wrapper">
+              <div>My journey at work</div>
+              <div>
+                Life doesn't start out easy <br />
+                The job market is hard to navigate
+              </div>
+            </div>
+            <div class="_flex_col workshops_info_wrapper">
+              <div>Praying over my resume</div>
+              <div>
+                Find comfort in your skills <br />
+                Clever instinct makes sense
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="_flex_col workshops_info_wrapper">
+        <div>Understanding my role</div>
+        <div>
+          Work smart and hard <br />
+          but work in God's timing
+        </div>
+      </div>
+      <div
+        class="_flex _flex_align_item_center _justify_center view_more_button"
+        (click)="onClickChangeRoute('workshops')"
+      >
+        <div>View more</div>
+        <mat-icon>trending_flat</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="_flex _flex_align_item_start _space_between margin_bottom_5rem">
     <div class="_flex _justify_start">
       <div class="_flex_col">
         <div class="_flex_col">
@@ -205,7 +266,7 @@
     <common-blog-carousel></common-blog-carousel>
   </div>
 
-  <div class="_flex _flex_align_item_center _justify_center margin_bottom_40">
+  <div class="_flex _flex_align_item_center _justify_center margin_bottom_5rem">
     <div class="_flex _flex_align_item_center">
       <div class="_flex_col">
         <div class="section_header_text">Join our mailing list</div>
