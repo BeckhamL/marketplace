@@ -15,10 +15,6 @@
   letter-spacing: 4px;
 }
 
-.width_33 {
-  width: 33%;
-}
-
 .width_100 {
   width: 100%;
 }
@@ -27,8 +23,8 @@
   height: 100% !important;
 }
 
-.site_color {
-  color: $site-pink;
+.text_center {
+  text-align: center;
 }
 
 .title_text {
@@ -52,18 +48,6 @@
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 0.36px;
-}
-
-// .section_header_text {
-//   font-size: 40px;
-//   font-weight: bold;
-//   margin-bottom: 30px;
-// }
-
-.seperator {
-  width: 60%;
-  height: 2px;
-  background-color: #c1c1c1;
 }
 
 .info_card_title {
@@ -324,6 +308,15 @@ app-icon-button {
   padding: 50px;
 }
 
+.case_section {
+  background-color:$background-beige;
+  margin: 0px -50px 5rem -50px;
+}
+
+.section_2_right {
+  padding: 50px;
+}
+
 .workshops_image {
   width: 50%;
   height: 100%;
@@ -349,11 +342,20 @@ app-icon-button {
 
 .outlines_info {
   height: 400px;
-  width: 60%;
   background-color: #f6efe8;
   padding: 20px;
-  position: relative;
+  width: 100%;
   border-radius: 10px;
+}
+
+.workshops_info_wrapper {
+  
+  div:nth-child(1) {
+    color: $site-pink;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
 }
 
 .outlines_image {
@@ -400,7 +402,11 @@ app-icon-button {
   }
 }
 
-.margin_bottom_40 {
+.margin_bottom_20 {
+  margin-bottom: 20px;
+}
+
+.margin_bottom_5rem {
   margin-bottom: 5rem;
 }
 
@@ -413,6 +419,10 @@ common-solid-info-card {
 }
 
 common-blog-carousel {
+  width: 100%;
+}
+
+common-image-carousel {
   width: 100%;
 }
 
