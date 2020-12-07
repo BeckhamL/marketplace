@@ -28,5 +28,7 @@ export class OutlineMainComponent implements OnInit {
   };
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(JSON.stringify(this.outline))
+  }
 }

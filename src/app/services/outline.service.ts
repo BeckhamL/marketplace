@@ -16,6 +16,6 @@ export class OutlineService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get('http://localhost:3000/outlines');
+    return this.httpClient.get('/outlines/outlines');
   }
 }
