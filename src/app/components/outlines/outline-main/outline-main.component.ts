@@ -23,12 +23,10 @@ export class OutlineMainComponent implements OnInit {
       '自我認識多少?',
       'Personal branding: 打造自己的品牌',
       'Building my network: 人脈',
-      'Communication and interpersonal skills: 溝通與人際關係的技巧'
-    ]
+      'Communication and interpersonal skills: 溝通與人際關係的技巧',
+    ],
   };
   constructor() {}
 
-  ngOnInit() {
-    console.log(JSON.stringify(this.outline))
-  }
+  ngOnInit() {}
 }

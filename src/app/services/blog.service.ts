@@ -16,6 +16,6 @@ export class BlogService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get('http://localhost:3000/blogs');
+    return this.httpClient.get('/blogs/blogs');
   }
 }
