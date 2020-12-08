@@ -16,6 +16,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ToolsModule } from '../app/components/tools/tools.module';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -33,7 +34,8 @@ import { ToolsModule } from '../app/components/tools/tools.module';
     BlogModule,
     HttpClientModule,
     IvyCarouselModule,
-    ToolsModule
+    ToolsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

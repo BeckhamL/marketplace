@@ -1,1 +1,3 @@
-<input type="text" placeholder="Enter your email" maxlength="28"><input type="submit">
+<form [formGroup]="formGroup">
+    <input type="email" placeholder="Enter your email" maxlength="28" formControlName="email"><input type="submit" (click)="onSubmitEmail()">
+</form>
