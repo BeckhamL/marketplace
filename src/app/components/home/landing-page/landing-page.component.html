@@ -246,27 +246,60 @@
     </div>
   </div>
 
-  <div class="_flex _flex_align_item_start _space_between margin_bottom_5rem">
-    <div class="_flex _justify_start">
+  <div
+    class="_flex_col _flex_align_item_start _space_between margin_bottom_5rem"
+  >
+    <div class="_flex _space_between _flex_align_item_center width_100">
       <div class="_flex_col">
-        <div class="_flex_col">
-          <div class="section_header_subtext">Blogs</div>
-          <div class="section_header_text">
-            Hear testimonials from brothers and sisters
-          </div>
-        </div>
-        <div
-          class="_flex _flex_align_item_center _justify_center view_more_button"
-        >
-          <div>View blogs</div>
-          <mat-icon>trending_flat</mat-icon>
+        <div class="section_header_subtext">Blogs</div>
+        <div class="section_header_text">
+          Hear testimonials from <br />
+          brothers and sisters
         </div>
       </div>
+      <div
+        class="_flex _flex_align_item_center _justify_center view_more_button"
+      >
+        <div>View blogs</div>
+        <mat-icon>trending_flat</mat-icon>
+      </div>
     </div>
-    <common-blog-carousel></common-blog-carousel>
+    <common-image-description></common-image-description>
   </div>
 
-  <div class="_flex _flex_align_item_center _justify_center margin_bottom_5rem">
+  <div class="_flex _space_around margin_bottom_5rem width_100">
+    <div class="_flex_col count_card" fxFlex="30%">
+      <div class="_flex _flex_align_item_center _space_between">
+        <div>64</div>
+        <mat-icon>edit</mat-icon>
+      </div>
+      <div>Videos</div>
+      <div>Get started to find meaning in the marketplace</div>
+      <common-button [title]="'Videos'"></common-button>
+    </div>
+    <div class="_flex_col count_card" fxFlex="30%">
+      <div class="_flex _flex_align_item_center _space_between">
+        <div>18</div>
+        <mat-icon>edit</mat-icon>
+      </div>
+      <div>Podcasts</div>
+      <div>Get started to find meaning in the marketplace</div>
+      <common-button [title]="'Podcasts'"></common-button>
+    </div>
+    <div class="_flex_col count_card" fxFlex="30%">
+      <div class="_flex _flex_align_item_center _space_between">
+        <div>32</div>
+        <mat-icon>edit</mat-icon>
+      </div>
+      <div>Songs</div>
+      <div>Get started to find meaning in the marketplace</div>
+      <common-button></common-button>
+    </div>
+  </div>
+
+  <div
+    class="_flex _flex_align_item_center _justify_center join_section margin_bottom_5rem"
+  >
     <div class="_flex _flex_align_item_center">
       <div class="_flex_col">
         <div class="section_header_text">Join our mailing list</div>

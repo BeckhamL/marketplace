@@ -1,22 +1,23 @@
 @import "../../../../assets/scss/main.scss";
 
 .button_wrapper {
-  padding: 15px 25px;
+  padding: 5px 20px;
   margin: 10px 0px;
   cursor: pointer;
   outline: none;
-  background-color: $site-pink;
+  background-color: #eee9f9;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
+  display: inline-block;
 }
 
 .button_wrapper:hover {
-  background-color: #cc0052;
-  box-shadow: 0px 3px 6px #c1c1c1;
+  box-shadow: 0px 1px 6px #00000029;
 }
 
 .button_text {
-  color: white;
+  color: #5529c6;
   font-weight: bold;
   letter-spacing: 1.5px;
+  font-size: 14px;
 }

@@ -10,7 +10,7 @@
     <app-icon-button [config]="{icon: 'self_improvement', style: 'default', description: 'Personal'}"></app-icon-button>
   </div>
 
-  <div class="_flex _justify_center">
+  <div class="_flex _space_between">
     <div class="_flex_col _flex_align_item_center" fxFlex="45%">
       <div class="header_text">Most recent</div>
       <common-image-description (click)="onClickBlog()"></common-image-description>
@@ -24,6 +24,7 @@
     </div>
   </div>
 
+  <div class="title_text2 margin_bottom_50">More blogs</div>
   <common-image-grid></common-image-grid>
 
 </div>

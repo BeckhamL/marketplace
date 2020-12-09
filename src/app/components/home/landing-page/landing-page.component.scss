@@ -196,7 +196,6 @@ app-icon-button {
 }
 
 .header_column2 {
-
   height: 60%;
 
   div:nth-child(1) {
@@ -209,7 +208,7 @@ app-icon-button {
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  
+
   div:nth-child(3) {
     font-weight: 500;
     text-decoration: underline;
@@ -309,7 +308,7 @@ app-icon-button {
 }
 
 .case_section {
-  background-color:$background-beige;
+  background-color: $background-beige;
   margin: 0px -50px 5rem -50px;
 }
 
@@ -349,7 +348,6 @@ app-icon-button {
 }
 
 .workshops_info_wrapper {
-  
   div:nth-child(1) {
     color: $site-pink;
     font-weight: bold;
@@ -367,7 +365,7 @@ app-icon-button {
 
 .outlines_info_wrapper {
   padding: 0px 20px;
-  
+
   div:nth-child(1) {
     font-weight: bold;
     font-size: 24px;
@@ -394,11 +392,30 @@ app-icon-button {
 
 .tools_info_wrapper {
   padding: 20px;
-  
+
   div:nth-child(1) {
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
+  }
+}
+
+.join_section {
+  border-top: 1px solid #c1c1c1;
+}
+
+.count_card {
+  padding: 20px;
+  border-left: 5px dotted #5529c6;
+
+  div:nth-child(1) {
+    font-size: 50px;
+    color: #330033;
+    font-weight: bold;
+  }
+
+  div:nth-child(2) {
+    font-size: 60px;
   }
 }
 
