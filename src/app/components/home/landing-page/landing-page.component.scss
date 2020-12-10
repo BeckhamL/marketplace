@@ -27,6 +27,10 @@
   text-align: center;
 }
 
+.text_end {
+  text-align: end;
+}
+
 .title_text {
   font-size: 60px;
   font-weight: bold;
@@ -417,6 +421,25 @@ app-icon-button {
   div:nth-child(2) {
     font-size: 60px;
   }
+}
+
+.blog_section {
+  background-color: $background-yellow;
+  margin: 0px -50px 5rem -50px;
+  position: relative;
+}
+
+.blog_section_header {
+  padding: 50px;
+}
+
+.blog_section_content {
+  padding: 0px 50px 50px 50px;
+}
+
+.blog_image {
+  width: 50%;
+  height: 100%;
 }
 
 .margin_bottom_20 {
