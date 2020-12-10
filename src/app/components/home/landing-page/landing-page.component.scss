@@ -305,6 +305,7 @@ app-icon-button {
 .section_2 {
   background-color: $background-yellow;
   margin: 0px -50px 5rem -50px;
+  align-items: center;
 }
 
 .section_2_left {
@@ -358,6 +359,8 @@ app-icon-button {
     font-size: 24px;
     letter-spacing: 1px;
   }
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .outlines_image {
@@ -466,6 +469,10 @@ common-image-carousel {
   width: 100%;
 }
 
+#workplace_tools_section {
+  margin-right: 200px;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 2560px) {
@@ -480,8 +487,65 @@ common-image-carousel {
   }
 }
 
+@media only screen and (max-width: 1815px) {
+  .tools_image {
+    width: 22.039vw;
+  }
+}
+
+
+@media only screen and (max-width: 1700px) {
+  #prepare_yourself_section {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  #div_courses {
+    margin-right: 30px;
+  }
+
+  #div_instructors {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1508px) {
+  .section_1 {
+    margin-bottom: 190px;
+  }
+
+  .section1_corner {
+    bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #workplace_text {
+    max-height: 440px;
+    font-size: 1.2vw;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .header_image {
     height: 50%;
+  }
+
+  .landing_page_wrapper {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #workplace_tools_section {
+    max-height: 440px;
+    font-size: 1.385vw;
+  }
+
+  .tools_info_wrapper {
+    div:nth-child(1) {
+      font-size: 1.846vw;
+    }
   }
 }
