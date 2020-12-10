@@ -1,0 +1,30 @@
+@import "../../../../assets/scss/main.scss";
+
+.bio_wrapper {
+  padding: 20px;
+}
+
+.name_text {
+  font-size: 24px;
+  margin: 5px 0px;
+  font-weight: 500;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.social_icon {
+  margin-right: 10px;
+  color: $site-pink;
+}
+
+img {
+  width: 40%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
