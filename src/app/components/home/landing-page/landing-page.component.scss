@@ -490,6 +490,11 @@ common-image-carousel {
   }
 }
 
+@media only screen and (max-width: 1750px) {
+  #workshops_view_more_button, #case_studies_view_more_button {
+    margin-top: 20px;
+  }
+}
 
 @media only screen and (max-width: 1700px) {
   #prepare_yourself_section {
@@ -544,5 +549,11 @@ common-image-carousel {
     div:nth-child(1) {
       font-size: 1.846vw;
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .landing_page_wrapper {
+    padding: 0 5rem;
   }
 }
