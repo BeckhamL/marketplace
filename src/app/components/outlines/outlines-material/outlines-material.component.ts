@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { Outline } from 'src/app/models/outlines.model';
 import { OutlineService } from 'src/app/services/outline.service';
 
@@ -7,10 +9,11 @@ import { OutlineService } from 'src/app/services/outline.service';
   templateUrl: './outlines-material.component.html',
   styleUrls: ['./outlines-material.component.scss']
 })
-export class OutlinesMaterialComponent implements OnInit {
+export class OutlinesMaterialComponent implements OnInit, OnDestroy {
 
   outline: any;
   isLoaded = false;
+  routeSub: Subscription;
 
   columnDefs = ['Date', 'Topic', 'Description', 'Testimony/Case'];
 
@@ -21,14 +24,20 @@ export class OutlinesMaterialComponent implements OnInit {
     {'Date': '6/28', 'Topic' : 'Building partners @ work', 'Description': 'Next steps for your journey' }
   ]
   
-  constructor(private outlineService: OutlineService) { }
+  constructor(private outlineService: OutlineService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.getOutlineData();
+    this.routeSub = this.route.params.subscribe(params => {
+      this.getOutlineData(params['id']);
+    })
   }
 
-  getOutlineData() {
-    this.outlineService.getOutline().subscribe(outline => {
+  ngOnDestroy() {
+    this.routeSub.unsubscribe();
+  }
+
+  getOutlineData(id: number) {
+    this.outlineService.getOneOutline(id).subscribe(outline => {
       this.outline = outline;
 
       if (this.outline) {
@@ -36,7 +45,4 @@ export class OutlinesMaterialComponent implements OnInit {
       }
     })
   }
-
-
-
 }

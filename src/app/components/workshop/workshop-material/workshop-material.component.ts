@@ -4,6 +4,7 @@ import {
   Input,
   ViewChild,
   AfterViewInit,
+  OnDestroy,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -16,7 +17,7 @@ import { ScrolledToDirective } from 'src/app/utility/directives/scrolled-to.dire
   templateUrl: './workshop-material.component.html',
   styleUrls: ['./workshop-material.component.scss'],
 })
-export class WorkshopMaterialComponent implements OnInit, AfterViewInit {
+export class WorkshopMaterialComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('scrolledToElement') hightlightElement;
 
   workshop: any;
@@ -35,6 +36,10 @@ export class WorkshopMaterialComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {}
+
+  ngOnDestroy() {
+    this.routeSub.unsubscribe();
+  }
 
   getWorkshop(id: number) {
     this.workshopService.getOneWorkshop(id).subscribe((workshop) => {

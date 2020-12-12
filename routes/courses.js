@@ -15,4 +15,16 @@ router.get("/courses", async (req, res) => {
     }
 });
 
+router.get("/course/:id", async (req, res) => {
+
+  var id = req.params.id;
+  const course = await Courses.findOne({ id: id});
+
+  try {
+    res.send(course);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 module.exports = router;

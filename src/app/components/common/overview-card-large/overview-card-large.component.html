@@ -1,17 +1,21 @@
 <div class="card_wrapper">
   <div class="_flex_col">
     <div class="_flex_col post_image">
-      <div class="category">October 8th, 2021</div>
+      <div class="category">{{ outline?.date }}</div>
       <img src="/assets/images/mountains.jpg" />
     </div>
     <div class="_flex_col _flex_align_item_center _space_around text_wrapper">
       <div class="_flex_col _flex_align_item_center">
-        <div class="title_text">Finding purpose in a divided work environment</div>
-       
-          <div>Navigating the workplace</div>
-          <div>Instructor: Alex Smith</div>
-   
-
+        <div class="title_text">
+          {{ outline?.title }}
+        </div>
+        <div class="_flex _flex_wrap">
+          <span>Instructor(s):</span>
+          <div *ngFor="let instructor of outline?.instructors; let last = last">
+            <div *ngIf="last">{{ instructor }}</div>
+            <div *ngIf="!last">{{ instructor }},</div>
+          </div>
+        </div>
       </div>
       <button (click)="onClickViewOutline()">Find out more</button>
     </div>
