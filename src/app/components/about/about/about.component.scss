@@ -1,7 +1,7 @@
 @import "../../../../assets/scss/main.scss";
 
 .about_wrapper {
-  text-align: center;
+  // text-align: center;
   // padding: 70px;
 }
 
@@ -11,11 +11,16 @@
   letter-spacing: 3px;
 }
 
+.title_text_header_anim {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
 .title_subtext {
   font-size: 24px;
   letter-spacing: 0.36px;
   font-weight: 500;
-  text-align: center;
 }
 
 .title_text {
@@ -43,7 +48,6 @@
 .general_text {
   font-size: 22px;
   font-weight: 500;
-  text-align: justify;
 }
 
 .about_card {
@@ -136,6 +140,8 @@
   padding-top: 0px;
 }
 
+/* RESPONSIVE */
+
 @media only screen and (max-width: 1000px) {
   ._flex {
     flex-direction: column;
@@ -152,5 +158,17 @@
 
   img {
     width: 400px;
+  }
+
+  .title_text_header_anim {
+    display: none;
+  }
+
+  .title_text_header {
+    font-size: 40px;
+  }
+
+  .title_subtext {
+    font-size: 18px;
   }
 }

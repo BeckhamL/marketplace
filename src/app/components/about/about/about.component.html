@@ -1,14 +1,14 @@
-<div class="_flex_col _flex_align_item_start about_wrapper">
+<div class="">
   <div
     class="_flex_col _flex_align_item_center _justify_center header_section purple_background"
   >
-    <div class="_flex_col _flex_align_item_start">
+    <div class="_flex_col _flex_align_item_start section_wrapper">
       <div class="title_text_header">MARKETPLACE</div>
       <div class="title_subtext">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum
         dolor vel tempus pulvinar. Ut vitae leo metus. Duis felis metus,
       </div>
-      <div class="_flex title_text_header">
+      <div class="_flex title_text_header_anim">
         <div>Join us to:</div>
         <div id="element" class="site_color"></div>
       </div>
@@ -88,7 +88,6 @@
 
   <div
     class="_flex_col _flex_align_item_start section_wrapper green_background"
-    fxFlex="50%"
   >
     <div class="title_text">Explore.</div>
     <div class="sub_header_text">
@@ -131,7 +130,7 @@
     <div class="title_text">Team.</div>
     <div class="_flex _flex_align_item_center bio_wrapper">
       <div
-        class="image_wrapper"
+        class="_flex_col _flex_align_item_center image_wrapper"
         tooltipInfoPopup
         [tooltipText]="'Click to view more'"
         (click)="onClickOpenBioDetails()"
@@ -149,7 +148,7 @@
     </div>
 
     <div class="_flex _flex_align_item_center bio_wrapper">
-      <div class="image_wrapper">
+      <div class="_flex_col _flex_align_item_center image_wrapper">
         <img
           src="../../../../assets/images/maymie.jpg"
           class="bio_image"
