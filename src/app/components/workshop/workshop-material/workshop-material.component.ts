@@ -5,6 +5,8 @@ import {
   ViewChild,
   AfterViewInit,
 } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { Workshop } from 'src/app/models/workshop.model';
 import { WorkshopService } from 'src/app/services/workshop.service';
 import { ScrolledToDirective } from 'src/app/utility/directives/scrolled-to.directive';
@@ -20,20 +22,24 @@ export class WorkshopMaterialComponent implements OnInit, AfterViewInit {
   workshop: any;
   workshopData: any;
   isLoaded = false;
+  routeSub: Subscription;
 
-  constructor(private workshopService: WorkshopService) {}
+  constructor(private workshopService: WorkshopService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.workshop = null;
-    this.getWorkshop();
+    this.routeSub = this.route.params.subscribe(params => {
+      this.getWorkshop(params['id']);
+    });
+    
   }
 
   ngAfterViewInit() {}
 
-  getWorkshop() {
-    this.workshopService.getWorkshop().subscribe((workshop) => {
+  getWorkshop(id: number) {
+    this.workshopService.getOneWorkshop(id).subscribe((workshop) => {
       this.workshop = workshop;
-      this.workshopData = workshop[0];
+      this.workshopData = workshop;
 
       if (this.workshop && this.workshopData) {
         this.isLoaded = true;

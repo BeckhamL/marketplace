@@ -11,11 +11,19 @@ export class WorkshopService {
 
   }
 
-  getWorkshop() {
+  getAllWorkshops() {
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
     return this.httpClient.get('/workshops/workshops');
+  }
+
+  getOneWorkshop(id: number) {
+    console.log('go', id)
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+
+    return this.httpClient.get(`/workshops/workshop/${id}`);
   }
 }

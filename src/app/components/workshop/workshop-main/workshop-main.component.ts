@@ -119,7 +119,7 @@ export class WorkshopMainComponent implements OnInit {
     this.clickedWorkshopToShow = item;
   }
 
-  onClickViewMore() {
-    this.router.navigate(['/workshop/1']);
+  onClickViewMore(workshop) {
+    this.router.navigate([`/workshop/${workshop?.id}`]);
   }
 }

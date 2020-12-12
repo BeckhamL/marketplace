@@ -1,6 +1,6 @@
 <div class="workshop_list">
   <mat-accordion>
-    <mat-expansion-panel *ngFor="let item of fakeItems" (opened)="onExpansionPanelOpen(item)">
+    <mat-expansion-panel *ngFor="let item of workshops" (opened)="onExpansionPanelOpen(item)">
       <mat-expansion-panel-header>
         <mat-panel-title> {{item?.title}}</mat-panel-title>
       </mat-expansion-panel-header>

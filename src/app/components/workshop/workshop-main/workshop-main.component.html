@@ -29,7 +29,7 @@
         <div class="def_text">Click on a workshop to view</div>
       </div>
       <ng-template #showWorkshop>
-        <div class="workshop_summary_wrapper">
+        <div class="workshop_summary_wrapper" fxFlex="100%">
           <div class="workshop_title">{{ clickedWorkshopToShow?.title }}</div>
           <div class="_flex _flex_align_item_start">
             <div class="_flex_col" fxFlex="50%">
@@ -63,7 +63,7 @@
           <div>{{ clickedWorkshopToShow?.benefit }}</div>
           <div
             class="_flex _flex_align_item_center _justify_end read_more_text"
-            (click)="onClickViewMore()"
+            (click)="onClickViewMore(clickedWorkshopToShow)"
           >
             View full workshop <mat-icon>keyboard_arrow_right</mat-icon>
           </div>

@@ -5,11 +5,11 @@
   ></app-scroll-content-tracker>
   <div fxFlex="50%">
     <div class="_flex_col margin_bottom_40">
-      <div class="workshop_title">{{ workshop[0]?.title }}</div>
-      <div class="author_text">Written by {{ workshop[0]?.author }}</div>
+      <div class="workshop_title">{{ workshop?.title }}</div>
+      <div class="author_text">Written by {{ workshop?.author }}</div>
     </div>
 
-    <div *ngFor="let part of workshop[0]?.part; let i = index">
+    <div *ngFor="let part of workshop?.part; let i = index">
       <div>{{ part?.description }}</div>
       <div>Part {{ i + 1 }}</div>
       <div *ngFor="let topic of part?.topic">

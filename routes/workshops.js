@@ -15,4 +15,15 @@ router.get("/workshops", async (req, res) => {
     }
 });
 
+router.get("/workshop/:id", async (req, res) => {
+
+  var id = req.params.id;
+  const workshop = await Workshops.findOne({ id: id });
+  try {
+    res.send(workshop);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 module.exports = router;
