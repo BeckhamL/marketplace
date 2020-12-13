@@ -6,11 +6,6 @@
   background-color: $background-olive;
 }
 
-.image_wrapper {
-  height: 600px;
-  overflow: hidden;
-}
-
 .content_title_text {
   font-size: 50px;
   font-weight: bold;
@@ -48,8 +43,38 @@
 }
 
 img {
-  width: 100vw;
-  position: relative;
-  bottom: 500px;
+  width: 100%;
   filter: brightness(70%);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 945px) {
+  .title_text {
+    font-size: 50px;
+  }
+
+  .content_title_text {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .title_text {
+    font-size: 35px;
+  }
+
+  .content_title_text {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title_text {
+    font-size: 25px;
+  }
+
+  .outlines_wrapper {
+    margin-top: 56px;
+  }
 }
