@@ -12,6 +12,10 @@
   color: white;
 }
 
+.title_col {
+  max-width: 400px;
+}
+
 .header_text {
   font-weight: 500;
   color: $site-pink;
@@ -27,7 +31,6 @@
 .nav_text {
   font-weight: 500;
   color: white;
-  margin: 10px 0px;
 }
 
 .nav_text:hover {
@@ -35,6 +38,10 @@
   text-decoration: underline;
 }
 
-#title_col {
-  min-width: 400px;
+/* RESPONSIVE */
+
+@media only screen and (max-width:1350px) {
+  .marketplace_text {
+    font-size: 30px;
+  }
 }
