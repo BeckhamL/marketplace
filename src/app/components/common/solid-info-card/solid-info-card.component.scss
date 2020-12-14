@@ -34,3 +34,17 @@ mat-icon {
   height: 40px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1150px) {
+  .pop_text {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .pop_text {
+    max-width: 100%;
+    font-size: 35px;
+    //font-size: 4.082vw;
+  }
+}

@@ -470,6 +470,10 @@ common-image-carousel {
   margin-right: 200px;
 }
 
+.text_align_right {
+  text-align: right;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 2560px) {
@@ -481,12 +485,6 @@ common-image-carousel {
 @media only screen and (max-width: 1860px) {
   .header_image {
     height: 90%;
-  }
-}
-
-@media only screen and (max-width: 1815px) {
-  .tools_image {
-    width: 22.039vw;
   }
 }
 
@@ -522,13 +520,6 @@ common-image-carousel {
   }
 }
 
-@media only screen and (max-width: 1500px) {
-  #workplace_text {
-    max-height: 440px;
-    font-size: 1.2vw;
-  }
-}
-
 @media only screen and (max-width: 1440px) {
   .header_image {
     height: 50%;
@@ -541,19 +532,93 @@ common-image-carousel {
 
 @media only screen and (max-width: 1300px) {
   #workplace_tools_section {
-    max-height: 440px;
-    font-size: 1.385vw;
+    width: 50%;
   }
 
-  .tools_info_wrapper {
-    div:nth-child(1) {
-      font-size: 1.846vw;
+  #workplace_section {
+    flex-direction: column;
+  }
+
+  #workplace_text {
+    width: 60%;
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .count_card {
+    div:nth-child(2) {
+      font-size: 4.800vw;
     }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .tools_info, #workplace_text {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .tools_info, #workplace_text {
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .landing_page_wrapper {
     padding: 0 5rem;
+  }
+  
+  .section_1 {
+    .section_1_text {
+      font-size: 5.859vw;
+    }
+  }
+
+  .info_card_title {
+    font-size: 4.883vw;
+  }
+
+  .info_card_desc {
+    font-size: 1.758vw;
+  }
+
+  .tools_image {
+    width: 39.063vw;
+    height: auto;
+    right: -10%;
+    bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .tools_info, #workplace_text {
+    width: 90%;
+  }
+
+  .tools_image {
+    right: -5%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #course_header_text {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .landing_page_wrapper {
+    padding: 0 2.5rem;
+  }
+
+  .section_1 {
+    margin-bottom: 250px;
+  }
+
+  .section1_corner {
+    bottom: -210px;
   }
 }
