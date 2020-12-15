@@ -1,15 +1,6 @@
 <div class="_flex workshop_wrapper">
-  <div class="_flex_col _flex_align_item_center list_background" fxFlex="30%">
-    <div class="list_title">Current workshops</div>
-    <div class="list_subtext">Click on a workshop to view details</div>
-    <app-workshop-list
-      (clickedWorkshop)="onShowWorkshop($event)"
-      class="margin_top_30 width_100"
-    ></app-workshop-list>
-  </div>
-
   <div class="_flex_col" fxFlex="70%">
-    <div class="_flex _flex_align_item_start _space_between content_wrapper">
+    <div class="_flex _flex_align_item_start _justify_center content_wrapper">
       <div
         class="_flex_col"
         *ngIf="!clickedWorkshopToShow; else showWorkshop"
@@ -88,5 +79,13 @@
         </div>
       </ng-template>
     </div>
+  </div>
+  <div class="_flex_col _flex_align_item_center list_background" fxFlex="30%">
+    <div class="list_title">Current workshops</div>
+    <div class="list_subtext">Click on a workshop to view details</div>
+    <app-workshop-list
+      (clickedWorkshop)="onShowWorkshop($event)"
+      class="margin_top_30 width_100"
+    ></app-workshop-list>
   </div>
 </div>
