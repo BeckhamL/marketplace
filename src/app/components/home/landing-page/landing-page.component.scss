@@ -411,6 +411,7 @@ app-icon-button {
 .count_card {
   padding: 20px;
   border-left: 5px dotted #5529c6;
+  width: 30%;
 
   div:nth-child(1) {
     font-size: 50px;
@@ -600,6 +601,16 @@ common-image-carousel {
 
   .tools_image {
     right: -5%;
+  }
+
+  .count_card_wrapper {
+    flex-direction: column;
+  }
+
+  .count_card {
+    border-top: 5px dotted #5529c6;
+    border-left: none;
+    width: 100%;
   }
 }
 

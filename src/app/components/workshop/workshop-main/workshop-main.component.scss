@@ -8,11 +8,20 @@
 
 .list_background {
   background-color: white;
-  padding: 20px 0px;
+  padding: 20px;
 }
 
 .list_inner {
   position: fixed;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  margin-bottom: -1px;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  margin: 40px 0px;
 }
 
 .list_title {
@@ -31,18 +40,17 @@
 }
 
 .title_text {
-  position: absolute;
   font-size: 60px;
   font-weight: 500;
   letter-spacing: 1px;
-  right: 20px;
-  top: 300px;
-  color: white;
+  color: black;
+}
 
-  span {
-    color: $site-pink;
-    font-weight: bold;
-  }
+.subheader_text {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: black;
 }
 
 .search_img {
@@ -134,4 +142,18 @@ ul {
   position: relative;
   top: -200px;
   filter: brightness(50%);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1095px) {
+  .title_text {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .workshop_wrapper {
+    flex-direction: column;
+  }
 }

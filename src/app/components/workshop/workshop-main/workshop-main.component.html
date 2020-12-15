@@ -1,5 +1,5 @@
 <div class="_flex workshop_wrapper">
-  <div class="_flex_col _flex_align_item_center list_background" fxFlex="20%">
+  <div class="_flex_col _flex_align_item_center list_background" fxFlex="30%">
     <div class="list_title">Current workshops</div>
     <div class="list_subtext">Click on a workshop to view details</div>
     <app-workshop-list
@@ -8,25 +8,43 @@
     ></app-workshop-list>
   </div>
 
-  <div class="_flex_col" fxFlex="80%">
-    <div class="image_wrapper">
-      <img src="/assets/images/meeting.jpg" class="header_img" />
-    </div>
-    <div class="title_text">
-      Find <span>WORKSHOPS</span> that peak <br />
-      your curiosity and interest.
-    </div>
-
-    <div
-      class="_flex _flex_align_item_start _space_between content_wrapper"
-      [ngClass]="{ _justify_center: !clickedWorkshopToShow }"
-    >
+  <div class="_flex_col" fxFlex="70%">
+    <div class="_flex _flex_align_item_start _space_between content_wrapper">
       <div
-        class="_flex_col _flex_align_item_center"
+        class="_flex_col"
         *ngIf="!clickedWorkshopToShow; else showWorkshop"
+        fxFlex="60%"
       >
-        <img src="/assets/images/searching.svg" class="search_img" />
-        <div class="def_text">Click on a workshop to view</div>
+        <div class="title_text">Getting started</div>
+        <div>
+          This page is an overview of the workshops documentation and related
+          resources.
+        </div>
+        <hr />
+        <div class="subheader_text">What are workshops?</div>
+        <div>
+          If you prefer to use your own text editor, you can also download this
+          HTML file, edit it, and open it from the local filesystem in your
+          browser. It does a slow runtime code transformation, so we’d only
+          recommend using this for simple demos.
+        </div>
+        <hr />
+        <div class="subheader_text">How long are workshops?</div>
+        <div>
+          If you prefer to use your own text editor, you can also download this
+          HTML file, edit it, and open it from the local filesystem in your
+          browser. It does a slow runtime code transformation, so we’d only
+          recommend using this for simple demos.
+        </div>
+        <hr />
+        <div class="subheader_text">What do I learn from workshops?</div>
+        <div>
+          If you prefer to use your own text editor, you can also download this
+          HTML file, edit it, and open it from the local filesystem in your
+          browser. It does a slow runtime code transformation, so we’d only
+          recommend using this for simple demos.
+        </div>
+        <hr />
       </div>
       <ng-template #showWorkshop>
         <div class="workshop_summary_wrapper" fxFlex="100%">
