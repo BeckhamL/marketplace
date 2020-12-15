@@ -118,7 +118,7 @@
           <div class="section_header_subtext">
             Course outlines <span>Specific scenarios</span>
           </div>
-          <div class="section_header_text">
+          <div class="section_header_text" id="course_header_text">
             Learn together, <br />
             see progress together
           </div>
@@ -162,7 +162,7 @@
         </div>
       </div>
     </div>
-    <div class="_flex _flex_align_item_center _space_between" fxFlex="100%">
+    <div class="_flex _flex_align_item_center _space_between" fxFlex="100%" id="workplace_section">
       <div class="_flex _flex_align_item_center tools_info">
         <div class="_flex_col" id="workplace_tools_section">
           <div class="_flex _flex_align_item_center _flex_wrap">
@@ -269,7 +269,7 @@
     <div class="_flex _space_between">
       <div class="blog_section_content" fxFlex="50%">
         <div class="_flex_col _flex_align_item_end workshops_info_wrapper">
-          <div>Understanding my role</div>
+          <div class="text_align_right">Understanding my role</div>
           <div class="text_end">
             Work smart and hard <br />
             but work in God's timing
@@ -283,7 +283,7 @@
           </div>
         </div>
         <div class="_flex_col _flex_align_item_end workshops_info_wrapper">
-          <div>Continuing to learn</div>
+          <div class="text_align_right">Continuing to learn</div>
           <div class="text_end">
             Even at the peak of <br />
             your career, learn to move forward
@@ -327,7 +327,7 @@
       </div>
       <div>Songs</div>
       <div>Get started to find meaning in the marketplace</div>
-      <common-button></common-button>
+      <common-button [title]="'Songs'"></common-button>
     </div>
   </div>
 
