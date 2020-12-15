@@ -81,8 +81,10 @@
     </div>
   </div>
   <div class="_flex_col _flex_align_item_center list_background" fxFlex="30%">
-    <div class="list_title">Current workshops</div>
-    <div class="list_subtext">Click on a workshop to view details</div>
+    <div class="list_header">
+      <div class="list_title">Current workshops</div>
+      <div class="list_subtext">Click on a workshop to view details</div>
+    </div>
     <app-workshop-list
       (clickedWorkshop)="onShowWorkshop($event)"
       class="margin_top_30 width_100"

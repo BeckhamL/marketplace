@@ -612,6 +612,14 @@ common-image-carousel {
     border-left: none;
     width: 100%;
   }
+
+  .email_image {
+    display: none;
+  }
+
+  .section_header_text {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 780px) {

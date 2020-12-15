@@ -8,20 +8,10 @@
 
 .list_background {
   background-color: white;
-  padding: 70px;
 }
 
-.list_inner {
-  position: fixed;
-}
-
-hr {
-  height: 1px;
-  width: 100%;
-  margin-bottom: -1px;
-  border: none;
-  border-bottom: 1px solid #c1c1c1;
-  margin: 40px 0px;
+.list_header {
+  padding: 70px 70px 0px 70px;
 }
 
 .list_title {
@@ -101,10 +91,6 @@ hr {
   margin-bottom: 10px;
 }
 
-.workshop_description {
-  //margin-bottom: 40px;
-}
-
 .read_more_text {
   cursor: pointer;
   font-size: 20px;
@@ -135,6 +121,16 @@ ul {
   margin: 0;
   text-decoration: none;
 }
+
+hr {
+  height: 1px;
+  width: 100%;
+  margin-bottom: -1px;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  margin: 40px 0px;
+}
+
 
 .image_wrapper {
   height: 600px;

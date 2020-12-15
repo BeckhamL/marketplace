@@ -1,12 +1,46 @@
 @import "../../../../assets/scss/main.scss";
 
-// .share_wrapper {
-//   margin: 10px;
-// }
+.header_text {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.icon_wrapper {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+  .background_div {
+    box-shadow: 0px 1px 6px #00000029;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    left: -10px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+  }
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+.whatsapp {
+  background-color: #4ac959;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.google {
+  background-color: #db4437;
+}
 
 img {
-  cursor: pointer;
   width: 40px;
   height: 40px;
-  margin: 10px 20px 10px 0px;
 }
