@@ -16,7 +16,7 @@ export class WorkshopService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get('/workshops/workshops');
+    return this.httpClient.get('http://localhost:3000/workshops/workshops');
   }
 
   getOneWorkshop(id: number) {
@@ -24,6 +24,6 @@ export class WorkshopService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    return this.httpClient.get(`/workshops/workshop/${id}`);
+    return this.httpClient.get(`http://localhost:3000/workshops/workshop/${id}`);
   }
 }

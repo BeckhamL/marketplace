@@ -35,7 +35,7 @@
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 3px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .title_subtext {
@@ -472,6 +472,18 @@ common-image-carousel {
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 2560px) {
+  .header_image {
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 1860px) {
+  .header_image {
+    height: 90%;
+  }
+}
+
 @media only screen and (max-width: 1750px) {
   #workshops_view_more_button, #case_studies_view_more_button {
     margin-top: 20px;
@@ -601,6 +613,14 @@ common-image-carousel {
     border-top: 5px dotted #5529c6;
     border-left: none;
     width: 100%;
+  }
+
+  .email_image {
+    display: none;
+  }
+
+  .section_header_text {
+    font-size: 30px;
   }
 }
 

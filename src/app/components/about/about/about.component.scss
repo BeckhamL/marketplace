@@ -1,10 +1,5 @@
 @import "../../../../assets/scss/main.scss";
 
-.about_wrapper {
-  // text-align: center;
-  // padding: 70px;
-}
-
 .title_text_header {
   font-size: 80px;
   font-weight: bold;
@@ -82,8 +77,7 @@
 
 .section_wrapper {
   padding: 70px;
-  display: flex;
-  justify-content: center;
+  width: 90%;
 }
 
 .beige_background {
@@ -119,7 +113,7 @@
 }
 
 .header_section {
-  padding-top: 10rem;
+  padding-top: 4rem;
   width: 100%;
   color: white;
 }
