@@ -3,6 +3,7 @@
 .footer_wrapper {
   padding: 70px;
   background-color: #330033;
+  width: 100%;
 }
 
 .marketplace_text {
@@ -53,5 +54,12 @@
 @media only screen and (max-width:1200px) {
   #marketplace_section {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  .footer_wrapper {
+    overflow: auto;
+    min-width: 425px;   
   }
 }
