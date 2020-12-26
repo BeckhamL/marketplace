@@ -43,6 +43,11 @@
 .general_text {
   font-size: 22px;
   font-weight: 500;
+
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
 .about_card {
@@ -77,7 +82,8 @@
 
 .section_wrapper {
   padding: 70px;
-  width: 90%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .beige_background {
@@ -163,6 +169,10 @@
   }
 
   .title_subtext {
+    font-size: 18px;
+  }
+
+  .general_text {
     font-size: 18px;
   }
 }

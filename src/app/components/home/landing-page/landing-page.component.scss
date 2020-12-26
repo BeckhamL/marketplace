@@ -40,7 +40,16 @@
 
 .title_subtext {
   font-size: 30px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.title_passage {
+  margin-bottom: 2rem;
+  font-style: italic;
+
+  span {
+    font-style: normal;
+  }
 }
 
 .section_regular_text {
@@ -597,6 +606,11 @@ common-image-carousel {
 }
 
 @media only screen and (max-width: 850px) {
+
+  .header_image {
+    display: none;
+  }
+  
   .tools_info, #workplace_text {
     width: 90%;
   }
