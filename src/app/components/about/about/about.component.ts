@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
       smartBackspace: true,
       loop: true,
       showCursor: false,
-      shuffle: true,
+      shuffle: false
     });
   }
 

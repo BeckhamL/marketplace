@@ -1,5 +1,7 @@
 <mat-toolbar class="_flex _space_between">
-  <div class="header_title" (click)="onClickNavigation('')"><mat-icon>storefront</mat-icon></div>
+  <div class="header_title" (click)="onClickNavigation('')">
+    <mat-icon>storefront</mat-icon>
+  </div>
   <div class="_flex _flex_align_item_center" *ngIf="innerWidth > 1000">
     <div
       class="content_tab"
@@ -8,12 +10,20 @@
     >
       About
     </div>
-    <div
+    <!-- <div
       class="content_tab"
       (click)="onClickNavigation('workshops')"
       [ngClass]="{ activeRoute: currentRoute === 'workshops' }"
     >
       Workshops
+    </div> -->
+    <div
+      class="content_tab"
+      class="content_tab"
+      (click)="onClickNavigation('rethinking-my-work')"
+      [ngClass]="{ activeRoute: currentRoute === 'rethinking-my-work' }"
+    >
+      Rethinking my work
     </div>
     <div
       class="content_tab"
@@ -33,12 +43,12 @@
     </div>
     <div class="content_tab">Case Studies</div>
     <div
-    class="content_tab"
-    (click)="onClickNavigation('tools')"
-    [ngClass]="{ activeRoute: currentRoute === 'tools' }"
-  >
-    Tools
-  </div>
+      class="content_tab"
+      (click)="onClickNavigation('toolbox')"
+      [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
+    >
+      Toolbox
+    </div>
   </div>
   <div *ngIf="innerWidth < 1000">
     <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
@@ -54,7 +64,9 @@
         </div>
       </button>
       <button mat-menu-item>
-        <div class="content_tab_small" (click)="onClickNavigation('outlines')">Course Outline</div>
+        <div class="content_tab_small" (click)="onClickNavigation('outlines')">
+          Course Outline
+        </div>
       </button>
     </mat-menu>
   </div>

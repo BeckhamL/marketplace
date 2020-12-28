@@ -9,17 +9,19 @@ import { WorkshopMaterialComponent } from './components/workshop/workshop-materi
 import { OutlinesMaterialComponent } from './components/outlines/outlines-material/outlines-material.component';
 import { BlogMaterialComponent } from './components/blogs/blog-material/blog-material.component';
 import { ToolsMainComponent } from './components/tools/tools-main/tools-main.component';
-
+import { RethinkingMainComponent } from './components/rethinking-my-work/rethinking-main/rethinking-main.component';
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'rethinking-my-work', component: RethinkingMainComponent },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },
   { path: 'outline/:id', component: OutlinesMaterialComponent },
   { path: 'blogs', component: BlogMainComponent },
   { path: 'blog/:id', component: BlogMaterialComponent },
-  { path: 'tools', component: ToolsMainComponent },
+  { path: 'toolbox', component: ToolsMainComponent },
+  
 ];
 
 @NgModule({
