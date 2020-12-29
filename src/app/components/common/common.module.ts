@@ -23,6 +23,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { BlogCarouselComponent } from './blog-carousel/blog-carousel.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { SignupComponent } from './signup/signup.component';
+import { StepperComponent } from './stepper/stepper.component';
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule],
@@ -46,7 +47,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TextImageCarouselComponent,
     BlogCarouselComponent,
     ImageCarouselComponent,
-    SignupComponent
+    SignupComponent,
+    StepperComponent
   ],
   declarations: [
     HeaderComponent,
@@ -68,7 +70,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TextImageCarouselComponent,
     BlogCarouselComponent,
     ImageCarouselComponent,
-    SignupComponent
+    SignupComponent,
+    StepperComponent
   ],
 })
 export class CommonComponentModule {}

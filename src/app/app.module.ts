@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ToolsModule } from '../app/components/tools/tools.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinking-my-work.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -35,7 +36,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     IvyCarouselModule,
     ToolsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RethinkingMyWorkModule
   ],
   providers: [],
   bootstrap: [AppComponent],

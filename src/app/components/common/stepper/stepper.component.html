@@ -1,0 +1,5 @@
+<mat-horizontal-stepper>
+  <mat-step *ngFor="let stepper of stepperConfig">
+    <ng-template matStepLabel>{{ stepper?.label }}</ng-template>
+  </mat-step>
+</mat-horizontal-stepper>
