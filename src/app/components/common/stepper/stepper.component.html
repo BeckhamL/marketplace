@@ -1,5 +1,17 @@
 <mat-horizontal-stepper>
-  <mat-step *ngFor="let stepper of stepperConfig">
-    <ng-template matStepLabel>{{ stepper?.label }}</ng-template>
+  <mat-step>
+    <ng-template matStepLabel>Where am I?</ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Where have I been?</ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>What's my passion?</ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Where do I want to go?</ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>What's holding me back?</ng-template>
   </mat-step>
 </mat-horizontal-stepper>

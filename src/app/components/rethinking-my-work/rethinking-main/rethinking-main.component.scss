@@ -1,5 +1,10 @@
-@import '../../../../assets/scss/main.scss';
+@import "../../../../assets/scss/main.scss";
 
 .rethinking_wrapper {
-    padding: 70px;
+  padding: 70px;
+  margin-top: 64px;
+}
+
+.title_text {
+    font-size: 4rem;
 }
