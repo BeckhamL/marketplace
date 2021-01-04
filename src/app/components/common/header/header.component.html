@@ -19,7 +19,6 @@
     </div> -->
     <div
       class="content_tab"
-      class="content_tab"
       (click)="onClickNavigation('rethinking-my-work')"
       [ngClass]="{ activeRoute: currentRoute === 'rethinking-my-work' }"
     >
@@ -27,22 +26,26 @@
     </div>
     <div
       class="content_tab"
-      class="content_tab"
       (click)="onClickNavigation('recreating-my-work')"
       [ngClass]="{ activeRoute: currentRoute === 'recreating-my-work' }"
     >
       Recreating my work
     </div>
-    <div
+    <!-- <div
       class="content_tab"
       class="content_tab"
       (click)="onClickNavigation('outlines')"
       [ngClass]="{ activeRoute: currentRoute === 'outlines' }"
     >
       Course Outlines
-    </div>
+    </div> -->
     <div
       class="content_tab"
+      (click)="onClickNavigation('stories')"
+    >
+      Snapshots and Stories
+    </div>
+    <div
       class="content_tab"
       (click)="onClickNavigation('blogs')"
       [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
