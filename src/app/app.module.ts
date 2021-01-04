@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,6 +17,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ToolsModule } from '../app/components/tools/tools.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinking-my-work.module';
+import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreating-my-work.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -37,7 +37,8 @@ import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinki
     IvyCarouselModule,
     ToolsModule,
     ReactiveFormsModule,
-    RethinkingMyWorkModule
+    RethinkingMyWorkModule,
+    RecreatinggMyWorkModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,10 +10,13 @@ import { OutlinesMaterialComponent } from './components/outlines/outlines-materi
 import { BlogMaterialComponent } from './components/blogs/blog-material/blog-material.component';
 import { ToolsMainComponent } from './components/tools/tools-main/tools-main.component';
 import { RethinkingMainComponent } from './components/rethinking-my-work/rethinking-main/rethinking-main.component';
+import { RecreatingMainComponent } from './components/recreating-my-work/recreating-main/recreating-main.component';
+
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'rethinking-my-work', component: RethinkingMainComponent },
+  { path: 'recreating-my-work', component: RecreatingMainComponent },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },
