@@ -1,0 +1,11 @@
+@import '../../../assets/scss/main.scss';
+
+.download_button {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+    mat-icon {
+        margin-right: 5px;
+    }
+}

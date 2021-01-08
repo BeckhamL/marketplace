@@ -25,8 +25,9 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
 import { SignupComponent } from './signup/signup.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DataFilesModule } from 'src/app/data-files/data-files.module';
 @NgModule({
-  imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule],
+  imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule, DataFilesModule],
   exports: [
     HeaderComponent,
     ScrollContentTrackerComponent,

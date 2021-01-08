@@ -18,6 +18,7 @@ import { ToolsModule } from '../app/components/tools/tools.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinking-my-work.module';
 import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreating-my-work.module';
+import { DataFilesModule } from './data-files/data-files.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -38,7 +39,8 @@ import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreat
     ToolsModule,
     ReactiveFormsModule,
     RethinkingMyWorkModule,
-    RecreatinggMyWorkModule
+    RecreatinggMyWorkModule,
+    DataFilesModule
   ],
   providers: [],
   bootstrap: [AppComponent],
