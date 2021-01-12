@@ -1,7 +1,8 @@
 <div class="blog_card_wrapper">
-  <img src="../../../../assets/images/learn.svg">
+  <img src="../../../../assets/images/learn.svg" />
   <div class="_flex_col">
-    <div class="blog_title">3 Common mistakes when finding a job</div>
-    <div>David</div>
+    <div class="blog_title">{{ title }}</div>
+    <div>{{ description }}</div>
+    <common-button [title]="buttonTitle" (click)="onEmit()"></common-button>
   </div>
 </div>

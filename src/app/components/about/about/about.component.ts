@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import Typed from 'typed.js';
 import { BioDetailsComponent } from '../bio-details/bio-details.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -10,7 +11,7 @@ import { BioDetailsComponent } from '../bio-details/bio-details.component';
 export class AboutComponent implements OnInit {
 
   typed: Typed;
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
     this.typed = new Typed('#element', {
@@ -29,6 +30,11 @@ export class AboutComponent implements OnInit {
     const dialogRef = this.dialog.open(BioDetailsComponent, {
       width: '500px'
     })
+  }
+
+  onViewMore(route: string) {
+    console.log('here')
+    this.router.navigate(['/' + route])
   }
 
 }

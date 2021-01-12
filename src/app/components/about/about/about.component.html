@@ -38,21 +38,58 @@
 <div
   class="_flex_col _flex_align_item_start section_wrapper beige_background no_top_padding"
 >
-
   <div class="title_text">Our Mission.</div>
   <div class="general_text">
     To help people discover meaning, mission and ministry in their work.
   </div>
-  <br>
+  <br />
   <div class="general_text">
-    Welcome to <span>Work-as-Mission</span>, where ordinary people discover how to make a
-    difference through purposeful work. You can discover your mission and
-    fulfill it. You’ll find tools to get you started and ideas to help you press
-    on. Connect with like-minded partners as you clarify your purpose!
+    Welcome to <span>Work-as-Mission</span>, where ordinary people discover how
+    to make a difference through purposeful work. You can discover your mission
+    and fulfill it. You’ll find tools to get you started and ideas to help you
+    press on. Connect with like-minded partners as you clarify your purpose!
   </div>
 </div>
 
 <div class="_flex_col _flex_align_item_start section_wrapper">
+  <div class="title_text">Your Unique Role.</div>
+  <div class="_flex_col _space_evenly">
+    <h1>You can make a difference at work!</h1>
+    <div class="general_text">
+      You are God’s masterpiece. You have a destiny to fulfill.
+    </div>
+    <br />
+    <div class="general_text">
+      Your situation may seem otherwise right now. You may see yourself as a
+      nobody at work, perhaps at the mercy of your boss yet having to put on
+      your best smile for customers. You may be looking for a job, or pondering
+      a new career, or even asking God to lead you into the clergy. You may be
+      seeking a new direction. But God says you are His masterpiece, and you are
+      destined to take part in His amazing work (Ephesians 2:10). As long as you
+      are in the marketplace, you need to discover your unique role and make a
+      difference.
+    </div>
+    <br />
+    <div class="general_text">
+      God is not confined to a church building. His work of renewal and
+      transformation reaches into every corner of society! Jesus commissioned us
+      to bring the Good News to people everywhere – to show and tell them that
+      God wants to renew the world, including our marketplaces! This Great
+      Commission does not stop with sharing a gospel tract, but requires us to
+      live faithfully and consistently at work.
+    </div>
+    <br />
+    <div class="general_text">
+      Are you absolutely clear about your role in the marketplace? Why did God
+      put you in your present profession? Are you aware of Jesus’ presence in
+      the workplace? Did you know that the Holy Spirit is your
+      <b><i>Partner</i></b> at work? We invite you to dig deeper and join us on
+      a journey of discovery!
+    </div>
+  </div>
+</div>
+
+<!-- <div class="_flex_col _flex_align_item_start section_wrapper">
   <div class="title_text">Vision & Plan.</div>
   <div class="_flex _space_evenly">
     <div class="_flex_col" fxFlex="30%">
@@ -82,39 +119,30 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="_flex_col _flex_align_item_start section_wrapper green_background">
-  <div class="title_text">Explore.</div>
-  <div class="sub_header_text">3 areas of word to discover and re-imagine:</div>
+  <div class="title_text">Come!</div>
+  <h1>
+    Take the next steps to discover meaning, mission and ministry at work!
+  </h1>
   <div class="_flex _flex_align_item_center _space_evenly margin_top_40">
-    <div class="_flex_col" fxFlex="20%">
-      <div class="explore_subtext">I enjoy work</div>
-      <div class="general_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor
-        justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta non
-        lorem ac, volutpat ullamcorper nisl.
-      </div>
-      <common-button [title]="'View More'"></common-button>
-    </div>
-    <div class="_flex_col" fxFlex="20%">
-      <div class="explore_subtext">I dislike work</div>
-      <div class="general_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor
-        justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta non
-        lorem ac, volutpat ullamcorper nisl.
-      </div>
-      <common-button [title]="'View More'"></common-button>
-    </div>
-    <div class="_flex_col" fxFlex="20%">
-      <div class="explore_subtext">I'm lost</div>
-      <div class="general_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor
-        justo quam, quis molestie arcu elementum et. Etiam leo nulla, porta non
-        lorem ac, volutpat ullamcorper nisl.
-      </div>
-      <common-button [title]="'View More'"></common-button>
-    </div>
+    <common-blog-card
+      [title]="'Discover mission @ work'"
+      [description]="'Access your marketplace. Know who you\'re serving.'"
+      [buttonTitle]="'View More'"
+      (emitButton)="onViewMore('rethinking-my-work')"
+    ></common-blog-card>
+    <common-blog-card
+      [title]="'Build ministry @ work'"
+      [description]="'A step-by-step approach to serving God and people.'"
+      [buttonTitle]="'View More'"
+    ></common-blog-card>
+    <common-blog-card
+      [title]="'Toolbox'"
+      [description]="'Get the tools to navigate your workplace.'"
+      [buttonTitle]="'View More'"
+    ></common-blog-card>
   </div>
 </div>
 
@@ -169,7 +197,7 @@
     </div>
   </div>
 
-  <div class="_flex _flex_align_item_center _space_between bio_wrapper">
+  <!-- <div class="_flex _flex_align_item_center _space_between bio_wrapper">
     <div class="_flex_col _flex_align_item_center image_wrapper">
       <img
         src="../../../../assets/images/maymie.jpg"
@@ -189,7 +217,7 @@
         eget leo posuere, congue turpis semper, aliquet mi.
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <div class="_flex_col _flex_align_item_start section_wrapper">
