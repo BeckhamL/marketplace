@@ -15,7 +15,7 @@ import { RecreatingMainComponent } from './components/recreating-my-work/recreat
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'rethinking-my-work', component: RethinkingMainComponent },
+  { path: 'discover-@-work', component: RethinkingMainComponent },
   { path: 'recreating-my-work', component: RecreatingMainComponent },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
