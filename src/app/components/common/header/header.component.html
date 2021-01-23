@@ -19,17 +19,17 @@
     </div> -->
     <div
       class="content_tab"
-      (click)="onClickNavigation('discover-@-work')"
-      [ngClass]="{ activeRoute: currentRoute === 'discover-@-work' }"
+      (click)="onClickNavigation('mission-@-work')"
+      [ngClass]="{ activeRoute: currentRoute === 'mission-@-work' }"
     >
-      Discover Mission @ Work
+      Mission @ Work
     </div>
     <div
       class="content_tab"
-      (click)="onClickNavigation('recreating-my-work')"
-      [ngClass]="{ activeRoute: currentRoute === 'recreating-my-work' }"
+      (click)="onClickNavigation('ministry-@-work')"
+      [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
     >
-      Recreating my work
+      Ministry @ work
     </div>
     <!-- <div
       class="content_tab"
@@ -41,9 +41,13 @@
     </div> -->
     <div
       class="content_tab"
-      (click)="onClickNavigation('stories')"
+      (click)="onClickNavigation('toolbox')"
+      [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
     >
-      Snapshots and Stories
+      Toolbox
+    </div>
+    <div class="content_tab" (click)="onClickNavigation('Snapshots')">
+      Snapshots
     </div>
     <div
       class="content_tab"
@@ -51,13 +55,6 @@
       [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
     >
       Blogs
-    </div>
-    <div
-      class="content_tab"
-      (click)="onClickNavigation('toolbox')"
-      [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
-    >
-      Toolbox
     </div>
   </div>
   <div *ngIf="innerWidth < 1000">
