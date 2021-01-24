@@ -1,80 +1,68 @@
-<mat-toolbar class="_flex _space_between">
-  <div class="header_title" (click)="onClickNavigation('')">
-    <mat-icon>storefront</mat-icon>
+<div class="navbar">
+  <div class="navbar-brand" (click)="onClickNavigation('')">
+    <a class="navbar-item">
+      <img src="../../../../assets/images/marketplace_logo.jpg" class="image" />
+    </a>
   </div>
-  <div class="_flex _flex_align_item_center" *ngIf="innerWidth > 1000">
-    <div
-      class="content_tab"
+  <div class="navbar-end">
+    <a
+      class="navbar-item"
       (click)="onClickNavigation('about')"
       [ngClass]="{ activeRoute: currentRoute === 'about' }"
     >
       About
-    </div>
-    <!-- <div
-      class="content_tab"
-      (click)="onClickNavigation('workshops')"
-      [ngClass]="{ activeRoute: currentRoute === 'workshops' }"
-    >
-      Workshops
-    </div> -->
-    <div
-      class="content_tab"
+    </a>
+    <a
+      class="navbar-item"
       (click)="onClickNavigation('mission-@-work')"
       [ngClass]="{ activeRoute: currentRoute === 'mission-@-work' }"
     >
       Mission @ Work
-    </div>
-    <div
-      class="content_tab"
+    </a>
+    <a
+      class="navbar-item"
       (click)="onClickNavigation('ministry-@-work')"
       [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
     >
       Ministry @ work
-    </div>
-    <!-- <div
-      class="content_tab"
-      class="content_tab"
-      (click)="onClickNavigation('outlines')"
-      [ngClass]="{ activeRoute: currentRoute === 'outlines' }"
-    >
-      Course Outlines
-    </div> -->
-    <div
-      class="content_tab"
+    </a>
+    <a
+      class="navbar-item"
       (click)="onClickNavigation('toolbox')"
       [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
     >
       Toolbox
-    </div>
-    <div class="content_tab" (click)="onClickNavigation('Snapshots')">
+  </a>
+    <a class="navbar-item" (click)="onClickNavigation('Snapshots')">
       Snapshots
-    </div>
-    <div
-      class="content_tab"
+    </a>
+    <a
+      class="navbar-item"
       (click)="onClickNavigation('blogs')"
       [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
     >
       Blogs
-    </div>
+  </a>
   </div>
-  <div *ngIf="innerWidth < 1000">
-    <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <div class="content_tab_small" (click)="onClickNavigation('about')">
-          About
-        </div>
-      </button>
-      <button mat-menu-item>
-        <div class="content_tab_small" (click)="onClickNavigation('workshops')">
-          Workshop
-        </div>
-      </button>
-      <button mat-menu-item>
-        <div class="content_tab_small" (click)="onClickNavigation('outlines')">
-          Course Outline
-        </div>
-      </button>
-    </mat-menu>
-  </div>
-</mat-toolbar>
+</div>
+
+<!-- <div *ngIf="innerWidth < 1000">
+  <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <div class="content_tab_small" (click)="onClickNavigation('about')">
+        About
+      </div>
+    </button>
+    <button mat-menu-item>
+      <div class="content_tab_small" (click)="onClickNavigation('workshops')">
+        Workshop
+      </div>
+    </button>
+    <button mat-menu-item>
+      <div class="content_tab_small" (click)="onClickNavigation('outlines')">
+        Course Outline
+      </div>
+    </button>
+  </mat-menu>
+</div> -->
