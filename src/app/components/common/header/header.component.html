@@ -32,8 +32,14 @@
       [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
     >
       Toolbox
-  </a>
-    <a class="navbar-item" (click)="onClickNavigation('Snapshots')">
+    </a>
+    <a
+      class="navbar-item"
+      (click)="onClickNavigation('contact')"
+      [ngClass]="{ activeRoute: currentRoute === 'contact' }"
+      >Contact</a
+    >
+    <!-- <a class="navbar-item" (click)="onClickNavigation('Snapshots')">
       Snapshots
     </a>
     <a
@@ -42,7 +48,7 @@
       [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
     >
       Blogs
-  </a>
+  </a> -->
   </div>
 </div>
 

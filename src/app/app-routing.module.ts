@@ -11,6 +11,7 @@ import { BlogMaterialComponent } from './components/blogs/blog-material/blog-mat
 import { ToolsMainComponent } from './components/tools/tools-main/tools-main.component';
 import { RethinkingMainComponent } from './components/rethinking-my-work/rethinking-main/rethinking-main.component';
 import { RecreatingMainComponent } from './components/recreating-my-work/recreating-main/recreating-main.component';
+import { ContactComponent } from './components/contact/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -24,7 +25,7 @@ const routes: Routes = [
   { path: 'blogs', component: BlogMainComponent },
   { path: 'blog/:id', component: BlogMaterialComponent },
   { path: 'toolbox', component: ToolsMainComponent },
-  
+  { path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({

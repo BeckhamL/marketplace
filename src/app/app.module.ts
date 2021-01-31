@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinking-my-work.module';
 import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreating-my-work.module';
 import { DataFilesModule } from './data-files/data-files.module';
+import { ContactModule } from './components/contact/contact.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -40,7 +41,8 @@ import { DataFilesModule } from './data-files/data-files.module';
     ReactiveFormsModule,
     RethinkingMyWorkModule,
     RecreatinggMyWorkModule,
-    DataFilesModule
+    DataFilesModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent],
