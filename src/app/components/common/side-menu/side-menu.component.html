@@ -1,0 +1,12 @@
+<div class="side-menu__wrapper">
+  <aside class="menu">
+    <span *ngFor="let entry of content?.content">
+      <p class="menu-label">{{ entry?.title }}</p>
+      <ul class="menu-list" *ngIf="entry?.subLinks.length > 0">
+        <li *ngFor="let link of entry?.subLinks">
+          <a>{{ link }}</a>
+        </li>
+      </ul>
+    </span>
+  </aside>
+</div>
