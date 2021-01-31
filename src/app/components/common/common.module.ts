@@ -26,6 +26,7 @@ import { SignupComponent } from './signup/signup.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DataFilesModule } from 'src/app/data-files/data-files.module';
+import { CircleIconComponent } from './circle-icon/circle-icon.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule, DataFilesModule],
   exports: [
@@ -49,7 +50,8 @@ import { DataFilesModule } from 'src/app/data-files/data-files.module';
     BlogCarouselComponent,
     ImageCarouselComponent,
     SignupComponent,
-    StepperComponent
+    StepperComponent,
+    CircleIconComponent
   ],
   declarations: [
     HeaderComponent,
@@ -72,7 +74,8 @@ import { DataFilesModule } from 'src/app/data-files/data-files.module';
     BlogCarouselComponent,
     ImageCarouselComponent,
     SignupComponent,
-    StepperComponent
+    StepperComponent,
+    CircleIconComponent
   ],
 })
 export class CommonComponentModule {}
