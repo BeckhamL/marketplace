@@ -5,8 +5,16 @@ import { UtilityModule } from '../../utility/utility.module';
 import { MaterialCommonModule } from '../../material/material.module';
 import { RecreatingMainComponent } from './recreating-main/recreating-main.component';
 import { CommonComponentModule } from '../common/common.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, UtilityModule, MaterialCommonModule, CommonComponentModule],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    UtilityModule,
+    MaterialCommonModule,
+    CommonComponentModule,
+    RouterModule,
+  ],
   exports: [RecreatingMainComponent],
   declarations: [RecreatingMainComponent],
 })

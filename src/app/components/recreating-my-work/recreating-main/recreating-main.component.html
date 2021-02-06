@@ -1,20 +1,32 @@
 <div class="ministry_work__wrapper">
-  <div class="title_text">Ministry @ Work</div>
-  <p>
-    Here’s your step-by-step approach to serving God and people in your marketplace.
-  </p>
+  <div *ngIf="show">
+    <div class="title_text">Ministry @ Work</div>
+    <p>
+      Ministry is service. To those who follow Jesus, ministry is never just
+      about what we do inside a church.
+    </p>
+    <p>
+      When we take our work as ministry, we serve people and God through our
+      daily activities in the marketplace. We strive to do the maximum good
+      using finite resources. We move by faith trusting that God is with us. We
+      bless people through prayer. We Exceed client expectations. We cultivate
+      positive relationships.
+    </p>
+    <p>It begins with blessing people and places.</p>
 
-  <div class="ministry_work__header">
-    <h1 class="title is-1">Bless your marketplace</h1>
-    <p class="content"><i>You’ve got more influence than you think!</i></p>
-  </div>
+    <common-image-description
+      [description]="'You’ve got more influence than you think!'"
+      [route]="'bless-your-marketplace'"
+      (routeChange)="onChange($event)"
+    ></common-image-description>
+    <div class="ministry_work__header">
+      <h1 class="title is-1">Serve to excel</h1>
+      <p class="content">Exceed customer expectations!</p>
+    </div>
 
-  <div class="ministry_work__header">
-    <h1 class="title is-1">Serve to excel</h1>
-    <p class="content">Exceed customer expectations!</p>
+    <div class="ministry_work__header">
+      <h1 class="title is-1">Declare hope !</h1>
+    </div>
   </div>
-
-  <div class="ministry_work__header">
-    <h1 class="title is-1">Declare hope!</h1>
-  </div>
+  <router-outlet></router-outlet>
 </div>

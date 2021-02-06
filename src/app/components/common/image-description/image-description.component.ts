@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'common-image-description',
   templateUrl: './image-description.component.html',
@@ -16,9 +16,19 @@ export class ImageDescriptionComponent implements OnInit {
   @Input()
   description: string;
 
-  constructor() { }
+  @Input()
+  route: string;
+
+  @Output() routeChange = new EventEmitter<boolean>();
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+  }
+
+  onClickRoute() {
+    this.routeChange.emit(true);
+    this.router.navigate([this.route], { relativeTo: this.activatedRoute });
   }
 
 }

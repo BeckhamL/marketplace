@@ -20,12 +20,14 @@ import { RethinkingMyWorkModule } from './components/rethinking-my-work/rethinki
 import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreating-my-work.module';
 import { DataFilesModule } from './data-files/data-files.module';
 import { ContactModule } from './components/contact/contact.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    RouterModule,
     MaterialCommonModule,
     CommonComponentModule,
     HomeCommonModule,

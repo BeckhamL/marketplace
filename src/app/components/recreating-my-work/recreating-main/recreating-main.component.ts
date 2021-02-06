@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecreatingMainComponent implements OnInit {
 
-  constructor() { }
+  show = true;
+  constructor() { 
+  }
 
   ngOnInit() {
+    this.show = true;
+  }
+
+  onChange($event: boolean) {
+    this.show = !$event;
   }
 
 }

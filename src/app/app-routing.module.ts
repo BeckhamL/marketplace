@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './components/home/landing-page/landing-page.component';
 import { AboutComponent } from './components/about/about/about.component';
@@ -12,12 +12,26 @@ import { ToolsMainComponent } from './components/tools/tools-main/tools-main.com
 import { RethinkingMainComponent } from './components/rethinking-my-work/rethinking-main/rethinking-main.component';
 import { RecreatingMainComponent } from './components/recreating-my-work/recreating-main/recreating-main.component';
 import { ContactComponent } from './components/contact/contact/contact.component';
+import { BlessYourMarketplaceComponent } from './data-files/bless-your-marketplace/bless-your-marketplace.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'mission-@-work', component: RethinkingMainComponent },
-  { path: 'ministry-@-work', component: RecreatingMainComponent },
+  {
+    path: 'ministry-@-work',
+    component: RecreatingMainComponent,
+    children: [
+      {
+        path: 'bless-your-marketplace',
+        component: BlessYourMarketplaceComponent,
+      },
+    ],
+  },
+  // {
+  //   path: 'bless-your-marketplace',
+  //   component: BlessYourMarketplaceComponent,
+  // },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },
@@ -25,7 +39,7 @@ const routes: Routes = [
   { path: 'blogs', component: BlogMainComponent },
   { path: 'blog/:id', component: BlogMaterialComponent },
   { path: 'toolbox', component: ToolsMainComponent },
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
