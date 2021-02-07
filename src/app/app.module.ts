@@ -21,6 +21,7 @@ import { RecreatinggMyWorkModule } from './components/recreating-my-work/recreat
 import { DataFilesModule } from './data-files/data-files.module';
 import { ContactModule } from './components/contact/contact.module';
 import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -44,7 +45,8 @@ import { RouterModule } from '@angular/router';
     RethinkingMyWorkModule,
     RecreatinggMyWorkModule,
     DataFilesModule,
-    ContactModule
+    ContactModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
