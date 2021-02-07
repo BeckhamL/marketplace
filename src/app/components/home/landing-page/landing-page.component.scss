@@ -67,7 +67,7 @@
   font-size: 50px;
   font-weight: 500;
   margin: 10px 0px;
-  color: #ec615b;
+  color: #f57921;
 }
 
 .info_card_desc {
@@ -180,7 +180,6 @@ app-icon-button {
 
 .landing_page_wrapper {
   padding: 0 15rem;
-  margin-top: 64px;
 }
 
 .header_section {
@@ -274,7 +273,7 @@ app-icon-button {
   border: 1px solid black;
   padding: 10px;
   cursor: pointer;
-  width: 150px;
+  width: 160px;
 
   div {
     font-weight: bold;
@@ -353,15 +352,6 @@ app-icon-button {
   padding: 20px;
   width: 100%;
   border-radius: 10px;
-}
-
-.workshops_info_wrapper {
-  div:nth-child(1) {
-    color: $site-pink;
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 1px;
-  }
 }
 
 .outlines_image {

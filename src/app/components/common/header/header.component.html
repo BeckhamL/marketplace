@@ -19,13 +19,25 @@
     >
       Mission @ Work
     </a>
-    <a
-      class="navbar-item"
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link"
       (click)="onClickNavigation('ministry-@-work')"
-      [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
-    >
-      Ministry @ work
-    </a>
+        [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }">
+        Ministry @ work
+      </a>
+  
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Overview
+        </a>
+        <a class="navbar-item">
+          Elements
+        </a>
+        <a class="navbar-item">
+          Components
+        </a>
+      </div>
+    </div>
     <a
       class="navbar-item"
       (click)="onClickNavigation('toolbox')"
