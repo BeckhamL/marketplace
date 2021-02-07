@@ -4,11 +4,25 @@
   padding: 70px;
 }
 
+.contact_banner {
+  width: 100%;
+  height: 300px;
+  background-color: #c7d8bb;
+}
+
 .title_text {
   font-size: 4rem;
   margin-bottom: 20px;
 }
 
 .section1 {
-    border-right: 1px solid black;
+    border-right: 1px solid #c1c1c1;
+}
+
+.contact_input_wrapper {
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.16);
+  padding: 20px;
 }

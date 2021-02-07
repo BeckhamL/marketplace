@@ -10,19 +10,13 @@ body {
 // BULMA 
 
 $orange: #f57921;
-$pink: #FA7C91;
+$pink: blue;
 $brown: #757763;
 
 // Update Bulma's global variables
 $primary: $orange;
-$link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";

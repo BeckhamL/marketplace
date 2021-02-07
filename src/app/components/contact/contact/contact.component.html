@@ -1,23 +1,75 @@
+<div class="contact_banner _flex _justify_center _flex_align_item_center">
+  <h1 class="title is-1">Contact us</h1>
+</div>
 <div class="contact_wrapper">
-  <p class="content">GET IN TOUCH</p>
-  <div class="subtitle title_text">Wouldn't it be great to talk?</div>
-  <div class="is-flex">
-    <div class="section1" fxFlex="50%">
-      <div class="is-flex is-justify-content-center">
-        <h2 class="title is-2">Find</h2>
-      </div>
-      
-    </div>
-    <div class="sectio2" fxFlex="50%">
-      <div class="is-flex is-justify-content-center">
+  <div class="block">
+    <h1 class="title is-1">Wouldn't it be great to talk?</h1>
+    <p class="subtitle">GET IN TOUCH</p>
+    <div class="is-flex">
+      <div class="section1" fxFlex="50%">
         <div class="is-flex is-flex-direction-column is-align-items-center">
-          <common-circle-icon [icon]="'import_contacts'" [color]="'red'"></common-circle-icon>
-          <h2 class="title is-2">Contact</h2>
-          <p>Email: david@work-as-mission.com</p>
+          <common-circle-icon
+            [icon]="'import_contacts'"
+            [color]="'orange'"
+          ></common-circle-icon>
+          <h2 class="title is-2">Resources</h2>
         </div>
-        
+      </div>
+      <div class="sectio2" fxFlex="50%">
+        <div class="is-flex is-justify-content-center">
+          <div class="is-flex is-flex-direction-column is-align-items-center">
+            <common-circle-icon
+              [icon]="'alternate_email'"
+              [color]="'red'"
+            ></common-circle-icon>
+            <h2 class="title is-2">Contact</h2>
+            <p class="content">Email: david@work-as-mission.com</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+  <div class="block">
+    <h1 class="title is-1">Pictures of our journey so far...</h1>
+    <common-text-image-carousel></common-text-image-carousel>
+  </div>
+  <div class="block">
+    <h1 class="title is-1">Message us</h1>
+    <div class="contact_input_wrapper">
+      <div class="field">
+        <label class="label">Name:</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Please enter your name"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Email:</label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="Please enter your email"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Message:</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-success">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-danger is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
