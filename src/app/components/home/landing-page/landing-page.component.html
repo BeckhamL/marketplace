@@ -234,7 +234,10 @@
 
   <div class="_flex_col margin_bottom_5rem">
     <div class="_flex _justify_end" id="prepare_yourself_section">
-      <div class="_flex_col">
+      <div
+        class="_flex _space_between _flex_align_item_center margin_bottom_20"
+        fxFlex="100%"
+      >
         <div class="_flex_col">
           <div class="section_header_subtext">Tools for the workplace</div>
           <h1 class="title is-1">
@@ -257,45 +260,36 @@
     >
       <div class="_flex _flex_align_item_center tools_info">
         <div class="_flex_col" id="workplace_tools_section">
-          <div class="_flex _flex_align_item_center _flex_wrap">
-            <div class="_flex_col tools_info_wrapper">
-              <h4 class="title is-4">Reality Challenge</h4>
-              <p class="subtitle">
-                Take the Reality Challenge and see where you stand in the
-                marketplace
-              </p>
-            </div>
-            <div class="_flex_col tools_info_wrapper">
-              <h4 class="title is-4">JOURNEY @ WORK</h4>
-              <p class="subtitle">
-                Learn from the highs and lows of your career
-              </p>
-            </div>
+          <div class="_flex_col block">
+            <h4 class="title is-4">Reality Challenge</h4>
+            <p class="subtitle">
+              Take the Reality Challenge and see where you stand in the
+              marketplace
+            </p>
           </div>
-          <div class="_flex_col tools_info_wrapper">
-            <h4 class="title is-4">MINISTRY @ WORK</h4>
+          <div class="_flex_col block">
+            <h4 class="title is-4">Journey @ Work</h4>
+            <p class="subtitle">Learn from the highs and lows of your career</p>
+          </div>
+          <div class="_flex_col block">
+            <h4 class="title is-4">Ministry @ Work</h4>
             <p class="subtitle">
               Take your work to a higher level and make a real difference
             </p>
           </div>
+          <div class="_flex_col block">
+            <h4 class="title is-4">And more...</h4>
+          </div>
         </div>
-
         <img src="/assets/images/mountains.jpg" class="tools_image" />
       </div>
       <div class="_flex_col" fxFlex="20%" id="workplace_text">
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra
-          iaculis nunc id bibendum. Pellentesque vitae felis eget mi porta
-          interdum non sodales ligula. Cras convallis nisl at cursus porttitor.
-          Nam nec interdum tortor. Nunc arcu dui, mollis eu justo et, luctus
-          ultricies massa. Aliquam finibus est eget quam iaculis congue vitae
-          vel erat.
-        </div>
+        <p class="content">Personal tools for your journey</p>
       </div>
     </div>
   </div>
 
-  <div class="blog_section">
+  <!-- <div class="blog_section">
     <div class="_flex_col _space_between blog_section_header">
       <div class="_flex _space_between _flex_align_item_center width_100">
         <div class="_flex_col">
@@ -346,9 +340,9 @@
       </div>
       <img src="/assets/images/reading.jpg" class="blog_image" />
     </div>
-  </div>
+  </div> -->
 
-  <div
+  <!-- <div
     class="_flex _space_around count_card_wrapper margin_bottom_5rem width_100"
   >
     <div class="_flex_col count_card">
@@ -378,13 +372,13 @@
       <div>Get started to find meaning in the marketplace</div>
       <common-button [title]="'Songs'"></common-button>
     </div>
-  </div>
+  </div> -->
 
   <div class="_flex _flex_align_item_center _justify_center margin_bottom_5rem">
     <div class="_flex _flex_align_item_center">
       <div class="_flex_col">
         <h1 class="title is-1">Join our mailing list</h1>
-        <div>Get started to find meaning in the marketplace</div>
+        <p class="subtitle">Get started to find meaning in the marketplace</p>
         <div class="email_wrapper">
           <app-email-input></app-email-input>
         </div>
