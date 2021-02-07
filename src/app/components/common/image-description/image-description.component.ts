@@ -14,6 +14,9 @@ export class ImageDescriptionComponent implements OnInit {
   author: string;
 
   @Input()
+  title: string;
+
+  @Input()
   description: string;
 
   @Input()

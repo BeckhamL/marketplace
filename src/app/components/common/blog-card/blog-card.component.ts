@@ -16,6 +16,10 @@ export class BlogCardComponent implements OnInit {
   @Input()
   buttonTitle: string;
 
+  // Learn, web, meditation
+  @Input()
+  img: string;
+
   @Output() emitButton = new EventEmitter<() => {}>();
 
   constructor() { }

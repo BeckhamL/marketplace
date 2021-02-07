@@ -1,32 +1,50 @@
+<div class="ministry_banner _flex _justify_center _flex_align_item_center">
+  <h1 class="title_text">Ministry @ Work</h1>
+</div>
 <div class="ministry_work__wrapper">
   <div *ngIf="show">
-    <div class="title_text">Ministry @ Work</div>
-    <p>
-      Ministry is service. To those who follow Jesus, ministry is never just
-      about what we do inside a church.
-    </p>
-    <p>
-      When we take our work as ministry, we serve people and God through our
-      daily activities in the marketplace. We strive to do the maximum good
-      using finite resources. We move by faith trusting that God is with us. We
-      bless people through prayer. We Exceed client expectations. We cultivate
-      positive relationships.
-    </p>
-    <p>It begins with blessing people and places.</p>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+        <img src="../../../../assets/images/crosses.jpg" />
+      </div>
+      <div class="column is-one-quarter">
+        <h1 class="title is-1">Ministry is service.</h1>
+        <p class="subtitle">
+          To those who follow Jesus, ministry is never just about what we do
+          inside a church.
+        </p>
+        <p class="content">
+          When we take our work as ministry, we serve people and God through our
+          daily activities in the marketplace. We strive to do the maximum good
+          using finite resources. We move by faith trusting that God is with us.
+          We bless people through prayer. We Exceed client expectations. We
+          cultivate positive relationships.
+        </p>
+        <p class="content">It begins with blessing people and places.</p>
+      </div>
+    </div>
 
+    <!-- <div class="ministry_banner_inner _flex _justify_center _flex_align_item_center">
+      <h1 class="title is-1">Lessons & Content</h1>
+    </div> -->
     <common-image-description
+      [title]="'Bless your marketplace'"
       [description]="'You’ve got more influence than you think!'"
       [route]="'bless-your-marketplace'"
       (routeChange)="onChange($event)"
     ></common-image-description>
-    <div class="ministry_work__header">
-      <h1 class="title is-1">Serve to excel</h1>
-      <p class="content">Exceed customer expectations!</p>
-    </div>
-
-    <div class="ministry_work__header">
-      <h1 class="title is-1">Declare hope !</h1>
-    </div>
+    <common-image-description
+      [title]="'Serve to excel'"
+      [description]="'Exceed customer expectations!'"
+      [route]="'bless-your-marketplace'"
+      (routeChange)="onChange($event)"
+    ></common-image-description>
+    <common-image-description
+      [title]="'Declare hope!'"
+      [description]="'Exceed customer expectations!'"
+      [route]="'bless-your-marketplace'"
+      (routeChange)="onChange($event)"
+    ></common-image-description>
   </div>
   <router-outlet></router-outlet>
 </div>

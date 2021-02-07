@@ -1,5 +1,7 @@
 <div class="blog_card_wrapper">
-  <img src="../../../../assets/images/learn.svg" />
+  <img *ngIf="img === 'learn'" src="../../../../assets/images/learn.svg" />
+  <img *ngIf="img === 'web'" src="../../../../assets/images/web-dev.svg" />
+  <img *ngIf="img === 'meditation'" src="../../../../assets/images/meditation.svg" />
   <div class="_flex_col">
     <div class="blog_title">{{ title }}</div>
     <div>{{ description }}</div>
