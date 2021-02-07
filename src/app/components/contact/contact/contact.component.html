@@ -35,41 +35,43 @@
   </div>
   <div class="block">
     <h1 class="title is-1">Message us</h1>
-    <div class="contact_input_wrapper">
+    <form class="contact_input_wrapper" [formGroup]="formGroup">
       <div class="field">
         <label class="label">Name:</label>
-        <div class="control">
+
           <input
             class="input"
             type="text"
             placeholder="Please enter your name"
+            formControlName="name"
           />
-        </div>
+  
       </div>
       <div class="field">
         <label class="label">Email:</label>
-        <div class="control">
+
           <input
             class="input"
             type="email"
             placeholder="Please enter your email"
+            formControlName="email"
           />
-        </div>
+   
       </div>
       <div class="field">
         <label class="label">Message:</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
-        </div>
+
+          <textarea class="textarea" placeholder="Please enter your message" formControlName="message"></textarea>
+    
       </div>
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-success">Submit</button>
+          <button class="button is-success" (click)="onClickSubmit()">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-danger is-light">Cancel</button>
+          <button class="button is-danger is-light" (click)="onClickCancel()">Cancel</button>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
