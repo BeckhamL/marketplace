@@ -7,6 +7,7 @@ import { RealityChallengeComponent } from './reality-challenge/reality-challenge
 import { BlessYourMarketplaceComponent } from './bless-your-marketplace/bless-your-marketplace.component';
 import { PrayOverResumeComponent } from './pray-over-resume/pray-over-resume.component';
 import { SurvivingAtWorkComponent } from './surviving-at-work/surviving-at-work.component';
+import { MakeYourMoveComponent } from './make-your-move/make-your-move.component';
 @NgModule({
   imports: [CommonModule, FlexLayoutModule, MaterialCommonModule],
   declarations: [
@@ -14,14 +15,16 @@ import { SurvivingAtWorkComponent } from './surviving-at-work/surviving-at-work.
     RealityChallengeComponent,
     BlessYourMarketplaceComponent,
     PrayOverResumeComponent,
-    SurvivingAtWorkComponent
+    SurvivingAtWorkComponent,
+    MakeYourMoveComponent
   ],
   exports: [
     MyJourneyAtWorkComponent,
     RealityChallengeComponent,
     BlessYourMarketplaceComponent,
     PrayOverResumeComponent,
-    SurvivingAtWorkComponent
+    SurvivingAtWorkComponent,
+    MakeYourMoveComponent
   ],
 })
 export class DataFilesModule {}
