@@ -1,5 +1,5 @@
 <div class="contact_banner _flex _justify_center _flex_align_item_center">
-  <h1 class="title is-1">Contact us</h1>
+  <h1 class="title_text">Contact us</h1>
 </div>
 <div class="contact_wrapper">
   <div class="block">
@@ -64,13 +64,14 @@
           <textarea class="textarea" placeholder="Please enter your message" formControlName="message"></textarea>
     
       </div>
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-success" (click)="onClickSubmit()">Submit</button>
-        </div>
+      <div class="field is-grouped is-grouped-right">
         <div class="control">
           <button class="button is-danger is-light" (click)="onClickCancel()">Cancel</button>
         </div>
+        <div class="control">
+          <button class="button is-success" (click)="onClickSubmit()">Submit</button>
+        </div>
+
       </div>
     </form>
   </div>
