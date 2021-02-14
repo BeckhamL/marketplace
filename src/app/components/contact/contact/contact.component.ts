@@ -20,7 +20,9 @@ export class ContactComponent implements OnInit {
   }
 
   onClickSubmit() {
-    this.contactService.postMessageUs(this.formGroup.value);
+    this.contactService.postMessageUs(this.formGroup.value).subscribe(res => {
+      console.log(res);
+    });
   }
 
   onClickCancel() {

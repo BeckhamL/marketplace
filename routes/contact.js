@@ -6,18 +6,23 @@ const Message = require("../models/message_model");
 const { request } = require("./courses");
 
 // Routes
-router.post("/contact", async (req, res) => {
+router.post("/message", async (req, res) => {
+
+  console.log('request', req.body)
     let message = new Message({
         name: req.body.name,
         email: req.body.name,
         message: req.body.message
     });
 
-    try {
-      Message.insertOne(message);
-    } catch (err) {
-      res.status(500).send(err);
-    }
+    message
+    .save()
+    .then((data) => {
+      res.json(data);
+    })
+    .catch((error) => {
+      res.json(error);
+    });
 });
 
 module.exports = router;

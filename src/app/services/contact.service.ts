@@ -13,9 +13,6 @@ export class ContactService {
 
   postMessageUs(message: MessageModel) {
 
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-
-    return this.httpClient.post<MessageModel>('/contact', message);
+    return this.httpClient.post<MessageModel>('/contact/message', message);
   }
 }

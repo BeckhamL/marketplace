@@ -18,7 +18,7 @@ export class RethinkingMainComponent implements OnInit {
   ];
 
   middleBanner: MiddleSeperatorModel = {
-    topTitle: 'Step by step lessons',
+    topTitle: 'Find your bearings. Stand firm. Seek change.',
     bottomTitle: 'Let\'s begin. Find your bearings. Stand firm. Seek change.',
     iconImages: [
       { icon: 'anchor', text: 'foundation' },

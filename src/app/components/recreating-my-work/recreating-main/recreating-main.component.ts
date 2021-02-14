@@ -10,7 +10,7 @@ export class RecreatingMainComponent implements OnInit {
   show = true;
 
   middleBanner: MiddleSeperatorModel = {
-    topTitle: 'Resources & Content',
+    topTitle: 'It begins with blessing people and places',
     bottomTitle: 'It begins with blessing people and places',
     iconImages: [
       { icon: 'supervisor_account', text: 'colleagues' },
