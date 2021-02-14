@@ -3,25 +3,24 @@
   <img src="../../../../assets/images/dig-in.jpg" class="banner_image" />
 </div>
 <div class="contact_wrapper">
-  <div class="columns is-centered">
+  <div class="columns is-centered is-vcentered">
     <div class="column is-one-quarter">
       <h1 class="title is-1">Wouldn't it be great to connect?</h1>
       <p class="content">
-         It may not feel like your dream job or make you a
-        lot of money, but it deserves your respect - just because <i>you</i> are
-        doing it.
+        It may not feel like your dream job or make you a lot of money, but it
+        deserves your respect - just because <i>you</i> are doing it.
       </p>
     </div>
 
     <div class="column is-one-quarter">
       <p class="content">
-        Seeking a higher purpose? Longing to fufill your calling? Wondering how to
-        survive your next workday? Looking for a job? You're not alone. Whatever
-        your situation, know that your God stands with you today. You are God's
-        masterpiece. You reach your full potential when you work with Him.
+        Seeking a higher purpose? Longing to fufill your calling? Wondering how
+        to survive your next workday? Looking for a job? You're not alone.
+        Whatever your situation, know that your God stands with you today. You
+        are God's masterpiece. You reach your full potential when you work with
+        Him.
       </p>
     </div>
-
   </div>
   <div class="block">
     <div class="is-flex block_wrapper">
@@ -42,7 +41,9 @@
               [color]="'red'"
             ></common-circle-icon>
             <h2 class="title is-2">Contact</h2>
-            <a href="mailto:david@work-as-mission.com">david@work-as-mission.com</a>
+            <a href="mailto:david@work-as-mission.com"
+              >david@work-as-mission.com</a
+            >
           </div>
         </div>
       </div>
@@ -58,40 +59,77 @@
     <form class="contact_input_wrapper" [formGroup]="formGroup">
       <div class="field">
         <label class="label">Name:</label>
-
+        <div class="control">
           <input
             class="input"
             type="text"
             placeholder="Please enter your name"
             formControlName="name"
           />
-  
+        </div>
+        <p
+          *ngIf="
+            formGroup.controls['name'].errors &&
+            (formGroup.controls['name'].dirty ||
+              formGroup.controls['name'].touched)
+          "
+          class="help is-danger"
+        >
+          Name is required.
+        </p>
       </div>
       <div class="field">
         <label class="label">Email:</label>
-
+        <div class="control">
           <input
             class="input"
             type="email"
             placeholder="Please enter your email"
             formControlName="email"
           />
-   
+        </div>
+        <p
+          *ngIf="
+            formGroup.controls['email'].errors &&
+            (formGroup.controls['email'].dirty ||
+              formGroup.controls['email'].touched)
+          "
+          class="help is-danger"
+        >
+          Email is required.
+        </p>
       </div>
       <div class="field">
         <label class="label">Message:</label>
-
-          <textarea class="textarea" placeholder="Please enter your message" formControlName="message"></textarea>
-    
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Please enter your message"
+            formControlName="message"
+          ></textarea>
+        </div>
+        <p
+          *ngIf="
+            formGroup.controls['message'].errors &&
+            (formGroup.controls['message'].dirty ||
+              formGroup.controls['message'].touched)
+          "
+          class="help is-danger"
+        >
+          Message is required.
+        </p>
       </div>
       <div class="field is-grouped is-grouped-right">
         <div class="control">
-          <button class="button is-danger is-light" (click)="onClickCancel()">Cancel</button>
+          <button class="button is-danger is-light" (click)="onClickCancel()">
+            Cancel
+          </button>
         </div>
         <div class="control">
-          <button class="button is-success" (click)="onClickSubmit()">Submit</button>
+          <button class="button is-success" (click)="onClickSubmit()">
+            Submit
+          </button>
         </div>
-
       </div>
     </form>
   </div>

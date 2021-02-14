@@ -11,7 +11,7 @@ router.post("/message", async (req, res) => {
   console.log('request', req.body)
     let message = new Message({
         name: req.body.name,
-        email: req.body.name,
+        email: req.body.email,
         message: req.body.message
     });
 
