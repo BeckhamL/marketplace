@@ -28,7 +28,7 @@ export class AboutComponent implements OnInit {
   onClickOpenBioDetails() {
     console.log('here')
     const dialogRef = this.dialog.open(BioDetailsComponent, {
-      width: '600px',
+      width: '50vw',
       maxHeight: '70vh'
     })
   }

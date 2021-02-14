@@ -2,18 +2,34 @@
 
 .contact_wrapper {
   padding: 70px;
+  margin-top: 13rem;
 }
 
 .contact_banner {
   width: 100%;
   height: 300px;
   background-color: #c7d8bb;
+  position: relative;
+}
+
+.banner_image {
+  position: absolute;
+  width: 30%;
+  top: 210px;
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
 }
 
 .title_text {
   font-size: 4rem;
   margin-bottom: 20px;
   font-weight: bold;
+}
+
+.block_wrapper {
+  background-color: rgb(245, 244, 242);
+  padding: 2em;
+  margin: 3rem -70px;
 }
 
 .section1 {
