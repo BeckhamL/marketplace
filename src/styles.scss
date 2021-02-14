@@ -8,10 +8,13 @@ body {
 }
 
 // BULMA 
-
 $orange: #f57921;
 $pink: blue;
 $brown: #757763;
+
+// Navbar
+$navbar-item-hover-color: $orange;
+$navbar-dropdown-arrow: $orange;
 
 // Update Bulma's global variables
 $primary: $orange;
