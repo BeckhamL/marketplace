@@ -1,8 +1,9 @@
 @import "../../../../assets/scss/main.scss";
 
 .description_container {
-  width: 650px;
-  max-height: 650px;
+  // width: 650px;
+  // max-height: 650px;
+  border: 1px solid black;
 }
 
 .date_text {
@@ -52,8 +53,8 @@
   width: 100%;
 }
 
-img {
-  width: 650px;
-  margin-bottom: 25px;
-  cursor: pointer;
-}
+// img {
+//   width: 650px;
+//   margin-bottom: 25px;
+//   cursor: pointer;
+// }

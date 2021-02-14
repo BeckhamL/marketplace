@@ -1,6 +1,6 @@
 <div class="ministry_banner _flex _justify_center _flex_align_item_center">
   <h1 class="title_text">Ministry @ Work</h1>
-  <img src="../../../../assets/images/crosses.jpg" class="banner_image"/>
+  <img src="../../../../assets/images/crosses.jpg" class="banner_image" />
 </div>
 <div class="ministry_work__wrapper">
   <div *ngIf="show">
@@ -13,7 +13,6 @@
         </p>
       </div>
       <div class="column is-one-quarter">
-
         <p class="content">
           When we take our work as ministry, we serve people and God through our
           daily activities in the marketplace. We strive to do the maximum good
@@ -21,31 +20,37 @@
           We bless people through prayer. We Exceed client expectations. We
           cultivate positive relationships.
         </p>
-        <h3 class="title is-3">It begins with blessing people and places.</h3>
       </div>
     </div>
+    <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
 
-    <!-- <div class="ministry_banner_inner _flex _justify_center _flex_align_item_center">
-      <h1 class="title is-1">Lessons & Content</h1>
-    </div> -->
-    <common-image-description
-      [title]="'Bless your marketplace'"
-      [description]="'You’ve got more influence than you think!'"
-      [route]="'bless-your-marketplace'"
-      (routeChange)="onChange($event)"
-    ></common-image-description>
-    <common-image-description
-      [title]="'Serve to excel'"
-      [description]="'Exceed customer expectations!'"
-      [route]="'bless-your-marketplace'"
-      (routeChange)="onChange($event)"
-    ></common-image-description>
-    <common-image-description
-      [title]="'Declare hope!'"
-      [description]="'Exceed customer expectations!'"
-      [route]="'bless-your-marketplace'"
-      (routeChange)="onChange($event)"
-    ></common-image-description>
+    <div class="columns">
+      <div class="column">
+        <common-image-description
+          [title]="'Bless your marketplace'"
+          [description]="'You’ve got more influence than you think!'"
+          [image]="'making_coffee.jpg'"
+          [route]="'bless-your-marketplace'"
+          (routeChange)="onChange($event)"
+        ></common-image-description>
+      </div>
+      <div class="column">
+        <common-image-description
+          [title]="'Serve to excel'"
+          [description]="'Exceed customer expectations!'"
+          [route]="'bless-your-marketplace'"
+          (routeChange)="onChange($event)"
+        ></common-image-description>
+      </div>
+      <div class="column">
+        <common-image-description
+          [title]="'Declare hope!'"
+          [description]="'Exceed customer expectations!'"
+          [route]="'bless-your-marketplace'"
+          (routeChange)="onChange($event)"
+        ></common-image-description>
+      </div>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </div>

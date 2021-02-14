@@ -27,6 +27,9 @@ export class ImageDescriptionComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    if (this.image) {
+      this.image = '/assets/images/' + this.image;
+    }
   }
 
   onClickRoute() {

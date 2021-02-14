@@ -28,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DataFilesModule } from 'src/app/data-files/data-files.module';
 import { CircleIconComponent } from './circle-icon/circle-icon.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MiddleSeperatorComponent } from './middle-seperator/middle-seperator.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule, DataFilesModule],
   exports: [
@@ -53,7 +54,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     SignupComponent,
     StepperComponent,
     CircleIconComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    MiddleSeperatorComponent
   ],
   declarations: [
     HeaderComponent,
@@ -78,7 +80,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     SignupComponent,
     StepperComponent,
     CircleIconComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    MiddleSeperatorComponent
   ],
 })
 export class CommonComponentModule {}

@@ -1,0 +1,35 @@
+@import "../../../../assets/scss/main.scss";
+
+.middle-banner {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #fff;
+  background: #330033;
+  padding: 1em 0;
+  line-height: 1em;
+  text-align: center;
+  margin: 3rem -70px 0 -70px;
+}
+
+.middle-banner-bottom {
+  background-color: $background-beige;
+  padding: 2em 0;
+  text-align: center;
+  margin: 0 -70px 3rem -70px;
+}
+
+.bottom_text {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.icon_text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+mat-icon {
+  font-size: 50px;
+  width: 50px;
+}
