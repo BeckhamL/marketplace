@@ -1,17 +1,17 @@
-<div class="_flex _flex_align_item_start footer_wrapper _space_between _flex_wrap">
-  <div class="_flex_col margin_right" id="marketplace_section">
-    <div class="marketplace_text">Work As Mission</div>
-    <div class="desc_text">Transforming the marketplace through purposeful work</div>
-  </div>
-  <div class="_flex _flex_align_item_start _space_between _flex_wrap" fxFlex="60%">
-    <div class="_flex_col margin_right">
+<div class="footer_wrapper">
+  <div class="columns">
+    <div class="column is-one-quarter">
+      <div class="marketplace_text" (click)="onClickNav('/')">Work As Mission</div>
+      <div class="desc_text">Transforming the marketplace through purposeful work</div>
+    </div>
+    <div class="column is-one-fifth">
       <h4 class="title is-4 header_text">Content</h4>
       <div class="nav_text" (click)="onClickNav('/')">/ home.</div>
       <div class="nav_text" (click)="onClickNav('/about')">/ about.</div>
       <div class="nav_text" (click)="onClickNav('/mission-@-work')">/ mission @ work.</div>
       <div class="nav_text" (click)="onClickNav('/ministry-@-work')">/ ministry @ work.</div>
     </div>
-    <div class="_flex_col margin_right" >
+    <div class="column is-one-fifth">
       <h4 class="title is-4 header_text">About</h4>
       <div class="nav_text" (click)="onClickNav('/contact')">/ contact us.</div>
       <div class="nav_text">/ development team.</div>
@@ -19,4 +19,5 @@
     </div>
   </div>
   <hr>
+  <p class="content">	&copy; Work as Mission</p>
 </div>
