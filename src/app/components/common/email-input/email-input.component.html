@@ -1,3 +1,20 @@
 <form [formGroup]="formGroup">
-    <input type="email" placeholder="Enter your email" maxlength="28" formControlName="email"><input type="submit" (click)="onSubmitEmail()">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    maxlength="28"
+    formControlName="email"
+  /><input type="submit" (click)="onSubmitEmail()" />
+  <span
+    *ngIf="
+      formGroup.controls['email']?.errors?.required &&
+      (formGroup.controls['email'].dirty || formGroup.controls['email'].touched)
+    "
+    class="help is-danger"
+  >
+    Email is required.
+</span>
+  <p *ngIf="formGroup.controls['email']?.errors?.email" class="help is-danger">
+    Please provide a valid email
+  </p>
 </form>

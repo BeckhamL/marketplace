@@ -12,6 +12,7 @@ const workshops = require("./routes/workshops");
 const courses = require("./routes/courses");
 const blogs = require("./routes/blogs");
 const contact = require("./routes/contact");
+const general = require("./routes/general");
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -27,6 +28,7 @@ app.use("/workshops", workshops);
 app.use("/courses", courses);
 app.use("/blogs", blogs);
 app.use("/contact", contact);
+app.use("/general", general);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(__dirname + "/dist/markplace-app"));
