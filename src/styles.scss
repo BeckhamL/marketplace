@@ -7,6 +7,19 @@ body {
   letter-spacing: 0.36px;
 }
 
+// ANGULAR OVERRIDES
+.success-snackbar {
+  background: #48c774;
+  padding: 25px !important;
+
+  .mat-simple-snackbar {
+    span {
+      font-size: 18px;
+      color: white;
+    }
+  }
+}
+
 // BULMA 
 $orange: #f57921;
 $pink: blue;

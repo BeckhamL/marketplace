@@ -290,6 +290,10 @@ app-icon-button {
   }
 }
 
+.view_more_button:hover {
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.06);
+}
+
 .section_1 {
   background-color: #e8e8e8;
   padding: 100px;

@@ -90,13 +90,23 @@
         </div>
         <p
           *ngIf="
-            formGroup.controls['email'].errors &&
+            formGroup.controls['email']?.errors?.required &&
+              (formGroup.controls['email'].dirty ||
+                formGroup.controls['email'].touched)
+          "
+          class="help is-danger"
+        >
+          Email is required.
+        </p>
+        <p
+          *ngIf="
+            formGroup.controls['email']?.errors?.email &&
             (formGroup.controls['email'].dirty ||
               formGroup.controls['email'].touched)
           "
           class="help is-danger"
         >
-          Email is required.
+          Please provide a valid email
         </p>
       </div>
       <div class="field">

@@ -1,4 +1,5 @@
 @import "../../../../assets/scss/main.scss";
+
 input[type="email"] {
   color: rgba(33, 36, 44, 0.54);
   padding: 0px 30px;
@@ -18,7 +19,7 @@ input[type="submit"] {
   font-weight: bold;
   border-radius: 25px;
   letter-spacing: 0.5px;
-  background: #ff0067;
+  background: $site-orange;
   color: white;
   border: 0;
   height: 45px;

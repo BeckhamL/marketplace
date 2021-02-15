@@ -22,6 +22,7 @@ import { DataFilesModule } from './data-files/data-files.module';
 import { ContactModule } from './components/contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -46,7 +47,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RecreatinggMyWorkModule,
     DataFilesModule,
     ContactModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

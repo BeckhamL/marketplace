@@ -13,7 +13,6 @@ export class TextImageCarouselComponent implements OnInit {
   }
 
   onClickCarousel() {
-    console.log('hi')
   }
 
 }
