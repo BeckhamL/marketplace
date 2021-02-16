@@ -64,7 +64,7 @@
 }
 
 .info_card_title {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 500;
   margin: 10px 0px;
   color: #f57921;
@@ -91,6 +91,10 @@ img {
 
 .email_wrapper {
   margin: 20px 0px;
+}
+
+.white {
+  color: white;
 }
 
 .workshop_cards {
@@ -125,59 +129,6 @@ img {
 
 .static-three {
   background-color: rgb(247, 250, 255);
-}
-
-.static-four {
-  background-color: #f6efe8;
-}
-
-.static {
-  z-index: 2;
-}
-
-.parallax_full {
-  height: 500px;
-}
-
-.parallax_half {
-  height: 600px;
-}
-
-.parallax_full::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-}
-
-.parallax_half::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-}
-
-.parallax-one::after {
-  background-image: url("/assets/images/cross.jpg");
-}
-
-.parallax-two::after {
-  background-image: url("/assets/images/bible.jpg");
-}
-
-.desc_icon {
-  color: #ff0067;
-  font-size: 50px;
-  height: 50px;
-  width: 50px;
 }
 
 app-icon-button {

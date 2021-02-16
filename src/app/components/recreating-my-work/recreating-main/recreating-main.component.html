@@ -1,6 +1,10 @@
 <div class="ministry_banner _flex _justify_center _flex_align_item_center">
   <h1 class="title_text">Ministry @ Work</h1>
-  <img src="../../../../assets/images/crosses.jpg" class="banner_image" />
+  <img
+    src="../../../../assets/images/crosses.jpg"
+    class="banner_image"
+    *ngIf="show"
+  />
 </div>
 <div class="ministry_work__wrapper">
   <div *ngIf="show">
@@ -52,5 +56,6 @@
       </div>
     </div>
   </div>
+  <button class="button is-primary" *ngIf="!show">Back</button>
   <router-outlet></router-outlet>
 </div>
