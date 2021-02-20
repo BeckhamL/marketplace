@@ -29,7 +29,7 @@
     <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
 
     <div class="columns">
-      <div class="column">
+      <div class="column is-one-third">
         <common-image-description
           [title]="'Bless your marketplace'"
           [description]="'You’ve got more influence than you think!'"
@@ -38,22 +38,23 @@
           (routeChange)="onChange($event)"
         ></common-image-description>
       </div>
-      <div class="column">
+      <div class="column is-one-third">
         <common-image-description
           [title]="'Serve to excel'"
           [description]="'Exceed customer expectations!'"
+          [image]="'subway.jpg'"
           [route]="'serve-to-excel'"
           (routeChange)="onChange($event)"
         ></common-image-description>
       </div>
-      <div class="column">
+      <!-- <div class="column">
         <common-image-description
           [title]="'Declare hope!'"
           [description]="'Exceed customer expectations!'"
           [route]="'bless-your-marketplace'"
           (routeChange)="onChange($event)"
         ></common-image-description>
-      </div>
+      </div> -->
     </div>
   </div>
   <button class="button is-primary" *ngIf="!show">Back</button>

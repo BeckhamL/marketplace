@@ -25,3 +25,11 @@
   margin-bottom: 20px;
   font-weight: bold;
 }
+
+// RESPONSIVE 
+
+@media only screen and (max-width: 768px) {
+  .rethinking_wrapper {
+    margin-top: 1rem;
+  }
+}

@@ -144,20 +144,23 @@
   </div>
 </div> -->
 
-<div class="_flex_col _flex_align_item_start section_wrapper beige_background no_top_padding">
+<div class="section_wrapper beige_background no_top_padding">
   <div class="title_text">Pastor David</div>
-  <div class="_flex _flex_align_item_center _space_between bio_wrapper">
-    <div
-      class="_flex_col _flex_align_item_center image_wrapper"
-      tooltipInfoPopup
-      [tooltipText]="'Click to view more'"
-      (click)="onClickOpenBioDetails()"
-    >
-      <img src="../../../../assets/images/david.jpg" class="bio_image" />
-      <div class="name_text">David Lau</div>
-      <div>Marketplace Pastor</div>
+  <div class="columns bio_wrapper">
+    <div class="column is-one-quarter">
+      <div
+        class="_flex_col _flex_align_item_center image_wrapper"
+        tooltipInfoPopup
+        [tooltipText]="'Click to view more'"
+        (click)="onClickOpenBioDetails()"
+      >
+        <img src="../../../../assets/images/david.jpg" class="bio_image" />
+        <div class="name_text">David Lau</div>
+        <div>Marketplace Pastor</div>
+      </div>
     </div>
-    <div class="_flex_col" fxFlex="70%">
+
+    <div class="column">
       <p class="content">
         I’ve been a storyteller all my working life. While studying mass
         communication in Hong Kong, I was thrust into the world of television as
@@ -189,7 +192,9 @@
       <p class="content">
         If that’s what you’re looking for, you’re in the right place.
       </p>
-      <a class="is-link" (click)="onClickOpenBioDetails()">Click here to read more!</a>
+      <a class="is-link" (click)="onClickOpenBioDetails()"
+        >Click here to read more!</a
+      >
     </div>
   </div>
 
@@ -226,7 +231,9 @@
   <div class="_flex _flex_align_item_center">
     <div class="_flex_col _flex_align_item_start">
       <h3 class="title is-3 white">Feel free to shoot us an email!</h3>
-      <p class="subtitle white">We'd love to hear from you - questions, feedback, or to say hi!</p>
+      <p class="subtitle white">
+        We'd love to hear from you - questions, feedback, or to say hi!
+      </p>
       <div class="email_wrapper">
         <app-email-input></app-email-input>
       </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MiddleSeperatorModel } from 'src/app/models/middle-seperator.model';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-recreating-main',
   templateUrl: './recreating-main.component.html',
@@ -18,14 +18,23 @@ export class RecreatingMainComponent implements OnInit {
       { icon: 'corporate_fare', text: 'workplace' },
     ],
   };
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    console.log(this.activatedRoute.snapshot.params['id']) 
+    this.getRoute();
+  }
 
+  getRoute() {
+    if (this.router.url.split('/').pop() === 'ministry-@-work') {
+      this.show = true; 
+    } else {
+      this.show = false;
+    }
   }
 
   onChange($event: boolean) {
-    this.show = !$event;
+    if (this.show) {
+      this.show = false
+    }
   }
 }

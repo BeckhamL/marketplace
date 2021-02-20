@@ -588,9 +588,13 @@ common-image-carousel {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
   #course_header_text {
     padding-right: 20px;
+  }
+
+  .workshops_image {
+    display: none;
   }
 }
 
