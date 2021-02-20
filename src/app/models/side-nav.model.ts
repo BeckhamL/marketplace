@@ -4,5 +4,5 @@ export class SideNavModel {
 
 export class SideNavElementModel {
     title?: string;
-    subLinks?: string[];
+    description?: string;
 }

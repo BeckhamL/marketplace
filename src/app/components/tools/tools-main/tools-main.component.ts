@@ -11,35 +11,33 @@ export class ToolsMainComponent implements OnInit {
     content: [
       {
         title: 'Reality Challenge',
-        subLinks: [
+        description:
           'Take the Reality Challenge and see where you stand in the marketplace',
-        ],
       },
       {
         title: 'Journey @ Work',
-        subLinks: ['Learn from the highs and lows of your career'],
+        description: 'Learn from the highs and lows of your career',
       },
       {
         title: 'Surviving @ Work',
-        subLinks: [],
+        description: '',
       },
       {
         title: 'Prayer of Examen',
-        subLinks: ["Ask God to reveal what's on your heart"],
+        description: "Ask God to reveal what's on your heart",
       },
       {
         title: 'Bless your marketplace',
-        subLinks: [],
+        description: '',
       },
       {
         title: 'Ministry @ Work',
-        subLinks: [
+        description:
           'Take your work to a higher level and make a real difference',
-        ],
       },
       {
         title: 'Mapping your influence',
-        subLinks: [],
+        description: '',
       },
     ],
   };

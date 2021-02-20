@@ -1,17 +1,20 @@
-<div class="is-flex">
-  <common-side-menu [content]="content"></common-side-menu>
-  <div class="toolbox_wrapper">
-    <h1>Reality Challenge</h1>
-    <p>Take the <i>Reality Challenge</i> and see where you stand in the marketplace.</p>
-    <h1>Journey @ Work</h1>
-    <p>Learn from the highs and lows of your career</p>
-    <h1>Surviving @ Work</h1>
-    <h1>Prayer of Examen</h1>
-    <p>Ask God to reveal what's on your heart</p>
-    <h1>Bless your marketplace</h1>
-    <h1>Ministry @ Work</h1>
-    <p>Take your work to a higher level and make a real difference</p>
-    <h1>Mapping your influence</h1>
+<div class="tools_banner _flex _justify_center _flex_align_item_center">
+  <h1 class="title_text">Toolbox</h1>
+</div>
+<div class="toolbox_wrapper">
+  <div class="columns is-centered">
+    <div class="column is-one-quarter">
+      <p>
+        Here are some tools that we have developed over the years to help people
+        sort out where they are, where they have been, and where they
+        potentially can go. We hope they will draw you ever closer to the One
+        who labors with you every day in every situation.
+      </p>
+    </div>
   </div>
-  
+  <div class="columns is-multiline">
+    <div class="column is-one-third" *ngFor="let c of content?.content">
+      <common-tools-card [title]="c?.title" [description]="c?.description"></common-tools-card>
+    </div>
+  </div>
 </div>

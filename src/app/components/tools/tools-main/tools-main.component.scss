@@ -1,5 +1,18 @@
 @import "../../../../assets/scss/main.scss";
 
+.tools_banner {
+  width: 100%;
+  height: 300px;
+  background-color: #ffdb99;
+  position: relative;
+}
+
+.title_text {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 .toolbox_wrapper {
   padding: 70px;
 }
