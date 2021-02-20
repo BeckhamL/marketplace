@@ -37,4 +37,9 @@ export class RecreatingMainComponent implements OnInit {
       this.show = false
     }
   }
+
+  onClickBack() {
+    this.router.navigate(['/ministry-@-work']);
+    this.show = true;
+  }
 }

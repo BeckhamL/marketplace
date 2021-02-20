@@ -6,7 +6,7 @@
     *ngIf="show"
   />
 </div>
-<div class="ministry_work__wrapper">
+<div class="ministry_work__wrapper" [ngClass]="{no_margin: !show}">
   <div *ngIf="show">
     <div class="columns is-centered is-vcentered">
       <div class="column is-one-quarter">
@@ -57,6 +57,6 @@
       </div> -->
     </div>
   </div>
-  <button class="button is-primary" *ngIf="!show">Back</button>
+  <button class="button is-primary" *ngIf="!show" (click)="onClickBack()">Back</button>
   <router-outlet></router-outlet>
 </div>

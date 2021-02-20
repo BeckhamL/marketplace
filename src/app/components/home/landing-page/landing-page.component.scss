@@ -1,13 +1,5 @@
 @import "../../../../assets/scss/main.scss";
 
-.main_wrapper {
-  background-color: #91b7c7;
-}
-
-.main_cards {
-  border-right: 4px dotted;
-}
-
 .card_title {
   font-size: 28px;
   font-weight: bold;
@@ -113,32 +105,9 @@ img {
   cursor: pointer;
 }
 
-.main {
-  //height: 100vh;
-  perspective: 2px;
-  overflow-x: hidden;
-}
-
 .section {
   padding: 70px;
   // height: 600px;
-}
-
-.static-one {
-  background-color: #330033;
-  color: white;
-}
-
-.static-two {
-  background-color: #aacfcf;
-}
-
-.static-three {
-  background-color: rgb(247, 250, 255);
-}
-
-app-icon-button {
-  margin: 15px;
 }
 
 .landing_page_wrapper {
@@ -236,7 +205,7 @@ app-icon-button {
   border: 1px solid black;
   padding: 10px;
   cursor: pointer;
-  width: 170px;
+  width: 180px;
 
   div {
     font-weight: bold;
@@ -256,10 +225,11 @@ app-icon-button {
   padding: 100px;
   margin-bottom: 100px;
   position: relative;
-  .section_1_text {
-    font-size: 60px;
-    font-weight: 500;
-  }
+}
+
+.section_1_text {
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .section1_corner {
@@ -291,8 +261,8 @@ app-icon-button {
 }
 
 .workshops_image {
-  width: 50%;
-  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.16);
 }
 
 .section_3 {
@@ -339,7 +309,6 @@ app-icon-button {
 }
 
 .tools_info {
-  height: 400px;
   width: 60%;
   background-color: $background-olive;
   padding: 30px;
@@ -428,104 +397,45 @@ common-image-carousel {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 2560px) {
-  .header_image {
-    height: 80%;
-  }
-}
-
-@media only screen and (max-width: 1860px) {
-  .header_image {
-    height: 90%;
-  }
-}
-
-@media only screen and (max-width: 1750px) {
-  #workshops_view_more_button,
-  #case_studies_view_more_button {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 1700px) {
-  #prepare_yourself_section {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  #div_courses {
-    margin-right: 30px;
-  }
-
-  #div_instructors {
-    margin-right: 30px;
-  }
-}
-
-@media only screen and (max-width: 1508px) {
-  .section_1 {
-    margin-bottom: 190px;
-  }
-
-  .section1_corner {
-    bottom: -150px;
-  }
-}
-
 @media only screen and (max-width: 1440px) {
   .landing_page_wrapper {
     padding: 0 10rem;
   }
-}
 
-@media only screen and (max-width: 1300px) {
-  #workplace_tools_section {
-    width: 50%;
+  .header_image {
+    width: 55%;
   }
 
-  #workplace_section {
-    flex-direction: column;
+  .section_1_text {
+    font-size: 40px;
   }
 
-  #workplace_text {
-    width: 60%;
-    position: relative;
-    margin-top: 40px;
+  .info_card_title {
+    font-size: 3rem;
   }
-}
 
-@media only screen and (max-width: 1250px) {
-  .count_card {
-    div:nth-child(2) {
-      font-size: 4.8vw;
-    }
-  }
-}
-
-@media only screen and (max-width: 1220px) {
-  .tools_info,
-  #workplace_text {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .tools_info,
-  #workplace_text {
-    width: 80%;
+  .tools_image {
+    position: absolute;
+    right: -25%;
+    bottom: 20%;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .landing_page_wrapper {
-    padding: 0 5rem;
-  }
 
   .section_1 {
-    .section_1_text {
-      font-size: 5.9vw;
-    }
+    padding: 20px;
+  }
+
+  .section_1_text {
+    font-size: 2rem;
+  }
+
+  .section1_corner {
+    width: 40%;
   }
 
   .info_card_title {
@@ -546,45 +456,9 @@ common-image-carousel {
     right: -10%;
     bottom: 20%;
   }
-}
 
-@media only screen and (max-width: 960px) {
-  img {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .header_image {
+  .workshops_image {
     display: none;
-  }
-
-  .tools_info,
-  #workplace_text {
-    width: 90%;
-  }
-
-  .tools_image {
-    right: -5%;
-  }
-
-  .count_card_wrapper {
-    flex-direction: column;
-  }
-
-  .count_card {
-    border-top: 5px dotted #5529c6;
-    border-left: none;
-    width: 100%;
-  }
-
-  .email_image {
-    display: none;
-  }
-
-  .section_header_text {
-    font-size: 30px;
   }
 }
 
@@ -595,84 +469,6 @@ common-image-carousel {
 
   .workshops_image {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .landing_page_wrapper {
-    padding: 0 2.5rem;
-  }
-
-  .section_1 {
-    margin-bottom: 150px;
-  }
-
-  .section1_corner {
-    bottom: auto;
-    top: 90%;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .section_1 {
-    padding: 50px;
-  }
-
-  #common_solid_info_card_section {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-  }
-
-  common-solid-info-card {
-    width: 75%;
-  }
-
-  .tools_info {
-    flex-direction: column;
-  }
-
-  #workplace_tools_section {
-    width: 100%;
-    margin: 0px;
-  }
-
-  #workplace_text {
-    margin-top: 110px;
-  }
-
-  .tools_image {
-    position: static;
-    min-width: 255px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .landing_page_wrapper {
-    padding: 0 1rem;
-  }
-
-  .section1_corner {
-    width: 75%;
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .section_1 {
-    margin-bottom: 125px;
-  }
-
-  .section_2_left {
-    padding-right: 15px;
-  }
-
-  .section_2_right {
-    padding-left: 25px;
-  }
-
-  .blog_section_content {
-    padding-right: 25px;
   }
 }
 
