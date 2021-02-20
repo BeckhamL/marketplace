@@ -8,6 +8,7 @@ import { BlessYourMarketplaceComponent } from './bless-your-marketplace/bless-yo
 import { PrayOverResumeComponent } from './pray-over-resume/pray-over-resume.component';
 import { SurvivingAtWorkComponent } from './surviving-at-work/surviving-at-work.component';
 import { MakeYourMoveComponent } from './make-your-move/make-your-move.component';
+import { ExcelInServiceComponent } from './excel-in-service/excel-in-service.component';
 @NgModule({
   imports: [CommonModule, FlexLayoutModule, MaterialCommonModule],
   declarations: [
@@ -16,7 +17,8 @@ import { MakeYourMoveComponent } from './make-your-move/make-your-move.component
     BlessYourMarketplaceComponent,
     PrayOverResumeComponent,
     SurvivingAtWorkComponent,
-    MakeYourMoveComponent
+    MakeYourMoveComponent,
+    ExcelInServiceComponent
   ],
   exports: [
     MyJourneyAtWorkComponent,
@@ -24,7 +26,8 @@ import { MakeYourMoveComponent } from './make-your-move/make-your-move.component
     BlessYourMarketplaceComponent,
     PrayOverResumeComponent,
     SurvivingAtWorkComponent,
-    MakeYourMoveComponent
+    MakeYourMoveComponent,
+    ExcelInServiceComponent
   ],
 })
 export class DataFilesModule {}

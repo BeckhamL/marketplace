@@ -13,6 +13,7 @@ import { RethinkingMainComponent } from './components/rethinking-my-work/rethink
 import { RecreatingMainComponent } from './components/recreating-my-work/recreating-main/recreating-main.component';
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { BlessYourMarketplaceComponent } from './data-files/bless-your-marketplace/bless-your-marketplace.component';
+import { ExcelInServiceComponent } from './data-files/excel-in-service/excel-in-service.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -25,6 +26,10 @@ const routes: Routes = [
       {
         path: 'bless-your-marketplace',
         component: BlessYourMarketplaceComponent,
+      },
+      {
+        path: 'serve-to-excel',
+        component: ExcelInServiceComponent,
       },
     ],
   },
