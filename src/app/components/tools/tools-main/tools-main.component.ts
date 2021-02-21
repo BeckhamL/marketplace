@@ -29,10 +29,22 @@ export class ToolsMainComponent implements OnInit {
       {
         title: 'Journey @ Work',
         description: 'Learn from the highs and lows of your career',
+        file: 'journey-at-work.pdf'
       },
       {
         title: 'Surviving @ Work',
-        description: '',
+        description: 'surviving-at-work.pdf',
+        file: 'surviving-at-work.pdf'
+      },
+      {
+        title: 'Make your move',
+        description: 'surviving-at-work.pdf',
+        file: 'make-your-move.pdf'
+      },
+      {
+        title: 'Pray over my resume',
+        description: 'pray-over-resume.pdf',
+        file: 'pray-over-resume.pdf'
       },
       {
         title: 'Prayer of Examen',
@@ -50,6 +62,7 @@ export class ToolsMainComponent implements OnInit {
       {
         title: 'Mapping your influence',
         description: 'Who are the people I touch?',
+        file: 'influence.pdf'
       },
     ],
   };
