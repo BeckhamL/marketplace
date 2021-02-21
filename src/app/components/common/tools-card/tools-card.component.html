@@ -1,16 +1,21 @@
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
-      {{title}}
+      {{ title }}
     </p>
   </header>
   <div class="card-content">
     <div class="content">
-      {{description}}
+      {{ description }}
     </div>
   </div>
   <footer class="card-footer">
-    <a href="#" class="card-footer-item">Preview</a>
-    <a href="#" class="card-footer-item">Download File</a>
+    <a class="card-footer-item" (click)="onClickFilePreview()">Preview</a>
+    <a
+      href="../../../assets/files/{{file}}"
+      download
+      class="card-footer-item"
+      >Download File</a
+    >
   </footer>
 </div>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
+import { FilePreviewModalComponent } from '../file-preview-modal/file-preview-modal.component';
 @Component({
   selector: 'common-tools-card',
   templateUrl: './tools-card.component.html',
@@ -12,10 +13,21 @@ export class ToolsCardComponent implements OnInit {
 
   @Input()
   description?: string;
+
+  @Input()
+  file?: string;
   
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  onClickFilePreview() {
+    const dialogRef = this.dialog.open(FilePreviewModalComponent, {
+      data: this.file,
+      width: '70vw',
+      height: '80vh'
+    })
   }
 
 }

@@ -26,7 +26,6 @@ export class AboutComponent implements OnInit {
   }
 
   onClickOpenBioDetails() {
-    console.log('here')
     const dialogRef = this.dialog.open(BioDetailsComponent, {
       width: '50vw',
       maxHeight: '70vh'
@@ -34,7 +33,6 @@ export class AboutComponent implements OnInit {
   }
 
   onViewMore(route: string) {
-    console.log('here')
     this.router.navigate(['/' + route])
   }
 

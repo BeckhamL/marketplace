@@ -8,7 +8,6 @@ import { SideNavModel } from 'src/app/models/side-nav.model';
   styleUrls: ['./tools-main.component.scss'],
 })
 export class ToolsMainComponent implements OnInit {
-
   middleBanner: MiddleSeperatorModel = {
     topTitle: 'Tools & Resources',
     bottomTitle: 'It begins with blessing people and places',
@@ -18,13 +17,14 @@ export class ToolsMainComponent implements OnInit {
       { icon: 'corporate_fare', text: 'workplace' },
     ],
   };
-  
+
   content: SideNavModel = {
     content: [
       {
         title: 'Reality Challenge',
         description:
           'Take the Reality Challenge and see where you stand in the marketplace',
+        file: 'reality_challenge.pdf'
       },
       {
         title: 'Journey @ Work',

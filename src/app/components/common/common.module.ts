@@ -30,6 +30,7 @@ import { CircleIconComponent } from './circle-icon/circle-icon.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MiddleSeperatorComponent } from './middle-seperator/middle-seperator.component';
 import { ToolsCardComponent } from './tools-card/tools-card.component';
+import { FilePreviewModalComponent } from './file-preview-modal/file-preview-modal.component';
 @NgModule({
   imports: [CommonModule, MaterialCommonModule, FlexLayoutModule, IvyCarouselModule, ReactiveFormsModule, DataFilesModule],
   exports: [
@@ -57,7 +58,8 @@ import { ToolsCardComponent } from './tools-card/tools-card.component';
     CircleIconComponent,
     SideMenuComponent,
     MiddleSeperatorComponent,
-    ToolsCardComponent
+    ToolsCardComponent,
+    FilePreviewModalComponent
   ],
   declarations: [
     HeaderComponent,
@@ -84,7 +86,8 @@ import { ToolsCardComponent } from './tools-card/tools-card.component';
     CircleIconComponent,
     SideMenuComponent,
     MiddleSeperatorComponent,
-    ToolsCardComponent
+    ToolsCardComponent,
+    FilePreviewModalComponent
   ],
 })
 export class CommonComponentModule {}
