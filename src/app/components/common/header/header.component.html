@@ -1,89 +1,77 @@
-<div class="navbar">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand" (click)="onClickNavigation('')">
     <a class="navbar-item">
       <img src="../../../../assets/images/marketplace_logo.png" class="image" />
     </a>
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-  <div class="navbar-end">
-    <a
-      class="navbar-item"
-      (click)="onClickNavigation('about')"
-      [ngClass]="{ activeRoute: currentRoute === 'about' }"
-    >
-      About
-    </a>
-    <a
-      class="navbar-item"
-      (click)="onClickNavigation('mission-@-work')"
-      [ngClass]="{ activeRoute: currentRoute === 'mission-@-work' }"
-    >
-      Mission @ Work
-    </a>
-    <div class="navbar-item has-dropdown is-hoverable">
-      <a class="navbar-link"
-      (click)="onClickNavigation('ministry-@-work')"
-        [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }">
-        Ministry @ work
-      </a>
-  
-      <div class="navbar-dropdown">
-        <a class="navbar-item" (click)="onClickNavigation('ministry-@-work/bless-your-marketplace')">
-          Bless your marketplace
-        </a>
-        <a class="navbar-item" (click)="onClickNavigation('ministry-@-work/serve-to-excel')">
-          Serve to excel
-        </a>
-        <!-- <a class="navbar-item">
-          Declare hope!
-        </a> -->
-      </div>
-    </div>
-    <a
-      class="navbar-item"
-      (click)="onClickNavigation('toolbox')"
-      [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
-    >
-      Toolbox
-    </a>
-    <a
-      class="navbar-item"
-      (click)="onClickNavigation('contact')"
-      [ngClass]="{ activeRoute: currentRoute === 'contact' }"
-      >Contact Us</a
-    >
-    <!-- <a class="navbar-item" (click)="onClickNavigation('Snapshots')">
-      Snapshots
-    </a>
-    <a
-      class="navbar-item"
-      (click)="onClickNavigation('blogs')"
-      [ngClass]="{ activeRoute: currentRoute === 'blogs' }"
-    >
-      Blogs
-  </a> -->
-  </div>
-</div>
-<div class="navbar-menu is-active">
-  <!-- shown on mobile -->
-</div>
 
-<!-- <div *ngIf="innerWidth < 1000">
-  <mat-icon [matMenuTriggerFor]="menu">menu</mat-icon>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <div class="content_tab_small" (click)="onClickNavigation('about')">
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a
+        class="navbar-item"
+        (click)="onClickNavigation('about')"
+        [ngClass]="{ activeRoute: currentRoute === 'about' }"
+      >
         About
+      </a>
+      <a
+        class="navbar-item"
+        (click)="onClickNavigation('mission-@-work')"
+        [ngClass]="{ activeRoute: currentRoute === 'mission-@-work' }"
+      >
+        Mission @ Work
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a
+          class="navbar-link"
+          (click)="onClickNavigation('ministry-@-work')"
+          [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
+        >
+          Ministry @ work
+        </a>
+
+        <div class="navbar-dropdown">
+          <a
+            class="navbar-item"
+            (click)="
+              onClickNavigation('ministry-@-work/bless-your-marketplace')
+            "
+          >
+            Bless your marketplace
+          </a>
+          <a
+            class="navbar-item"
+            (click)="onClickNavigation('ministry-@-work/serve-to-excel')"
+          >
+            Serve to excel
+          </a>
+        </div>
       </div>
-    </button>
-    <button mat-menu-item>
-      <div class="content_tab_small" (click)="onClickNavigation('workshops')">
-        Workshop
-      </div>
-    </button>
-    <button mat-menu-item>
-      <div class="content_tab_small" (click)="onClickNavigation('outlines')">
-        Course Outline
-      </div>
-    </button>
-  </mat-menu>
-</div> -->
+      <a
+        class="navbar-item"
+        (click)="onClickNavigation('toolbox')"
+        [ngClass]="{ activeRoute: currentRoute === 'toolbox' }"
+      >
+        Toolbox
+      </a>
+      <a
+        class="navbar-item"
+        (click)="onClickNavigation('contact')"
+        [ngClass]="{ activeRoute: currentRoute === 'contact' }"
+        >Contact Us</a
+      >
+    </div>
+  </div>
+</nav>

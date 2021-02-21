@@ -13,7 +13,6 @@ export class FilePreviewModalComponent implements OnInit {
   constructor(@Inject(MAT_DIALOG_DATA) public data, private sanitizer:DomSanitizer) {}
 
   ngOnInit() {
-    console.log(typeof this?.data)
     if (this.data) {
       this.file = this.sanitizer.bypassSecurityTrustResourceUrl('../../../../assets/files/' + this.data);
     }
