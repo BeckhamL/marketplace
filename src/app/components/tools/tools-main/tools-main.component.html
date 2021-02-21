@@ -12,6 +12,7 @@
       </p>
     </div>
   </div>
+  <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
   <div class="columns is-multiline">
     <div class="column is-one-third" *ngFor="let c of content?.content">
       <common-tools-card [title]="c?.title" [description]="c?.description"></common-tools-card>

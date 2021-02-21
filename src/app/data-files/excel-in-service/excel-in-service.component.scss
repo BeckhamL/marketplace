@@ -12,7 +12,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #d9e2f3;
 }
 
 .letter {
@@ -22,4 +22,10 @@ tr:nth-child(even) {
   padding: 24px;
   position: relative;
   width: 80%;
+}
+
+.middle_box {
+  border-top: 6px solid #5b9bd5;
+  border-bottom: 6px solid #5b9bd5;
+  margin-top: 20px;
 }

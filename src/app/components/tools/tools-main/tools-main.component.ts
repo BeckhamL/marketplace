@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MiddleSeperatorModel } from 'src/app/models/middle-seperator.model';
 import { SideNavModel } from 'src/app/models/side-nav.model';
 
 @Component({
@@ -7,6 +8,17 @@ import { SideNavModel } from 'src/app/models/side-nav.model';
   styleUrls: ['./tools-main.component.scss'],
 })
 export class ToolsMainComponent implements OnInit {
+
+  middleBanner: MiddleSeperatorModel = {
+    topTitle: 'Tools & Resources',
+    bottomTitle: 'It begins with blessing people and places',
+    iconImages: [
+      { icon: 'supervisor_account', text: 'colleagues' },
+      { icon: 'assignment_ind', text: 'clients' },
+      { icon: 'corporate_fare', text: 'workplace' },
+    ],
+  };
+  
   content: SideNavModel = {
     content: [
       {
@@ -28,7 +40,7 @@ export class ToolsMainComponent implements OnInit {
       },
       {
         title: 'Bless your marketplace',
-        description: '',
+        description: 'You’ve got more influence than you think!',
       },
       {
         title: 'Ministry @ Work',
@@ -37,7 +49,7 @@ export class ToolsMainComponent implements OnInit {
       },
       {
         title: 'Mapping your influence',
-        description: '',
+        description: 'Who are the people I touch?',
       },
     ],
   };
