@@ -53,6 +53,7 @@ export class ToolsMainComponent implements OnInit {
       {
         title: 'Bless your marketplace',
         description: 'You’ve got more influence than you think!',
+        file: 'bless-your-marketplace.pdf'
       },
       {
         title: 'Ministry @ Work',
@@ -63,6 +64,11 @@ export class ToolsMainComponent implements OnInit {
         title: 'Mapping your influence',
         description: 'Who are the people I touch?',
         file: 'influence.pdf'
+      },
+      {
+        title: 'Excel in service',
+        description: 'You’ve got more influence than you think!',
+        file: 'excel-in-service.pdf'
       },
     ],
   };

@@ -43,3 +43,23 @@
   box-shadow: 0 16px 18px rgba(0, 0, 0, 0.16);
   padding: 20px;
 }
+
+// RESPONSIVE
+
+@media only screen and (max-width: 2560px) {
+  .contact_wrapper {
+    margin-top: 19rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .contact_wrapper {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact_wrapper {
+    margin-top: 2rem;
+  }
+}

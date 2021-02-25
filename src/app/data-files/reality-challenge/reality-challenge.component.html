@@ -33,11 +33,11 @@
   <div class="content">
     <ol>
       <li>
-        Company: <input class="input"/>
+        Company: <input class="input" />
         <ol>
-          <li>Industry: <input class="input"/></li>
-          <li>Position and job description: <input class="input"/></li>
-          <li>What does Jesus think of your work? <input class="input"/></li>
+          <li>Industry: <input class="input" /></li>
+          <li>Position and job description: <input class="input" /></li>
+          <li>What does Jesus think of your work? <input class="input" /></li>
         </ol>
       </li>
       <li>
@@ -147,10 +147,10 @@
   <div class="field is-grouped is-grouped-right">
     <a
       class="_flex _flex_align_item_center download_button control"
-      href="../../../assets/files/reality_challenge.pdf"
-      download
+      tooltipInfoPopup
+      [tooltipText]="'Coming Soon'"
     >
-      <button class="button is-outlined is-primary">
+      <button class="button is-outlined is-primary" disabled>
         <span>Save your responses</span>
       </button>
     </a>

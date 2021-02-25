@@ -82,7 +82,7 @@
   Complete the left-hand column using your job description, then ask yourself
   honestly what <i>you</i> bring to the table:
 </p>
-<table>
+<table class="content">
   <tr>
     <th>Your job description</th>
     <th>How you can add value</th>
@@ -120,7 +120,7 @@
   </ul>
 </div>
 <h3 class="title is-3">Week at work</h3>
-<table>
+<table class="content">
   <tr>
     <th>Day</th>
     <th>Work done</th>
@@ -170,3 +170,23 @@
     <td><textarea></textarea></td>
   </tr>
 </table>
+<div class="field is-grouped is-grouped-right">
+  <a
+    class="_flex _flex_align_item_center download_button control"
+    tooltipInfoPopup
+    [tooltipText]="'Coming Soon'"
+  >
+    <button class="button is-outlined is-primary" disabled>
+      <span>Save your responses</span>
+    </button>
+  </a>
+  <a
+    class="_flex _flex_align_item_center download_button control"
+    href="../../../assets/files/excel-in-service.pdf"
+    download
+  >
+    <button class="button is-primary">
+      <span>Download Original File</span>
+    </button>
+  </a>
+</div>

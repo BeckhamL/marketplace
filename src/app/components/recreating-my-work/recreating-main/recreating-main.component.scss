@@ -49,6 +49,24 @@
 
 // RESPONSIVE 
 
+@media only screen and (max-width: 2560px) {
+  .ministry_work__wrapper {
+    margin-top: 19rem;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .ministry_work__wrapper {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ministry_work__wrapper {
+    margin-top: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .ministry_work__wrapper {
     margin-top: 1rem;

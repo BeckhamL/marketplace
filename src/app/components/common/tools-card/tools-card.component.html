@@ -9,7 +9,7 @@
       {{ description }}
     </div>
   </div>
-  <footer class="card-footer">
+  <footer class="card-footer" *ngIf="file">
     <a class="card-footer-item" (click)="onClickFilePreview()">Preview</a>
     <a
       href="../../../assets/files/{{file}}"
@@ -17,5 +17,8 @@
       class="card-footer-item"
       >Download File</a
     >
+  </footer>
+  <footer class="card-footer" *ngIf="!file">
+    <a class="card-footer-item disabled">Coming soon!</a>
   </footer>
 </div>
