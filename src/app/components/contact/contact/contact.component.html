@@ -31,7 +31,9 @@
             [color]="'orange'"
           ></common-circle-icon>
           <h2 class="title is-2">Resources</h2>
-          <a href="https://licc.org.uk/resources/" target="_blank">https://licc.org.uk/resources/</a>
+          <a href="https://licc.org.uk/resources/" target="_blank"
+            >https://licc.org.uk/resources/</a
+          >
         </div>
       </div>
       <div class="sectio2" fxFlex="50%">
@@ -54,9 +56,9 @@
     <h1 class="title is-1">Pictures of our journey so far...</h1>
     <common-text-image-carousel></common-text-image-carousel>
   </div>
+  <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
   <div class="block">
-    <h1 class="title is-1">Message us!</h1>
-    <p class="subtitle">We'll get back to you as soon as possible</p>
+
     <form class="contact_input_wrapper" [formGroup]="formGroup">
       <div class="field">
         <label class="label">Name:</label>
@@ -92,8 +94,8 @@
         <p
           *ngIf="
             formGroup.controls['email']?.errors?.required &&
-              (formGroup.controls['email'].dirty ||
-                formGroup.controls['email'].touched)
+            (formGroup.controls['email'].dirty ||
+              formGroup.controls['email'].touched)
           "
           class="help is-danger"
         >

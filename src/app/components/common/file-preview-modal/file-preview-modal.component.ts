@@ -1,5 +1,5 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -8,14 +8,22 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./file-preview-modal.component.scss'],
 })
 export class FilePreviewModalComponent implements OnInit {
-
   file: SafeResourceUrl;
-  constructor(@Inject(MAT_DIALOG_DATA) public data, private sanitizer:DomSanitizer) {}
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data,
+    private sanitizer: DomSanitizer,
+    private dialogRef: MatDialogRef<FilePreviewModalComponent>
+  ) {}
 
   ngOnInit() {
     if (this.data) {
-      this.file = this.sanitizer.bypassSecurityTrustResourceUrl('../../../../assets/files/' + this.data);
+      this.file = this.sanitizer.bypassSecurityTrustResourceUrl(
+        '../../../../assets/files/' + this.data
+      );
     }
-    
+  }
+
+  onClickClose() {
+    this.dialogRef.close();
   }
 }

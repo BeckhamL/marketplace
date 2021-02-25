@@ -28,7 +28,8 @@ export class AboutComponent implements OnInit {
   onClickOpenBioDetails() {
     const dialogRef = this.dialog.open(BioDetailsComponent, {
       width: '50vw',
-      maxHeight: '70vh'
+      maxHeight: '70vh',
+      autoFocus: false
     })
   }
 

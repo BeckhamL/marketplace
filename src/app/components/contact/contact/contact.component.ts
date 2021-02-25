@@ -5,20 +5,26 @@ import {
   Validators,
   ValidationErrors,
 } from '@angular/forms';
+import { MiddleSeperatorModel } from 'src/app/models/middle-seperator.model';
 import { ContactService } from 'src/app/services/contact.service';
 import { CustomSnackbarService } from 'src/app/services/snackbar.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  providers: [
-    CustomSnackbarService 
-  ]
+  providers: [CustomSnackbarService],
 })
 export class ContactComponent implements OnInit {
   formGroup: FormGroup;
 
-  constructor(private contactService: ContactService, private snackbarService: CustomSnackbarService) {}
+  middleBanner: MiddleSeperatorModel = {
+    topTitle: 'Message Us!',
+  };
+
+  constructor(
+    private contactService: ContactService,
+    private snackbarService: CustomSnackbarService
+  ) {}
 
   ngOnInit() {
     this.formGroup = new FormGroup({

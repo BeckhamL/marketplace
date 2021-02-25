@@ -5,7 +5,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -28,4 +29,10 @@ tr:nth-child(even) {
   border-top: 6px solid #5b9bd5;
   border-bottom: 6px solid #5b9bd5;
   margin-top: 20px;
+}
+
+.subway_image {
+  box-shadow: 0 16px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  width: 80%;
 }

@@ -26,7 +26,6 @@ export class ToolsCardComponent implements OnInit {
     const dialogRef = this.dialog.open(FilePreviewModalComponent, {
       data: this.file,
       width: '70vw',
-      height: '80vh'
     })
   }
 
