@@ -40,7 +40,7 @@
 }
 
 .no_margin {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .margin_bottom_10 {
@@ -52,6 +52,12 @@
 @media only screen and (max-width: 2560px) {
   .ministry_work__wrapper {
     margin-top: 19rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .ministry_work__wrapper {
+    margin-top: 13rem;
   }
 }
 
@@ -70,5 +76,9 @@
 @media only screen and (max-width: 768px) {
   .ministry_work__wrapper {
     margin-top: 1rem;
+  }
+
+  .banner_image {
+    display: none;
   }
 }

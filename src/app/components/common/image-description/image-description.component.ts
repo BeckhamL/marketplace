@@ -34,7 +34,7 @@ export class ImageDescriptionComponent implements OnInit {
 
   onClickRoute() {
     this.routeChange.emit(true);
-    this.router.navigate([this.route], { relativeTo: this.activatedRoute });
+    this.router.navigate([this.route]);
   }
 
 }

@@ -22,21 +22,15 @@ const routes: Routes = [
   {
     path: 'ministry-@-work',
     component: RecreatingMainComponent,
-    children: [
-      {
-        path: 'bless-your-marketplace',
-        component: BlessYourMarketplaceComponent,
-      },
-      {
-        path: 'serve-to-excel',
-        component: ExcelInServiceComponent,
-      },
-    ],
   },
-  // {
-  //   path: 'bless-your-marketplace',
-  //   component: BlessYourMarketplaceComponent,
-  // },
+  {
+    path: 'bless-your-marketplace',
+    component: BlessYourMarketplaceComponent,
+  },
+  {
+    path: 'serve-to-excel',
+    component: ExcelInServiceComponent,
+  },
   { path: 'workshops', component: WorkshopMainComponent },
   { path: 'workshop/:id', component: WorkshopMaterialComponent },
   { path: 'outlines', component: OutlineMainComponent },

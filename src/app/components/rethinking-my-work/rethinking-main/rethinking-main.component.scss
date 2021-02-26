@@ -34,6 +34,12 @@
   }
 }
 
+@media only screen and (max-width: 1920px) {
+  .rethinking_wrapper {
+    margin-top: 13rem;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .rethinking_wrapper {
     margin-top: 8rem;
@@ -49,5 +55,9 @@
 @media only screen and (max-width: 768px) {
   .rethinking_wrapper {
     margin-top: 1rem;
+  }
+
+  .banner_image {
+    display: none;
   }
 }

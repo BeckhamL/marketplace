@@ -56,6 +56,12 @@
   }
 }
 
+@media only screen and (max-width: 1920px) {
+  .contact_wrapper {
+    margin-top: 13rem;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .contact_wrapper {
     margin-top: 8rem;
@@ -65,5 +71,9 @@
 @media only screen and (max-width: 1024px) {
   .contact_wrapper {
     margin-top: 2rem;
+  }
+
+  .banner_image {
+    display: none;
   }
 }

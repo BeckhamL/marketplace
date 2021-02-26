@@ -283,6 +283,10 @@ img {
   color: white;
 }
 
+.text_align_center {
+  text-align: center;
+}
+
 .outlines_info {
   height: 400px;
   background-color: #f6efe8;
@@ -309,7 +313,6 @@ img {
 }
 
 .tools_info {
-  width: 60%;
   background-color: $background-olive;
   padding: 30px;
   position: relative;
@@ -467,7 +470,7 @@ common-image-carousel {
     padding-right: 20px;
   }
 
-  .workshops_image {
+  .header_image {
     display: none;
   }
 }

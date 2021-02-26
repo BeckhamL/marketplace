@@ -1,4 +1,4 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
   <div class="navbar-brand" (click)="onClickNavigation('')">
     <a class="navbar-item">
       <img src="../../../../assets/images/marketplace_logo.png" class="image" />
@@ -33,32 +33,14 @@
         Mission @ Work
       </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a
-          class="navbar-link"
-          (click)="onClickNavigation('ministry-@-work')"
-          [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
-        >
-          Ministry @ work
-        </a>
+      <a
+        class="navbar-item"
+        (click)="onClickNavigation('ministry-@-work')"
+        [ngClass]="{ activeRoute: currentRoute === 'ministry-@-work' }"
+      >
+        Ministry @ work
+      </a>
 
-        <div class="navbar-dropdown">
-          <a
-            class="navbar-item"
-            (click)="
-              onClickNavigation('ministry-@-work/bless-your-marketplace')
-            "
-          >
-            Bless your marketplace
-          </a>
-          <a
-            class="navbar-item"
-            (click)="onClickNavigation('ministry-@-work/serve-to-excel')"
-          >
-            Serve to excel
-          </a>
-        </div>
-      </div>
       <a
         class="navbar-item"
         (click)="onClickNavigation('toolbox')"
