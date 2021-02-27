@@ -7,3 +7,11 @@
   width: 60%;
   margin: 70px auto;
 }
+
+// RESPONSIVE 
+
+@media only screen and (max-width: 1440px) {
+  .bless_wrapper {
+    width: 80%;
+  }
+}

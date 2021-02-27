@@ -41,3 +41,15 @@ tr:nth-child(even) {
   width: 60%;
   margin: 70px auto;
 }
+
+textarea {
+  width: 100%;
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1440px) {
+  .excel_wrapper {
+    width: 80%;
+  }
+}
