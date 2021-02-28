@@ -1,1 +1,6 @@
-@import '../../../../assets/scss/main.scss';
+@import "../../../../assets/scss/main.scss";
+
+mat-icon {
+  cursor: pointer;
+  margin: 10px;
+}
