@@ -33,17 +33,17 @@ export class ToolsMainComponent implements OnInit {
       },
       {
         title: 'Surviving @ Work',
-        description: 'surviving-at-work.pdf',
+        description: 'Now I realize I was getting paid quite well to do something I enjoyed.',
         file: 'surviving-at-work.pdf'
       },
       {
         title: 'Make your move',
-        description: 'surviving-at-work.pdf',
+        description: 'Instead of sitting around waiting, make a move and feel your way across the river.',
         file: 'make-your-move.pdf'
       },
       {
         title: 'Pray over my resume',
-        description: 'pray-over-resume.pdf',
+        description: 'Your resume is a great way to review the positives in your career.',
         file: 'pray-over-resume.pdf'
       },
       {
@@ -67,7 +67,7 @@ export class ToolsMainComponent implements OnInit {
       },
       {
         title: 'Excel in service',
-        description: 'You’ve got more influence than you think!',
+        description: 'Praying for people is never a substitute for honest service and uncompromising work!',
         file: 'excel-in-service.pdf'
       },
     ],
