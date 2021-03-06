@@ -70,6 +70,11 @@ export class ToolsMainComponent implements OnInit {
         description: 'Praying for people is never a substitute for honest service and uncompromising work!',
         file: 'excel-in-service.pdf'
       },
+      {
+        title: 'Kingdom Workers',
+        description: 'A Small Group Curriculum for Marketplace Christians',
+        file: 'kingdom-workers.pdf'
+      },
     ],
   };
 
