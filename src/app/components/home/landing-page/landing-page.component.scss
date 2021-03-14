@@ -236,6 +236,10 @@ img {
   font-weight: 500;
 }
 
+.display_none_desktop {
+  display: inline;
+}
+
 .section1_corner {
   position: absolute;
   bottom: -60px;
@@ -464,6 +468,10 @@ common-image-carousel {
 
   .section1_corner {
     font-size: 1.8vw;
+  }
+
+  .display_none_desktop {
+    display: none;
   }
 
   .tools_image {

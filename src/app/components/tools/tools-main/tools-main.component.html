@@ -3,7 +3,7 @@
 </div>
 <div class="toolbox_wrapper">
   <div class="columns is-centered">
-    <div class="column is-one-quarter">
+    <div class="column is-half-desktop is-one-third-widescreen">
       <p>
         Here are some tools that we have developed over the years to help people
         sort out where they are, where they have been, and where they
@@ -14,7 +14,7 @@
   </div>
   <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
   <div class="columns is-multiline">
-    <div class="column is-one-third" *ngFor="let c of content?.content">
+    <div class="column is-one-third-widescreen is-full-desktop" *ngFor="let c of content?.content">
       <common-tools-card [title]="c?.title" [description]="c?.description" [file]="c?.file"></common-tools-card>
     </div>
   </div>
