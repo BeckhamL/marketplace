@@ -2,10 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
+import sslRedirect from 'heroku-ssl-redirect';
 require("dotenv").config();
 
 const app = express();
 app.use(cors());
+app.use(sslRedirect());
 const PORT = process.env.PORT || 3000;
 
 const workshops = require("./routes/workshops");
