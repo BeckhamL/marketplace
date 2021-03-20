@@ -9,6 +9,7 @@
       aria-label="menu"
       aria-expanded="false"
       data-target="navbarBasicExample"
+      (click)="onClickMobileMenu()"
     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -16,8 +17,8 @@
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
+  <div class="navbar-menu" id="nav-links">
+    <div class="navbar-end" (click)="onClickLink()">
       <a
         class="navbar-item"
         (click)="onClickNavigation('about')"

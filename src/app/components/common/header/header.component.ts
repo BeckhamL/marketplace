@@ -29,4 +29,18 @@ export class HeaderComponent implements OnInit {
   onClickNavigation(path: string) {
     this.router.navigate([`/${path}`]);
   }
+
+  onClickMobileMenu() {
+    let links = document.getElementById('nav-links')
+    if (links) {
+      links.classList.toggle('is-active')
+    }
+  }
+
+  onClickLink() {
+    let links = document.getElementById('nav-links')
+    if (links.classList.contains('is-active')) {
+      links.classList.remove('is-active')
+    }
+  }
 }
