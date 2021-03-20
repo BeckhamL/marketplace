@@ -24,6 +24,7 @@
   font-size: 4rem;
   margin-bottom: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 // RESPONSIVE 
@@ -59,5 +60,11 @@
 
   .banner_image {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .title_text {
+    font-size: 2rem;
   }
 }
