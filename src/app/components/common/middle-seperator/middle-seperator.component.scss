@@ -5,7 +5,7 @@
   font-weight: bold;
   color: #fff;
   background: #330033;
-  padding: 1em 0;
+  padding: 1em;
   line-height: 1em;
   text-align: center;
   margin: 3rem -70px;
@@ -33,3 +33,9 @@ mat-icon {
   font-size: 50px;
   width: 50px;
 }
+
+@media only screen and (max-width: 425px) {
+  .middle-banner {
+    font-size: 1.8rem;
+  }
+} 
