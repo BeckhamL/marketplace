@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Workshop } from '../models/workshop.model';
 import { BlogModel } from '../models/blog.model';
 
 @Injectable({
@@ -9,7 +8,7 @@ import { BlogModel } from '../models/blog.model';
 export class BlogService {
   constructor(private httpClient: HttpClient) {}
 
-  getBlog() {
+  getBlogs() {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
@@ -18,5 +17,9 @@ export class BlogService {
 
   postBlog(blog: BlogModel) {
     return this.httpClient.post<BlogModel>('http://localhost:3000/blogs/blog', blog);
+  }
+
+  getBlog(title: string) {
+    return this.httpClient.get(`http://localhost:3000/blogs/blog/${title}`);
   }
 }

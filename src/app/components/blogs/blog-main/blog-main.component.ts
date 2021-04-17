@@ -18,14 +18,12 @@ export class BlogMainComponent implements OnInit {
   }
 
   getBlogs() {
-    this.blogService.getBlog().subscribe(blogs => {
+    this.blogService.getBlogs().subscribe(blogs => {
      this.blogs = blogs as BlogModel[];
-     
-
     });
   }
 
-  onClickBlog() {
-    this.router.navigate(['/blog/1']);
+  onClickBlog(blog: BlogModel) {
+    this.router.navigate(['/blog/' + blog.title]);
   }
 }

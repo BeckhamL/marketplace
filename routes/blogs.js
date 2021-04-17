@@ -13,6 +13,17 @@ router.get("/blogs", async (req, res) => {
   }
 });
 
+router.get("/blog/:title", async (req, res) => {
+  let title = req.params.title;
+  
+  const blog = await Blogs.findOne({title: title});
+  try {
+    res.send(blog);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 router.post("/blog", async (req, res) => {
   let blog = new Blogs({
     title: req.body.title,

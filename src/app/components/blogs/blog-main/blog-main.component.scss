@@ -13,3 +13,7 @@
 .blog_card {
   cursor: pointer;
 }
+
+.blog_card:hover {
+  border-right: 10px solid #f57921;
+}

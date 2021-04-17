@@ -3,13 +3,13 @@
   *ngIf="isLoaded"
 >
   <div class="blog_content_wrapper">
-    <div class="title_text has-text-centered">{{ blog[0]?.title }}</div>
+    <div class="title_text has-text-centered">{{ blog?.title }}</div>
     <div class="_flex _flex_align_item_center margin_top_20">
-      <div class="author_text">Written by {{ blog[0]?.author }}</div>
+      <div class="author_text">Written by {{ blog?.author }}</div>
       <div class="seperator">-</div>
-      <div>{{ blog[0]?.date | date: "mediumDate" }}</div>
+      <div>{{ blog?.date | date: "mediumDate" }}</div>
     </div>
     <hr />
-    <div class="content_text">{{ blog[0]?.content }}</div>
+    <div [innerHTML]="blog?.content" class="content_text"></div>
   </div>
 </div>
