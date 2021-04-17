@@ -15,7 +15,7 @@ export class AdminBlogsComponent implements OnInit {
   editorConfig: AngularEditorConfig = {
     editable: true,
     spellcheck: true,
-    height: 'auto',
+    height: '300px',
     minHeight: '10',
     maxHeight: 'auto',
     width: 'auto',
