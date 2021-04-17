@@ -1,16 +1,16 @@
 <div class="admin_blogs_wrapper">
   <h3 class="title is-3">Create a new blog</h3>
-  <form>
+  <form [formGroup]="formGroup">
     <div class="field">
       <label class="label">Title</label>
       <div class="control">
-        <input class="input" type="text" />
+        <input class="input" type="text" formControlName="title"/>
       </div>
     </div>
     <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+        <textarea class="textarea" formControlName="content"></textarea>
       </div>
     </div>
     <div class="field is-grouped is-grouped-right">
@@ -21,7 +21,7 @@
         <button
           class="button is-success"
           type="button"
-          (click)="onSubmitBlog($event)"
+          (click)="onSubmitBlog()"
         >
           Submit
         </button>

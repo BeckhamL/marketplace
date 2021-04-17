@@ -4,6 +4,4 @@ export class BlogModel {
   author: string;
   date?: string;
   content?: string;
-  id: number;
-  shortDescription?: string;
 }
