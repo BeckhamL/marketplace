@@ -5,10 +5,17 @@ import { UtilityModule } from '../../utility/utility.module';
 import { MaterialCommonModule } from '../../material/material.module';
 import { CommonComponentModule } from '../common/common.module';
 import { AdminLandingComponent } from './admin-landing/admin-landing.component';
+import { AdminBlogsComponent } from './admin-blogs/admin-blogs.component';
 
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, UtilityModule, MaterialCommonModule, CommonComponentModule],
-  exports: [AdminLandingComponent],
-  declarations: [AdminLandingComponent],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    UtilityModule,
+    MaterialCommonModule,
+    CommonComponentModule,
+  ],
+  exports: [AdminLandingComponent, AdminBlogsComponent],
+  declarations: [AdminLandingComponent, AdminBlogsComponent],
 })
 export class AdminModule {}

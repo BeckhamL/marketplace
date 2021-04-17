@@ -1,0 +1,31 @@
+<div class="admin_blogs_wrapper">
+  <h3 class="title is-3">Create a new blog</h3>
+  <form>
+    <div class="field">
+      <label class="label">Title</label>
+      <div class="control">
+        <input class="input" type="text" />
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Textarea"></textarea>
+      </div>
+    </div>
+    <div class="field is-grouped is-grouped-right">
+      <div class="control">
+        <button class="button is-danger">Cancel</button>
+      </div>
+      <div class="control">
+        <button
+          class="button is-success"
+          type="button"
+          (click)="onSubmitBlog($event)"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
