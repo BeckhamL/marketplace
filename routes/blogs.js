@@ -14,11 +14,11 @@ router.get("/blogs", async (req, res) => {
 });
 
 router.post("/blog", async (req, res) => {
-  let blog = new Blog({
+  let blog = new Blogs({
     title: req.body.title,
     content: req.body.content,
     author: 'David Lau',
-    date: new Date
+    date: req.body.date
   });
 
   blog

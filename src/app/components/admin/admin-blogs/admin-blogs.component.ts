@@ -22,6 +22,7 @@ export class AdminBlogsComponent implements OnInit {
     this.formGroup = new FormGroup({
       title: new FormControl(''),
       content: new FormControl(''),
+      date: new FormControl(new Date())
     });
   }
 

@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const BlogSchema = new Schema({
   title: String,
   author: String,
-  content: String
+  content: String,
+  date: Date
 });
 
 // Model

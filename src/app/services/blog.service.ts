@@ -17,6 +17,6 @@ export class BlogService {
   }
 
   postBlog(blog: BlogModel) {
-    return this.httpClient.post<BlogModel>('/blogs/blog', blog);
+    return this.httpClient.post<BlogModel>('http://localhost:3000/blogs/blog', blog);
   }
 }
