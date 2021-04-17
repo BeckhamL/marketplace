@@ -7,6 +7,7 @@ import { CommonComponentModule } from '../common/common.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminLandingComponent } from './admin-landing/admin-landing.component';
 import { AdminBlogsComponent } from './admin-blogs/admin-blogs.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AdminBlogsComponent } from './admin-blogs/admin-blogs.component';
     UtilityModule,
     MaterialCommonModule,
     CommonComponentModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularEditorModule
   ],
   exports: [AdminLandingComponent, AdminBlogsComponent],
   declarations: [AdminLandingComponent, AdminBlogsComponent],

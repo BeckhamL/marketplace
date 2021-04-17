@@ -21,6 +21,7 @@ export class AdminBlogsComponent implements OnInit {
   ngOnInit() {
     this.formGroup = new FormGroup({
       title: new FormControl(''),
+      shortDescription: new FormControl(''),
       content: new FormControl(''),
       date: new FormControl(new Date())
     });

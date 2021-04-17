@@ -17,6 +17,7 @@ router.post("/blog", async (req, res) => {
   let blog = new Blogs({
     title: req.body.title,
     content: req.body.content,
+    shortDescription: req.body.shortDescription,
     author: 'David Lau',
     date: req.body.date
   });

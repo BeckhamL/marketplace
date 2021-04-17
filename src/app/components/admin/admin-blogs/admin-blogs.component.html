@@ -8,9 +8,16 @@
       </div>
     </div>
     <div class="field">
+      <label class="label">Short description</label>
+      <div class="control">
+        <textarea class="textarea" formControlName="shortDescription"></textarea>
+      </div>
+    </div>
+    <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" formControlName="content"></textarea>
+        <!-- <textarea class="textarea" formControlName="content"></textarea> -->
+        <angular-editor formControlName="content"></angular-editor>
       </div>
     </div>
     <div class="field is-grouped is-grouped-right">

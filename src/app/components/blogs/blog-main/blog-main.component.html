@@ -1,30 +1,15 @@
-<div class="blog_wrapper">
-  <div class="_flex _justify_center">
-    <div class="title_text margin_bottom_50">What insight will <br> you gain today?</div>
-  </div>
-  <div class="_flex _justify_center category_buttons margin_bottom_50">
-    <app-icon-button [config]="{icon: 'visibility', style: 'default', description: 'Discover'}"></app-icon-button>
-    <app-icon-button [config]="{icon: 'supervisor_account', style: 'default', description: 'Workplace'}"></app-icon-button>
-    <app-icon-button [config]="{icon: 'family_restroom', style: 'default', description: 'Family'}"></app-icon-button>
-    <app-icon-button [config]="{icon: 'outdoor_grill', style: 'default', description: 'Social'}"></app-icon-button>
-    <app-icon-button [config]="{icon: 'self_improvement', style: 'default', description: 'Personal'}"></app-icon-button>
+<div class="site-container blog_wrapper">
+  <div class="mb-5">
+    <h1 class="title is-1">Blogs</h1>
+    <p class="subtitle">What will you discover today?</p>
   </div>
 
-  <div class="_flex _space_between">
-    <div class="_flex_col _flex_align_item_center" fxFlex="45%">
-      <div class="header_text">Most recent</div>
-      <common-image-description (click)="onClickBlog()"></common-image-description>
-    </div>
-  
-    <div class="_flex_col _flex_align_item_center list_column">
-      <div class="header_text">Popular</div>
-      <common-overview-card (click)="onClickBlog()"></common-overview-card>
-      <common-overview-card (click)="onClickBlog()"></common-overview-card>
-      <common-overview-card (click)="onClickBlog()"></common-overview-card>
+  <div *ngFor="let blog of blogs">
+    <div (click)="onClickBlog()" class="blog_card">
+      <h3 class="title is-3">{{ blog.title }}</h3>
+      <p class="subtitle is-size-6 autor_text">Written by: {{ blog.author }} - {{ blog.date | date: 'mediumDate'}}</p>
+      <p class="content">{{blog.shortDescription}}</p>
+      <hr />
     </div>
   </div>
-
-  <div class="title_text2 margin_bottom_50">More blogs</div>
-  <common-image-grid></common-image-grid>
-
 </div>

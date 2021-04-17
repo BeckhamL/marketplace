@@ -1,49 +1,15 @@
 @import "../../../../assets/scss/main.scss";
 
 .blog_wrapper {
-  padding: 70px 15rem;
-  margin-top: 64px;
-  background: oldlace;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  // background: oldlace;
 }
 
-.title_text {
-  font-size: 60px;
-  color: $site-blue;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  text-align: center;
+.autor_text {
+  color: #808080;
 }
 
-.title_text2 {
-  font-size: 60px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  margin: 4rem 0px;
-}
-
-.header_text {
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-.list_column {
-  common-overview-card {
-    margin: 10px;
-  }
-}
-
-.category_buttons {
-  app-icon-button {
-    margin: 40px;
-  }
-}
-
-.margin_bottom_50 {
-  margin-bottom: 50px;
-}
-
-common-image-description {
-  margin-top: 10px;
+.blog_card {
+  cursor: pointer;
 }

@@ -20,7 +20,6 @@ export class WorkshopService {
   }
 
   getOneWorkshop(id: number) {
-    console.log('go', id)
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
