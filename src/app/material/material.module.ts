@@ -9,6 +9,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   imports: [
     CommonModule,
@@ -21,6 +22,7 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatExpansionModule,
     MatListModule,
     MatStepperModule,
+    MatTabsModule,
   ],
   exports: [
     MatSliderModule,
@@ -32,6 +34,7 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatExpansionModule,
     MatListModule,
     MatStepperModule,
+    MatTabsModule,
   ],
   declarations: [],
 })

@@ -23,6 +23,7 @@ import { ContactModule } from './components/contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AdminModule } from './components/admin/admin.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -34,6 +35,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CommonComponentModule,
     HomeCommonModule,
     AboutModule,
+    AdminModule,
     WorkshopModule,
     UtilityModule,
     FlexLayoutModule,
@@ -49,6 +51,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ContactModule,
     FontAwesomeModule,
     MatSnackBarModule,
+  ],
+  exports: [
+    MaterialCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

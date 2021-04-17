@@ -14,6 +14,7 @@ import { RecreatingMainComponent } from './components/recreating-my-work/recreat
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { BlessYourMarketplaceComponent } from './data-files/bless-your-marketplace/bless-your-marketplace.component';
 import { ExcelInServiceComponent } from './data-files/excel-in-service/excel-in-service.component';
+import { AdminLandingComponent } from './components/admin/admin-landing/admin-landing.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'blog/:id', component: BlogMaterialComponent },
   { path: 'toolbox', component: ToolsMainComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'admin', component: AdminLandingComponent },
 ];
 
 @NgModule({
