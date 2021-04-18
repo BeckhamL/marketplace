@@ -20,6 +20,7 @@ export class BlogMainComponent implements OnInit {
   getBlogs() {
     this.blogService.getBlogs().subscribe(blogs => {
      this.blogs = blogs as BlogModel[];
+     this.blogs.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
     });
   }
 
