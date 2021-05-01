@@ -1,7 +1,6 @@
 @import "../../../../assets/scss/main.scss";
 
 .middle-banner {
-  font-size: 2.8em;
   font-weight: bold;
   color: #fff;
   background: #330033;
@@ -34,8 +33,8 @@ mat-icon {
   width: 50px;
 }
 
-@media only screen and (max-width: 425px) {
-  .middle-banner {
-    font-size: 1.8rem;
-  }
-} 
+// @media only screen and (max-width: 425px) {
+//   .middle-banner {
+//     font-size: 1.8rem;
+//   }
+// } 
