@@ -26,6 +26,13 @@ body {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .site-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 // BULMA
 $orange: #f57921;
 $pink: blue;

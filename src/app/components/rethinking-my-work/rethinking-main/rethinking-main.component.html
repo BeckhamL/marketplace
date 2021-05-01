@@ -3,7 +3,7 @@
   <img src="../../../../assets/images/landscape.jpg" class="banner_image">
 </div>
 <div class="rethinking_wrapper">
-  <div class="columns is-centered is-vcentered">
+  <div class="site-container columns is-vcentered is-justify-content-space-evenly">
     <div class="column is-half-desktop is-one-third-widescreen">
       <h1 class="title is-1">Your work is your mission.</h1>
       <p class="content">
@@ -25,5 +25,8 @@
   </div>
   <common-middle-seperator [config]="middleBanner"></common-middle-seperator>
   <!-- <h3 class="title is-3">Steps to guide you through your journey:</h3> -->
-  <common-stepper [stepperConfig]="stepperValue"></common-stepper>
+  <div class="site-container">
+    <common-stepper [stepperConfig]="stepperValue"></common-stepper>
+  </div>
+
 </div>

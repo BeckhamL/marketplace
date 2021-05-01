@@ -1,7 +1,6 @@
 @import "../../../../assets/scss/main.scss";
 
 .rethinking_wrapper {
-  padding: 70px;
   margin-top: 13rem;
 }
 
@@ -51,6 +50,9 @@
   .rethinking_wrapper {
     margin-top: 2rem;
   }
+  .banner_image {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,9 +60,6 @@
     margin-top: 1rem;
   }
 
-  .banner_image {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 425px) {
