@@ -34,11 +34,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(__dirname + "/dist/markplace-app"));
 
   app.get("*", function (req, res, next) {
-    if (req.secure) {
+    // if (req.secure) {
       res.sendFile(path.join(__dirname + "/dist/markplace-app/index.html"));
-    } else {
-      res.redirect(301, 'https://' + req.headers.host + req.url);
-    }
+    // } else {
+    //   res.redirect(301, 'https://' + req.headers.host + req.url);
+    // }
 
     // if (req.get("x-forwarded-proto") != "https") {
     //   res.set("x-forwarded-proto", "https");
