@@ -4,11 +4,17 @@
     <p class="subtitle">What will you discover today?</p>
   </div>
   <hr>
-  <div *ngFor="let blog of blogs">
-    <div (click)="onClickBlog(blog)" class="blog_card mb-5">
-      <h3 class="title is-3">{{ blog.title }}</h3>
-      <p class="subtitle is-size-6 autor_text">Written by: {{ blog.author }} - {{ blog.date | date: 'mediumDate'}}</p>
-      <p class="content">{{blog.shortDescription}}</p>
+  <div *ngIf="blogs?.length > 0; else noBlogs">
+    <div *ngFor="let blog of blogs">
+      <div (click)="onClickBlog(blog)" class="blog_card mb-5">
+        <h3 class="title is-3">{{ blog.title }}</h3>
+        <p class="subtitle is-size-6 autor_text">Written by: {{ blog.author }} - {{ blog.date | date: 'mediumDate'}}</p>
+        <p class="content">{{blog.shortDescription}}</p>
+      </div>
     </div>
   </div>
+  <ng-template #noBlogs>
+    <h1 class="title is-1">There are no blogs currently.</h1>
+  </ng-template>
+
 </div>
