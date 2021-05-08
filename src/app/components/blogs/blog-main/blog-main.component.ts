@@ -9,7 +9,6 @@ import * as moment from 'moment';
   styleUrls: ['./blog-main.component.scss'],
 })
 export class BlogMainComponent implements OnInit {
-
   blogs: BlogModel[];
   constructor(private router: Router, private blogService: BlogService) {}
 
@@ -18,9 +17,11 @@ export class BlogMainComponent implements OnInit {
   }
 
   getBlogs() {
-    this.blogService.getBlogs().subscribe(blogs => {
-     this.blogs = blogs as BlogModel[];
-     this.blogs.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    this.blogService.getBlogs().subscribe((blogs) => {
+      this.blogs = blogs as BlogModel[];
+      this.blogs.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
     });
   }
 
