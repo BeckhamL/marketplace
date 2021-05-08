@@ -40,7 +40,7 @@ const routes: Routes = [
   { path: 'blog/:id', component: BlogMaterialComponent },
   { path: 'toolbox', component: ToolsMainComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'admin', component: AdminLandingComponent },
+  { path: 'adcms', component: AdminLandingComponent },
 ];
 
 @NgModule({
